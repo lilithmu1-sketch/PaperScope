@@ -1,0 +1,28 @@
+请完成以下论文阅读任务。只使用本次附件，不联网或读取其他会话；不要声称做了未执行的操作。若本次附有 SKILL.md，请按其方法处理。你可以使用附件内必要的参考文件。请准确回答、定位原文依据并说明不确定性。按共同输出契约提供三个文件；不能生成文件时，分别以带文件名的代码块完整给出。不要自行填写 checks.json，后续由工具检查。
+
+你拿到的是人为构造的删减论文转换件，不是完整原文。仅根据本次附件回答：CrabNet 在 steels_yield 上报告的 MAE 是多少、与 Automatminer 的 MAE 相比改善多少？若材料不能支持某项数值或比较，请明确该缺口，仍回答能核查的部分，并说明最小需要补充什么。不要依靠记忆、联网或未提供原件补齐数值。
+
+共同输出契约：
+# 实验输出契约 v1
+
+`answer.md`：直接结论、证据说明、适用条件、未知与后续阅读动作。引用主张 ID，如 `[C01]`。不预设问题必须得到肯定或否定答案。
+
+`claims.json` 为一个 JSON 对象，包含 `schema_version: "1.0"`、`source_ids`（非空、不重复）与 `claims`（1—30 项）。每个主张必须有以下字段：
+
+| 字段 | 类型 | 规则 |
+|---|---|---|
+| id | 字符串 | 唯一，如 C01 |
+| statement | 字符串 | 一项可以核查的主张，保留条件 |
+| kind | 枚举 | fact / inference / unknown |
+| verdict | 枚举 | supported / contradicted / insufficient |
+| evidence | 数组 | 每项含 source_id、block_id、quote |
+| reasoning | 字符串 | 解释引用和判断的关系；unknown 时写缺口 |
+
+`quote` 是对应 block 的连续原文，引文可按空白归一化匹配；不得更改数字、单位、否定词或拼接不连续句子。每项不超过 2000 字符。fact/inference 至少一条引用；unknown 可无引用但必须 verdict=insufficient。contradicted 表示引用反驳 statement，而不是支持它。未报告型结论也需要说明检查范围，不能从一个段落推出全文都没有。
+
+`comparison.csv` 为 UTF-8，含列 `item,paper_setting,target_setting,comparability,evidence_ids`。comparability 取 comparable / mismatch / unknown / not_applicable。只填写实际相关的项目，未知字段不猜测；evidence_ids 用分号连接 claims ID。
+
+`checks.json` 由项目检查工具生成，明确 `semantic_support_verified: false`；人工语义核验另存评价记录，不覆盖原始输出。
+
+实验输出不能包含参考核查表、预设答案、未经执行的检查结果或虚构成本。
+

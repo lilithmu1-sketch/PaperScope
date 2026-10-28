@@ -1,0 +1,31 @@
+{
+  "synthetic": true,
+  "base_source_sha256": "3a19cce38b13a335d25f94c565e3284eee84ca498cf5f95c35a26040f5e3f740",
+  "removed_blocks": [
+    "p01-b03",
+    "p01-b04",
+    "p01-b05",
+    "p02-b01",
+    "p02-b02",
+    "p02-b03",
+    "p02-b04",
+    "p02-b05",
+    "p02-b06",
+    "p03-b01",
+    "p03-b02",
+    "p03-b03",
+    "p03-b04",
+    "p04-b01",
+    "p04-b02",
+    "p04-b03",
+    "p04-b04",
+    "p05-b01",
+    "p07-b06",
+    "p08-b01",
+    "p08-b02",
+    "p09-b02",
+    "p09-b03",
+    "p09-b04"
+  ],
+  "purpose": "Test insufficient-evidence behavior. Not a defect in the original paper."
+}

@@ -1,0 +1,15 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+input_information,元素身份/分数含量；不输入结构,只有化学组成，无晶体结构,comparable,C02;C08
+target_scope,28 个材料性质回归基准,新材料筛选；具体目标性质未给出,unknown,C03;C21
+dataset_domain,实验与计算来源混合，312—341788 条,未见化学体系；规模/标签来源未给出,unknown,C03;C21
+split_protocol,Matbench 五折72/8/20；Extended 固定随机划分70/15/15，后处理可改变比例,整个化学体系未见,mismatch,C04;C05;C20
+duplicate_handling,同组成去重/跨集排重；MP/OQMD最低形成焓对应目标，其余均值,需要区分目标候选具体材料；结构与标签定义未给出,unknown,C05;C22
+metric,测试集MAE，评估还原目标尺度,新体系候选排序/命中率与外推误差,mismatch,C07;C21
+baseline_scope,Roost、ElemNet、Magpie RF及HotCrab；存在逐任务例外,声称普遍优于比较方法,mismatch,C01;C08;C09;C10
+tuning_conditions,默认参数，CrabNet利用部分基准验证集优化,各方法相同调参机会是否必要且满足尚未确定,unknown,C06;C11
+automatminer,仅两种不依赖结构任务的外部结果,只有组成的相同两任务可参照；目标性质未指定,unknown,C12;C23
+irnet_comparison,引用原论文数值；本文未重训，带隙有反例,完全相同划分上的比较,mismatch,C13
+repeatability,固定训练种子42；钢强度有重复训练文字证据,新体系上跨种子稳健性,mismatch,C14;C15
+uncertainty,aleatoric输出；epistemic未研究,新体系外推风险及区间校准,mismatch,C16;C17;C21
+chemical_system_example,Si–O预测曲线；已有SiO2训练样本,整个化学体系未见,mismatch,C18;C19;C20
+screening_readiness,基准MAE和可视化趋势；结构/加工未输入,直接决定新材料筛选结果,mismatch,C20;C21;C22

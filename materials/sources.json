@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "retrieved_date": "2026-10-27",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Authors retain copyright. Original titles, DOI, source, and transformation notes are preserved.",
+      "third_party_material": "Check individual credit lines before reusing figures.",
+      "source_id": "crabnet",
+      "kind": "pdf",
+      "title": "Compositionally restricted attention-based network for materials property predictions",
+      "authors": "Anthony Yu-Tung Wang; Steven K. Kauwe; Ryan J. Murdock; Taylor D. Sparks",
+      "doi": "10.1038/s41524-021-00545-1",
+      "source_url": "https://api-depositonce.tu-berlin.de/server/api/core/bitstreams/97228139-e071-4d07-9ee1-2920161ba15a/content",
+      "path": "materials/A-crabnet.pdf",
+      "sha256": "3a19cce38b13a335d25f94c565e3284eee84ca498cf5f95c35a26040f5e3f740",
+      "version": "2021 published version, institution repository",
+      "transformations": "Original bytes retained; corpus uses pypdf plain text with whitespace normalization.",
+      "original_project_path": "materials/originals/crabnet.pdf"
+    },
+    {
+      "retrieved_date": "2026-10-27",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Authors retain copyright. Original titles, DOI, source, and transformation notes are preserved.",
+      "third_party_material": "Check individual credit lines before reusing figures.",
+      "source_id": "matbench-discovery",
+      "kind": "pdf",
+      "title": "A framework to evaluate machine learning crystal stability predictions",
+      "authors": "Janosh Riebesell; Rhys E. A. Goodall; Philipp Benner; Yuan Chiang; Bowen Deng; Gerbrand Ceder; Mark Asta; Alpha A. Lee; Anubhav Jain; Kristin A. Persson",
+      "doi": "10.1038/s42256-025-01055-1",
+      "source_url": "https://perssongroup.lbl.gov/papers/Riebesell_et_al-2025-Nature_Machine_Intelligence.pdf",
+      "path": "materials/B-matbench-discovery.pdf",
+      "sha256": "24349db88d4ed5cb1b0a6e601d026457f918d2ca30b5105afb33dde5c98853e4",
+      "version": "2025 institutional snapshot; predates correction or correction status unverified; do not treat model tables as current",
+      "transformations": "Original bytes retained; corpus uses pypdf plain text with whitespace normalization.",
+      "original_project_path": "materials/originals/matbench-discovery.pdf"
+    },
+    {
+      "retrieved_date": "2026-10-27",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Authors retain copyright. Original titles, DOI, source, and transformation notes are preserved.",
+      "third_party_material": "Check individual credit lines before reusing figures.",
+      "source_id": "matbench-correction",
+      "kind": "html",
+      "title": "Author Correction: A framework to evaluate machine learning crystal stability predictions",
+      "authors": "Janosh Riebesell; Rhys E. A. Goodall; Philipp Benner; Yuan Chiang; Bowen Deng; Gerbrand Ceder; Mark Asta; Alpha A. Lee; Anubhav Jain; Kristin A. Persson",
+      "doi": "10.1038/s42256-025-01117-4",
+      "source_url": "https://www.nature.com/articles/s42256-025-01117-4",
+      "path": "materials/matbench-correction.html",
+      "sha256": "0610c58227c575e7f30ee63c791d779ccaca10c9b5d1569921a4a32125d23c3d",
+      "version": "2025-09-02 official correction, retrieved 2026-10-27",
+      "transformations": "Single correction paragraph extracted; full HTML retained.",
+      "original_project_path": "materials/originals/matbench-correction.html"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "retrieved_date": "2026-10-27",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Authors retain copyright. Original titles, DOI, source, and transformation notes are preserved.",
+  "third_party_material": "Check individual credit lines before reusing figures.",
+  "source_id": "crabnet",
+  "kind": "pdf",
+  "title": "Compositionally restricted attention-based network for materials property predictions",
+  "authors": "Anthony Yu-Tung Wang; Steven K. Kauwe; Ryan J. Murdock; Taylor D. Sparks",
+  "doi": "10.1038/s41524-021-00545-1",
+  "source_url": "https://api-depositonce.tu-berlin.de/server/api/core/bitstreams/97228139-e071-4d07-9ee1-2920161ba15a/content",
+  "path": "materials/originals/crabnet.pdf",
+  "sha256": "3a19cce38b13a335d25f94c565e3284eee84ca498cf5f95c35a26040f5e3f740",
+  "version": "2021 published version, institution repository",
+  "transformations": "Original bytes retained; corpus uses pypdf plain text with whitespace normalization.",
+  "packaged_evidence": "Faithful full anchored text plus original PDF page images 1,2,3,4,6,7,8,10; full PDF retained in public repository, omitted here to avoid duplicate extracted text. No substantive text output shortened."
+}

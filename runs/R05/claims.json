@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "source_ids": ["matbench-discovery", "matbench-correction"],
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "形成能预测误差更低，就足以证明材料发现效果更好。",
+      "kind": "inference",
+      "verdict": "contradicted",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p05-b01", "quote": "Improvements in regression accuracy are of limited use to materials discovery in their own right unless they also improve classification accuracy. Our results demonstrate that this is not a given."}],
+      "reasoning": "论文直接否定由回归精度改善到发现效果改善的必然推论。能量误差仍有价值，但不能单独构成充分证据。"
+    },
+    {
+      "id": "C02",
+      "statement": "论文的发现任务是从初始结构预测弛豫后的能量，再相对参考凸包作稳定/不稳定筛选，用于计算材料发现流程。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p04-b04", "quote": "c, The proposed test evaluation framework where the end user takes an ML model and uses it to predict a relaxed energy given an initial structure (IS2RE). This energy is then used to make a prediction as to whether the material will be stable or unstable with respect to a reference convex hull."}],
+      "reasoning": "图1图注明确给出 IS2RE 到稳定性分类的流程；这里的发现首先指候选筛选，不能直接等同于实验合成成功。"
+    },
+    {
+      "id": "C03",
+      "statement": "测试时只允许以未弛豫结构作为输入，预测弛豫结构的凸包距离；预先提供候选的 DFT 弛豫结构会改变该任务的信息条件。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p07-b01", "quote": "predictions on the convex hull distance of the relaxed structure with only the unrelaxed structure as input. This setup avoids circularity in the discovery process, as unrelaxed structures can be cheaply enumer- ated through elemental substitution methodologies and do not contain information inaccessible in a prospective discovery campaign."}],
+      "reasoning": "原文的 only 限制测试输入。模型内部模拟弛豫并不违反限制；把预先算出的 DFT 弛豫结果作为输入则失去该前瞻筛选条件。"
+    },
+    {
+      "id": "C04",
+      "statement": "训练允许使用 MP v.2022.10.28 范围内完整或部分弛豫轨迹以及能量、力、应力；论文比较的是利用可用数据的方法，未固定所有模型的训练模态。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p07-b02", "quote": "We define the MP 3 v.2022.10.28 database release as the maxi - mum allowed training set for any compliant model submission. Mod- els may train on the complete set of relaxation frames, or any subset thereof such as the final relaxed structures. Any subsets of the energies, forces and stresses are valid training targets."}, {"source_id": "matbench-discovery", "block_id": "p07-b02", "quote": "What kind of training data a model can ingest is part of its methodology."}],
+      "reasoning": "训练中允许弛豫轨迹不等于测试时允许拿到候选的 DFT 弛豫信息；不同模态也是整体方法比较的一部分，不能把其差别全归因于架构。"
+    },
+    {
+      "id": "C05",
+      "statement": "形成能本身不直接表示热力学稳定性或可合成性；凸包距离衡量相同化学体系中与其他相的能量竞争。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p02-b02", "quote": "For materials discovery, high-throughput DFT formation energies are widely used as regression targets but do not directly indicate thermodynamic stability or synthesiz- ability. The true stability of a material depends on its energetic competition with other phases in the same chemical system, quantified by the distance to the convex hull phase diagram."}],
+      "reasoning": "原文直接区分形成能回归目标和相竞争所决定的稳定性目标。"
+    },
+    {
+      "id": "C06",
+      "statement": "本基准将位于 MP 训练集凸包上或下方定义为稳定正类，即相对该参考凸包的距离不大于 0。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p08-b05", "quote": "Throughout this work, we define stability as being on or below the convex hull of the MP training set (E MP hull dist ≤ 0)."}],
+      "reasoning": "标签依赖指定的固定参考凸包；距离为负在此代表低于已知 MP 凸包，不能据此误判为定义错误。"
+    },
+    {
+      "id": "C07",
+      "statement": "相对 MP 凸包的正类未必仍在联合 MP + WBM 凸包上；固定初始凸包避免后来候选追溯改变标签，但可能高估最终联合凸包意义下的成功。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p07-b05", "quote": "If we consider the performance against the final combined convex hull rather than the initial MP convex hull, then each additional sample considered can retroactively change whether or not a previous candidate would be labelled as a success as it may no-longer sit on the hull."}, {"source_id": "matbench-discovery", "block_id": "p07-b05", "quote": "The chosen setup does increase the number of positive labels and could consequently be interpreted as overestimating the performance."}],
+      "reasoning": "这是论文承认的参考凸包设计取舍。相对当时知识的筛选成功，不是对所有后来发现的相都保持稳定的保证。"
+    },
+    {
+      "id": "C08",
+      "statement": "全局 MAE、RMSE、R² 不能单独刻画稳定性筛选；接近 0 稳定性边界的较小误差也可能导致标签翻转和假阳性。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p02-b03", "quote": "Global metrics such as mean absolute er- ror (MAE), root mean squared error (RMSE) and R 2 may provide practitioners with misleading confidence regarding model relia- bility. Even models with strong regression performance can pro- duce unexpectedly high rates of false-positive predictions when nominally accurate estimates fall near decision boundaries, re- sulting in substantial opportunity costs through wasted labora- tory resources and time."}],
+      "reasoning": "全局误差同时汇总远离和接近阈值的候选，不能保证误差方向及阈值附近的分类正确率。较低平均误差不是更多稳定候选的充分条件。"
+    },
+    {
+      "id": "C09",
+      "statement": "负 R² 表示全局回归不及预测测试集均值，但不排除在远离稳定性阈值的分布尾部仍有预测能力。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p04-b02", "quote": "Negative R2 means model predictions explain the observed vari- ation in the data less than simply predicting the test set mean. In other words, these models are not predictive in a global sense (across the full dataset range). Nevertheless, models with negative R2 may still show predictive capability for materials far from the stability threshold (that is, in the distribution tails)."}],
+      "reasoning": "这是对反向误读的限制：不能因为单个回归指标差，就断言任何候选筛选都没有价值。"
+    },
+    {
+      "id": "C10",
+      "statement": "分类评价中 precision 表示已选候选中正确稳定预测的比例，recall 关注遗漏了多少稳定材料；累计 recall 需要预先知道总正例数。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p05-b04", "quote": "A higher fraction of correct stable predictions corresponds to higher precision and fewer stable materials overlooked corresponds to higher recall. Precision is calculated based only on the selected materials up to that point, while the cumulative recall depends on knowing the total number of positives upfront."}],
+      "reasoning": "两指标分别反映命中率和覆盖率；真正前瞻活动无法仅凭已验证样本精确获知整个未知候选池的 recall。"
+    },
+    {
+      "id": "C11",
+      "statement": "DAF 是 precision 与候选池稳定材料比例 prevalence 的比值，表示相对随机选取的命中率提升，并非直接的运行时间加速倍数。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p04-b01", "quote": "The discovery acceleration factor (DAF) quantifies how many times more effective a model is at finding stable structures compared with random selection from the test set. Formally, the DAF is the ratio of the precision to the prevalence."}],
+      "reasoning": "定义的分子分母都是比例，未计入训练、推理和验证耗时；不同 prevalence 的候选池不能仅凭 DAF 数值当作同样难度或同样节省时间。"
+    },
+    {
+      "id": "C12",
+      "statement": "资源受限时应评估按预测凸包距离排序后的预算范围内 precision/recall；全候选池指标不一定反映短期筛选效果。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p05-b01", "quote": "For each model, we iterate through that list and calculate at each step the precision and recall of correctly identified stable materials. This simulates exactly how these models would be used in a prospective materials discovery campaign and reveals how a model’s performance changes as a func- tion of the discovery campaign length. As a practitioner, you typically have a certain amount of resources available to validate model predic- tions. These curves allow you to read off the best model given these constraints."}],
+      "reasoning": "发现效果需要说明验证预算及选取规则，而不只是全局平均误差或单一全池分类分数。"
+    },
+    {
+      "id": "C13",
+      "statement": "WBM 测试集来自对 MP 源结构作化学相似元素替换并 DFT 弛豫，含五轮替换；主要结果合并各批次，不能当作任意未知化学空间的保证。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p08-b03", "quote": "The WBM dataset50 consists of 257,487 structures gener- ated via chemical similarity-based elemental substitution of MP source structures followed by DFT relaxation and calculating each crystal’s convex hull distance."}, {"source_id": "matbench-discovery", "block_id": "p08-b03", "quote": "The WBM authors performed five iterations of this substitution process (we refer to these steps as batches)."}, {"source_id": "matbench-discovery", "block_id": "p08-b04", "quote": "While this batch information makes the WBM dataset an exceptionally useful data source for examining the extrapolation performance of ML models, we look primarily at metrics that consider all batches as a single test set."}],
+      "reasoning": "这是特定发现流程生成的分布外测试，不是随机留出已知材料，也未覆盖所有未来分布。迁移时应保留其数据生成条件。"
+    },
+    {
+      "id": "C14",
+      "statement": "0 K 热力学凸包筛选不能保证可合成性；论文说明熵致无序和动力学不稳定等限制，WBM 缺少动态稳定性信息，未将其纳入额外筛选。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-discovery", "block_id": "p07-b03", "quote": "The corresponding real material may be disordered due to entropic effects that cannot be captured in the 0-K thermodynamic convex hull approximated by DFT51."}, {"source_id": "matbench-discovery", "block_id": "p07-b03", "quote": "The lack of information about the dynamic stability of nominally stable materials in the WBM test set prevents this work from considering this"}, {"source_id": "matbench-discovery", "block_id": "p07-b04", "quote": "important criterion as an additional screening filter."}],
+      "reasoning": "跨块句子分别保持原文连续片段，说明作者明确限定的筛选范围；因此不能由该基准得分直接证明实际合成产出。"
+    },
+    {
+      "id": "C15",
+      "statement": "正式勘误指出初版图1—3、表1和补充材料包含多于接受稿且正文未讨论的模型，并说明在线 HTML/PDF 图表及补充材料已更新。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [{"source_id": "matbench-correction", "block_id": "notice-b01", "quote": "In the version of this article initially published, Figs. 1–3, Table 1 and the Supplementary Information presented more models than were present in the accepted version of the article, and which were not discussed in the text. The Supplementary Information has been revised and the figures and table are now updated in the HTML and PDF versions of the article."}],
+      "reasoning": "存档图表不能直接充当当前排名依据。本回答使用方法文字核查逻辑，不混合版本报告数值或模型排名；勘误没有在该段声称重算全部能量或推翻方法结论。"
+    },
+    {
+      "id": "C16",
+      "statement": "对某个具体新模型，降低形成能误差后能提高多少真实实验发现产出，目前不能由本次附件确定。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "本次核查范围为所附正文定位文本的任务、方法、结果、局限和正式勘误。没有提供待比较新模型的逐候选预测、统一预算的验证结果及合成数据；论文基准不能替代这些目标场景证据。"
+    }
+  ]
+}

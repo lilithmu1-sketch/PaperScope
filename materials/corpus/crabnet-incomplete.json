@@ -1,0 +1,173 @@
+{
+  "schema_version": "paperscope-corpus/1.0",
+  "source_id": "crabnet-incomplete",
+  "source_sha256": "845b420dca215413184e6103af38fa02a9ee81fb6c5bcd3ea75b517939d6876b",
+  "title": "Compositionally restricted attention-based network for materials property predictions",
+  "doi": "10.1038/s41524-021-00545-1",
+  "license": "CC BY 4.0",
+  "extraction": {
+    "library": "pypdf",
+    "version": "6.10.0",
+    "mode": "plain",
+    "normalization": "whitespace only",
+    "limitations": "Tables, formulae, rotation and reading order require PDF visual verification."
+  },
+  "blocks": [
+    {
+      "block_id": "p01-b01",
+      "pdf_page": 1,
+      "text": "ARTICLE OPEN Compositionally restricted attention-based network for materials property predictions Anthony Yu-Tung Wang 1,3, Steven K. Kauwe 2,3, Ryan J. Murdock 2 and Taylor D. Sparks 2 ✉ In this paper, we demonstrate an application of the Transformer self-attention mechanism in the context of materials science. Our network, the Compositionally Restricted Attention-Based network ( CrabNet), explores the area of structure-agnostic materials property predictions when only a chemical formula is provided. Our results show that CrabNet’s performance matches or exceeds current best-practice methods on nearly all of 28 total benchmark datasets. We also demonstrate how CrabNet’s architecture lends itself towards model interpretability by showing different visualization approaches that are made possible by its design. We feel conﬁdent that CrabNet and its attention-based framework will be of keen interest to future materials informatics researchers. npj Computational Materials (2021) 7:77 ; https://doi.org/10.1038/s41524-021-00545-1 INTRODUCTION Materials scientists constantly strive to achieve better under- standing, and therefore better predictions, of materials properties. This began with the collection of empirical evidence through repeated experimentation, resulting in mathematical general- izations, theories, and laws. More recently, computational methods have arisen to solve a"
+    },
+    {
+      "block_id": "p01-b02",
+      "pdf_page": 1,
+      "text": "large variety of problems that were intractable to analytical approaches alone 1,2. As experimental and computational methods have become more ef ﬁcient, high-quality data has opened up a new avenue to materials understanding. Materials informatics (MI) is the resulting ﬁeld of research that utilizes statistical and machine learning (ML) approaches in combination with high-throughput computation to analyze the wealth of existing materials information and gain unique insights 2–4. As this wealth has increased, practitioners of MI have increasingly turned to deep learning techniques to model and represent inorganic chemistry, resulting in approaches such as ElemNet, IRNet, CGCNN, SchNet, and Roost5–9. In speci ﬁc cases including CGCNN and SchNet, the compounds are represented using their chemical and structural information7,8,10–15. Modeling approaches based on crystal structure are an excellent tool for MI. Unfortunately, there are many material property datasets that lack suitable structural information. An example of this is the experimental band gap data gathered by Zhou et al. 16. Conversely, many databases such as the Inorganic Crystal Structure Database (ICSD) and Pearson ’s Crystal Data (PCD) contain an abundance of structural information, but lack the associated material properties of the recorded structures. In both cases, the applicability of structure-based learning"
+    },
+    {
+      "block_id": "p05-b02",
+      "pdf_page": 5,
+      "text": "the four attention heads ( a–d) from the ﬁrst layer of a CrabNet model trained on the a ﬂow__Egap data is shown for systems containing Si. The heatmap shows the average amount of attention that Si dedicates to the other elements in Si-containing compounds. The darker the coloring, the more strongly Si attends to that element. We can see that each attention head exhibits its own behavior, and attends to different groups of elements. Interestingly, head a attends to common n-type dopants and head c attends to many transition metals, whereas heads b and d have unfamiliar element groupings. Fig. 4 Overall element contribution to property predictions. Average contribution of all elements to bulk modulus predictions, computed from the AFLOW bulk modulus dataset, ( a) plotted on a periodic table and ( b) plotted as a distribution showing the per-element contribution amounts of Li and W, respectively, in all the compounds. The darker colored elements in the periodic table contribute more towards a compound’s bulk modulus value. A.Y.-T. Wang et al. 5 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences npj Computational Materials (2021) 77"
+    },
+    {
+      "block_id": "p06-b01",
+      "pdf_page": 6,
+      "text": "similarly excel at this. 2. Attention-based models allow for new ways of thinking about materials-speci ﬁc problems. In this work, we brie ﬂy examined the attention mechan- ism. Attention highlights important interactions and may be used to understand which element interactions mediate materials properties. Model explainability has thus far been elusive to the traditional MI paradigms; the inclusion of self- attention in this work has introduced additional methods of model inspectability that may be a step towards this goal. 3. Augmentation of CrabNet using structural and domain- speciﬁc knowledge. This work intentionally used a compositionally restricted EDM representation with no structural information. Structure- agnostic learning is an important task in MI and CrabNet demonstrates that accurate learning is achievable using the self-attention mechanism. However, the prediction of materials properties using structural information is also an important task. Integration of structural information could be achieved by describing elements in their structural and chemical environ- ments. We expect that the self-attention mechanism of CrabNet will be able to utilize this additional information to make more accurate predictions. This application of attention- based learning to crystal systems is an exciting and promising direction. We also expect that materials prediction tasks"
+    },
+    {
+      "block_id": "p06-b02",
+      "pdf_page": 6,
+      "text": "involving processing steps or other non-compositional features c o u l db eu s e di nt h i sa p p r o a c h .Both of these changes could easily be implemented as extensions to the EDM. While further research is necessary to fully discern the utility of self-attention in materials problems, we believe that this paper highlights a major new direction in its application in MI and suggests exciting directions for future research. METHODS Self-attention and the CrabNet architecture Chemical compositions are input using the atomic numbers and fractional amounts of their constituent elements. The atomic numbers are used to retrieve element representations (either mat2vec or one-hot). The fractional amounts are used to obtain fractional embeddings (described below). An element embedding matrix is generated by applying a fully connected network to the element representations. A fractional embed- ding matrix is created from the fractional embeddings. These matrices are then added together (element-wise) to generate the element-derived matrix ( EDM, see Fig. 6). Each row of the EDM (j-index) represents an element and the columns ( k-index) contain the element embeddings. We batch each unique chemical composition onto a third dimension (the i- index). The resulting three-dimensional tensor contains the input data for the CrabNet architecture. We use the mat2vec element embeddings 60 as the"
+    },
+    {
+      "block_id": "p06-b03",
+      "pdf_page": 6,
+      "text": "default source of chemical information for each element, even though there are other choices for element properties available, such as Jarvis22, Magpie61, Oliynyk18 or a simple one-hot encoding. The mat2vec embedding has the advantage of being pre-scaled and normalized, and having no missing elements nor element features. Regardless of the choice of element representation, the representation must be reshaped to ﬁt the attention input dimensions of ( d model). This is done using a learned embedding network; the result is a matrix of size ( nelements, dmodel). In addition to the default training of CrabNet using the mat2vec embedding, a one-hot embedding of the elements was used to train an additional CrabNet model ( HotCrab) to better facilitate comparison with ElemNet. The stoichiometric information for each element in the EDM is represented by two fractional embeddings. The fractional embeddings are inspired by the positional encoder as described in the seminal work by Vaswani et al. 37. We use sine and cosine functions of various periods to project the fractional amounts into a high-dimensional space (dimension d = dmodel/2) where smooth interpolation between fractional values is preserved. The ﬁrst part of the fractional embedding represents the stoichiometry, using the normalized fractional amounts, on a linear scale with a fractional resolution of 0.01. The second part of"
+    },
+    {
+      "block_id": "p06-b04",
+      "pdf_page": 6,
+      "text": "the embedding maps stoichiometry using a log scale and spans from 1 × 10 −6 to 1 × 10−1. This logarithmic transformation of the fractional embedding preserves small fractional amounts such as those present in doping. The two parts of the fractional embedding for all elements are concatenated across the Fig. 5 Element contribution to property prediction as a function of composition. Model predictions over the Si xO1−x system using a model trained on the a ﬂow__Egap data. The x-axis is the fractional amount of Si. The y-axis shows the predicted band gap value at a given composition. The blue and red lines are the individual element contributions to the prediction, as predicted by CrabNet. The gray shading represents the aleatoric uncertainty for each prediction. Fig. 6 EDM featurization scheme. Schematic illustration of the element-derived matrix ( EDM) representation for Al 2O3, where B represents the batch, dmodel is the element features, and nelements represents the number of elements. Composition slices, when concatenated across batch dimension i, form an EDM tensor which is then used as the model input to CrabNet. When a chemical formula has fewer elements than rows in the EDM, the extra data rows are ﬁlled with zeros. A.Y.-T. Wang et al. 6 npj Computational Materials (2021) 77 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of"
+    },
+    {
+      "block_id": "p06-b05",
+      "pdf_page": 6,
+      "text": "Sciences"
+    },
+    {
+      "block_id": "p07-b01",
+      "pdf_page": 7,
+      "text": "embedding dimension to obtain a matrix of size ( nelements, dmodel). See Supplementary Figs. 1 and 2 for example visualizations of the EDM embedding. Once the element and fractional embeddings are calculated and added together, we then batch the ﬁnished EDMs across the ﬁrst dimension. This gives the ﬁnal input data of shape ( ncompounds, nelements, dmodel), where ncompounds is the total number of compounds in a given batch, nelements is the number of rows in the EDM (inferred from the number of elements in the largest composition in a given dataset), and dmodel is the size of the embeddings. Here, we also note that the exact ordering of the element rows (j) in a compound in the EDM does not inﬂuence CrabNet due to the permutation-invariant nature of the self-attention mechanism. CrabNet contains two primary modules with the default hyperpara- meters as shown in Table 2. The ﬁrst module is a Transformer encoder with 3 layers and 4 attention heads in each layer. The second module is a residual network that converts element vectors into element contributions. To understand the Transformer encoder, we ﬁrst describe the self- attention mechanism. During self-attention (Fig. 7a), the EDM is operated on by three fully connected linear networks (FC Q,F C K, and FC V). These networks generate the query Q, key K, and value V tensors. These tensors can be conceptualized as a learned"
+    },
+    {
+      "block_id": "p07-b02",
+      "pdf_page": 7,
+      "text": "high-dimensional space where the model stores chemical behavior from the training data. The K and Q tensors contain information regarding the magnitude to which elements interact. The V tensor stores the information that is used to map from element to property contribution. The dot product of each Q and K T tensor pair (where KT denotes the transpose of K) generates the relative element importances in the system (Fig. 7b). The importances are scaled using a constant ﬃﬃﬃﬃ ﬃdk p and then normalized using a softmax function. This results in the self-attention tensor, commonly referred to as the attention map. We denote this tensor as A. The matrix multiplication of A with V updates the element- representations in the compound based on the importance of each element. Each of the four attention heads independently performs self-attention with their own Qh, Kh, Vh, and Zh tensors, where h denotes the head index for h = 1, …, H. As a result, the network generates four different element representations at each layer. The individual Zh tensors are concatenated across the last dimension to make the Z tensor (as seen in Fig. 8a). The Z tensor is then passed into a linear FC network which combines the element representations from each head. The output of this FC network is an updated EDM 0 (for each composition in the batch). This process of converting an EDM into an updated EDM0 is"
+    },
+    {
+      "block_id": "p07-b03",
+      "pdf_page": 7,
+      "text": "referred to as a self-attention block. CrabNet repeats the process of updating the EDM via the self- attention block three times (hence, three layers) resulting in the ﬁnal updated representations, denoted EDM″. This concludes the Transformer encoder module. Once the Transformer encoder has updated the element representa- tions, each EDM″ passes through a fully connected residual network with hidden layer dimensions of node res. The residual network then transforms the EDMs into the shape ( nelements, nelements, 3). We de ﬁne these ﬁnal three vectors as the element-proto-contributions p0, element-uncertainties u0, and element-logits (see Fig. 8a). The element scaling factor s is obtained by taking the sigmoid ( σ) of the element-logits. The element-contributions are then obtained by multiplying the element-proto-contributions p0 by their respective scaling factor s. This results in element contributions y0. Finally, the mean of the element contributions is taken and output as the predicted property value for each compound (see Fig. 8b). Similarly, the mean of the element-uncertainties is used in the aleatoric uncertainty prediction as described by Roost 9. Training CrabNet After the featurization of compositions into EDMs, the dataset loading and batching is performed with the built-in Datasets and DataLoaders classes from PyTorch. All target values are scaled to zero-centered"
+    },
+    {
+      "block_id": "p07-b04",
+      "pdf_page": 7,
+      "text": "mean and unit variance for training and inference. The target scaling is then undone for performance evaluation. Batch size during training is dynamically calculated using the training set size for faster training, and limited to be within the range 2 7–212. For inference, the batch size was ﬁxed at 2 7. Model weights are updated using the look-ahead 62 and Lamb optimizer63 with a learning rate that is cycled between 1 × 10 −4 and 6 × 10−3 every 4 epochs to achieve consistent model convergence. A robust MAE is used as the loss criterion for model performance 9. The default parameters generalize well when predicting most of the benchmark materials properties. Although we expect that optimization of hyperpara- meters may improve CrabNet’s results for individual materials properties, we believe it is more important that materials scientists be able to use CrabNet with little or no adjustments to the underlying code. It is a known phenomenon that random weight initialization can impact the performance of the Transformer encoder architecture. Thus, to mitigate variance in the performance metrics between different model runs, we trained CrabNet using a ﬁxed random seed of 42 for all training runs across all materials properties. We do note that in the case of random model initialization, the run-to-run variation between different trained models is a feature that could be taken"
+    },
+    {
+      "block_id": "p07-b05",
+      "pdf_page": 7,
+      "text": "advantage of for determining the epistemic uncertainty. Unfortunately, due to the sheer volume of materials properties investigated in this work and the limited compute resources available, we have not investigated this thus far. Finally, we note that all model training, evaluation, and benchmarking (for CrabNet, Roost, ElemNet, and RF) was conducted on a single Table 2. List of default model parameters of CrabNet. Parameter Description Default value din (Input) dimension of element embedding 200 ( mat2vec); 118 ( one-hot) dmodel Dimension for EDM and positional encoder 512 dff Feedforward dimension for self-attention mechanism 2048 dk Key dimension (equal to dq in this work) dmodel/H = 128 H Number of attention heads per attention block 4 N Number of stacked self-attention layers 3 noderes Number of nodes at each layer for residual network [1024, 512, 256, 128] dout (Output) dimensions of residual network 3 Fig. 7 Schematic of an attention block in the CrabNet archi- tecture. a The initial projection of the input EDM into the Q, K and V tensors. b The scaled dot-product attention operation obtaining the self-attention matrix and the updated Z element representation. The batch dimension is not shown in b to improve legibility. A.Y.-T. Wang et al. 7 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences npj Computational Materials"
+    },
+    {
+      "block_id": "p08-b03",
+      "pdf_page": 8,
+      "text": "addition, pre-trained network weights for the CrabNet models reported in this work are available for download 64. The following ﬁles are available with this publication: (1) GitHub repository with the CrabNet source code, ﬁgures, and example property predictions: https://github. com/anthony-wang/CrabNet, (2) pre-trained weights for the CrabNet models reported in this work: https://doi.org/10.5281/zenodo.4633866, and (3) Supplemen- tary Information. Finally, we recommend that interested readers consult the paper “Machine Learning for Materials Scientists: An Introductory Guide towards Best Practices”4 for a detailed treatment of best practices in machine learning and justiﬁcation for many of the unmentioned experimental design decisions used in this work. Received: 22 February 2020; Accepted: 26 April 2021; REFERENCES 1 . M a i e r ,W .F . ,S t ö w e ,K .&S i e g ,S .C o m b i n atorial and high-thr oughput materials science. Angewandte Chemie (International ed. in English) 46, 6016 –6067 (2007). 2. Agrawal, A. & Choudhary, A. Perspective: materials informatics and big data: realization of the \"fourth paradigm ” of science in materials science. APL Mater. 4, 053208 (2016). 3. Barnard, A. S. Best practice leads to the best materials informatics. Matter 3, 22–23 (2020). 4. Wang, A. Y.-T. et al. Machine learning for materials scientists: an introductory guide toward best practices."
+    },
+    {
+      "block_id": "p08-b04",
+      "pdf_page": 8,
+      "text": "Chem. Mater. 32, 4954 –4965 (2020). 5. Jha, D. et al. ElemNet: deep learning the chemistry of materials from only ele- mental composition. Sci. Rep. 8, 17593 (2018). 6. Jha, D. et al. IRNet: a general purpose deep residual regression framework for materials discovery. In Proc. 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining – KDD ’19, 2385-2393 (eds. Teredesai, A. et al.) (ACM Press, 2019). 7. Xie, T. & Grossman, J. C. Crystal graph convolutional neural networks for an accurate and interpretable prediction of material properties. Phys. Rev. Lett. 120, 145301 (2018). 8. Schütt, K. T., Sauceda, H. E., Kindermans, P.-J., Tkatchenko, A. & Müller, K.-R. SchNet – A deep learning architecture for molecules and materials. J. Chem. Phys. 148, 241722 (2018). 9. Goodall, R. E. A. & Lee, A. A. Predicting materials properties without crystal structure: deep representation learning from stoichiometry. Nat. Commun. 11, 6280 (2020). 10. Ziletti, A., Kumar, D., Schef ﬂer, M. & Ghiringhelli, L. M. Insightful classi ﬁcation of crystal structures using deep learning. Nat. Commun. 9, 2775 (2018). 11. Faber, F. A., Lindmaa, A., von Lilienfeld, O. A. & Armiento, R. Crystal structure representations for machine learning models of formation energies. Int. J. Quantum Chem. 115, 1094 –1101 (2015). 12. Faber, F. A., Lindmaa, A., von Lilienfeld, O. A. & Armiento, R. Machine"
+    },
+    {
+      "block_id": "p08-b05",
+      "pdf_page": 8,
+      "text": "learning energies of 2 million elpasolite (ABC2D6) crystals. Phys. Rev. Lett. 117, 135502 (2016). 13. Kong, C. S. et al. Information-theoretic approach for the discovery of design rules for crystal chemistry. J. Chem. Inform. Model. 52, 1812 –1820 (2012). 14. Fischer, C. C., Tibbetts, K. J., Morgan, D. & Ceder, G. Predicting crystal structure by merging data mining with quantum mechanics. Nat. Mat. 5, 641 –646 (2006). 15. Curtarolo, S., Morgan, D., Persson, K. A., Rodgers, J. & Ceder, G. Predicting crystal structures with data mining of quantum calculations. Phys. Rev. Lett. 91, 135503 (2003). 16. Zhuo, Y., Mansouri Tehrani, A. & Brgoch, J. Predicting the band gaps of inorganic solids by machine learning. J. Phys. Chem. Lett. 9, 1668 –1673 (2018). 17. Kauwe, S. K., Graser, J., Vazquez, A. & Sparks, T. D. Machine learning prediction of heat capacity for solid inorganics. Integr. Mater. Manuf. Innov. 7,4 3 –51 (2018). Fig. 8 Overall CrabNet architecture and prediction of material property and uncertainty. a Schematic of the CrabNet architec- ture including the input EDM, the self-attention layers (repeated N times), the updated and ﬁnal element representations ( EDM0 and EDM″), the residual network, and the ﬁnal model output. b The calculation steps for element contributions and prediction of the targets and uncertainties. The p0 and u0 vectors represent the"
+    },
+    {
+      "block_id": "p08-b06",
+      "pdf_page": 8,
+      "text": "element-proto-contributions and the element uncertainties, respec- tively. y 0 represent the element contributions. The material property is obtained by taking the mean of element-contributions ( y0)f o r each compound. Similarly, the mean of the element-uncertainties (u 0) gives us the estimated aleatoric uncertainty. A.Y.-T. Wang et al. 8 npj Computational Materials (2021) 77 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences"
+    },
+    {
+      "block_id": "p09-b01",
+      "pdf_page": 9,
+      "text": "18. Oliynyk, A. O. et al. High-throughput machine-learning-driven synthesis of full- heusler compounds. Chem. Mater. 28, 7324 –7331 (2016). 19. Hautier, G., Fischer, C. C., Jain, A., Mueller, T. & Ceder, G. Finding nature ’s missing ternary oxide compounds using machine learning and density functional theory. Chem. Mater. 22, 3762 –3767 (2010). 2 0 . M a n s o u r iT e h r a n i ,A .e ta l .M a c h ine learning directed search for ultraincompressible, superhard materials. J. Am. Chem. Soc. 140,9 8 4 4–9853 (2018). 21. Graser, J., Kauwe, S. K. & Sparks, T. D. Machine learning and energy minimization approaches for crystal structure predictions: a review and new horizons. Chem. Mater. 30, 3601 –3612 (2018). 22. Choudhary, K., DeCost, B. & Tavazza, F. Machine learning with force- ﬁeld-inspired descriptors for materials: fast screening and mapping energy landscape. Phys. Rev. Mater. 2, 083801 (2018). 23. Kauwe, S. K., Graser, J., Murdock, R. J. & Sparks, T. D. Can machine learning ﬁnd extraordinary materials? Comput. Mater. Sci. 174, 109498 (2020). 24. Gaultois, M. W. et al. Perspective: web-based machine learning models for real- time screening of thermoelectric materials properties. APL Mater. 4, 053213 (2016). 25. de Jong, M. et al. A statistical learning framework for materials science: appli- cation to elastic moduli of k-nary inorganic polycrystalline compounds. Sci. Rep. 6,"
+    },
+    {
+      "block_id": "p09-b05",
+      "pdf_page": 9,
+      "text": "International Publishing, 2018). 47. Zhang, Y., Li, K., Li, K., Zhong, B. & Fu, Y. Residual non-local attention networks for image restoration. In Proc. International Conference on Learning Representations (ICLR) (2019). 48. Kim, T. H., Sajjadi, M. S. M., Hirsch, M. & Schölkopf, B. Spatio-temporal transformer network for video restoration. In Computer Vision – ECCV 2018 (eds. Ferrari, V. et al.) vol. 11207, 111 –127 (Springer International Publishing, 2018). 49. Wang, X., Chan, K. C. K., Yu, K., Dong, C. & Loy, C. C. EDVR: video restoration with enhanced deformable convolutional networks. In Proc. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops,1 9 5 4–1963 (IEEE, 2019). 50. Vinyals, O. et al. Grandmaster level in StarCraft II using multi-agent reinforcement learning. Nature 575, 350 –354 (2019). 51. Baker, B. et al. Emergent tool use from multi-agent autocurricula. In Proc. Inter- national Conference on Learning Representations (ICLR) (2020). 52. Zheng, S., Yan, X., Yang, Y. & Xu, J. Identifying structure-property relationships through SMILES syntax analysis with self-attention mechanism. J. Chem. Inform. Model. 59, 914 –923 (2019). 53. Schwaller, P. et al. Molecular transformer: a model for uncertainty-calibrated chemical reaction prediction. ACS Central Sci. 5, 1572 –1583 (2019). 54. Clement, C. L., Kauwe, S. K. & Sparks, T. D. Benchmark AFLOW"
+    },
+    {
+      "block_id": "p09-b06",
+      "pdf_page": 9,
+      "text": "data sets for machine learning. Integr. Mater. Manuf. Innov. 9, 153 –156 (2020). 55. Bartel, C. J. et al. A critical examination of compound stability predictions from machine-learned formation energies. npj Comput. Mater. 6, 97 (2020). 56. Kirklin, S. et al. The Open Quantum Materials Database (OQMD): assessing the accuracy of DFT formation energies. npj Comput. Mater . 1, 15010 (2015). 57. Ward, L. et al. Matminer: an open source toolkit for materials data mining. Comput. Mater. Sci. 152,6 0 –69 (2018). 58. Kauwe, S. K. Online GitHub repository for mse_datasets. https://github.com/ kaaiian/mse_datasets (2020). 59. Wang, A. Y.-T. & Kauwe, S. K. Online GitHub repository for the paper \"Composi- tionally-Restricted Attention-Based Network for Materials Property Prediction ”. https://github.com/anthony-wang/CrabNet (2020). 60. Tshitoyan, V. et al. Unsupervised word embeddings capture latent knowledge from materials science literature. Nature 571,9 5 –98 (2019). 61. Ward, L., Agrawal, A., Choudhary, A. & Wolverton, C. A general-purpose machine learning framework for predicting properties of inorganic materials. npj Comput. Mater. 2, 16028 (2016). 62. Zhang, M. R., Lucas, J., Hinton, G. & Ba, J. in Advances in Neural Information Processing Systems (eds. Wallach, H. M. et al.) (Curran Associates Inc., 2019). 63. You, Y. et al. Large batch optimization for deep learning: training BERT"
+    },
+    {
+      "block_id": "p09-b07",
+      "pdf_page": 9,
+      "text": "in 76 minutes. In Proc. International Conference on Learning Representations (ICLR) (2020). 64. Wang, A. Y.-T., Kauwe, S. K., Murdock, R. J. & Sparks, T. D. Trained network weights for the paper \"Compositionally-Restricted Attention-Based Network (CrabNet) ”. https://doi.org/10.5281/zenodo.4633866 (2021). 65. Castelli, I. E. et al. Computational screening of perovskite metal oxides for optimal solar light capture. Energy Environ. Sci. 5, 5814 –5819 (2012). 66. Jain, A. et al. Commentary: The Materials Project: a materials genome approach to accelerating materials innovation. APL Mater. 1, 011002 (2013). 67. Ong, S. P. et al. The Materials Application Programming Interface (API): a simple, ﬂexible and ef ﬁcient API for materials data based on REpresentational State Transfer (REST) principles. Comput. Mater. Sci. 97, 209 –215 (2015). 68. Petousis, I. et al. High-throughput screening of inorganic compounds for the discovery of novel dielectric and optical materials. Sci. Data 4, 160134 (2017). 69. de Jong, M. et al. Charting the complete elastic properties of inorganic crystalline compounds. Sci. Data 2, 150009 (2015). 70. National Institute of Standards and Technology (NIST). NIST JARVIS-DFT Database. https://www.nist.gov/programs-projects/jarvis-dft (2017). 71. Petretto, G. et al. High-throughput density-functional perturbation theory pho- nons for inorganic materials. Sci. Data"
+    },
+    {
+      "block_id": "p09-b08",
+      "pdf_page": 9,
+      "text": "5, 180065 (2018). 72. Conduit, G. & Bajaj, S. Mechanical properties of some steels: ID: 153092 - Version 3 https://citrination.com/datasets/153092/ (2017). ACKNOWLEDGEMENTS The authors gratefully acknowledge support from the NSF CAREER Award DMR 1651668. The authors also thank the Berlin International Graduate School in Model A.Y.-T. Wang et al. 9 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences npj Computational Materials (2021) 77"
+    },
+    {
+      "block_id": "p10-b01",
+      "pdf_page": 10,
+      "text": "and Simulation-based Research as well as the German Academic Exchange Service (program number 57438025) for their ﬁnancial support. Special thanks are given to Dr. Aleksander Gurlo and Dr. Mathias Czasny for advising and supporting Anthony Yu-Tung Wang and for encouraging his collaborative stay at the University of Utah. The authors thank the creators of AFLOW and Materials Project for the creation of the databases and for making the material properties available for this study. In addition, the authors express their gratitude to the open-source software community, for developing the excellent tools used in this research, including but not limited to Python, Pandas, NumPy, matplotlib, scikit-learn, and PyTorch. Last but not least, the authors thank OpenAI, the researchers at Hugging Face, and Adam King for their contribution to TalkToTransformer.com. The underlying Transformer- powered GPT-2 model was used to generate text for the closing lines of this publication. AUTHOR CONTRIBUTIONS A.Y.T.W. and S.K.K. jointly and in equal amounts conceived, developed the concept, and implemented the algorithms, code and visualizations described in this work. A.Y.T.W. and S.K.K. jointly analyzed the results. R.J.M. assisted with developing the architecture and provided insight and guidance during model optimization and training. All authors discussed the results and contributed to the"
+    },
+    {
+      "block_id": "p10-b02",
+      "pdf_page": 10,
+      "text": "writing of the manuscript. COMPETING INTERESTS The authors declare no competing interests. ADDITIONAL INFORMATION Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41524-021-00545-1. Correspondence and requests for materials should be addressed to T.D.S. Reprints and permission information is available at http://www.nature.com/ reprints Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional af ﬁliations. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article ’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons. org/licenses/by/4.0/. © The"
+    },
+    {
+      "block_id": "p10-b03",
+      "pdf_page": 10,
+      "text": "Author(s) 2021 A.Y.-T. Wang et al. 10 npj Computational Materials (2021) 77 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences"
+    }
+  ],
+  "transformation": {
+    "synthetic": true,
+    "base_source_sha256": "3a19cce38b13a335d25f94c565e3284eee84ca498cf5f95c35a26040f5e3f740",
+    "removed_blocks": [
+      "p01-b03",
+      "p01-b04",
+      "p01-b05",
+      "p02-b01",
+      "p02-b02",
+      "p02-b03",
+      "p02-b04",
+      "p02-b05",
+      "p02-b06",
+      "p03-b01",
+      "p03-b02",
+      "p03-b03",
+      "p03-b04",
+      "p04-b01",
+      "p04-b02",
+      "p04-b03",
+      "p04-b04",
+      "p05-b01",
+      "p07-b06",
+      "p08-b01",
+      "p08-b02",
+      "p09-b02",
+      "p09-b03",
+      "p09-b04"
+    ],
+    "purpose": "Test insufficient-evidence behavior. Not a defect in the original paper."
+  }
+}

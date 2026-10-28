@@ -1,0 +1,9 @@
+run_id,case,condition,model,effort,duration_seconds,tool_calls,input_tokens,cached_input_tokens,output_tokens,rubric_points,rubric_max,mechanical_checks_passed,cost
+R01,A,without_skill,gpt-6.1-sol,medium,368.055,9,459665,422528,8346,24,24,True,unavailable
+R02,A,with_skill,gpt-6.1-sol,medium,392.889,11,584278,535296,10175,24,24,True,unavailable
+R03,A,with_skill,gpt-6.1-sol,medium,372.31,9,480055,443520,8828,24,24,True,unavailable
+R04,A,without_skill,gpt-6.1-sol,medium,403.783,10,535965,497664,11709,24,24,True,unavailable
+R05,B,with_skill,gpt-6.1-sol,medium,305.969,8,429355,374784,7795,16,16,True,unavailable
+R06,C,with_skill,gpt-6.1-sol,medium,211.387,5,222161,192640,4490,8,8,True,unavailable
+R07,A,with_skill,gpt-6.1-sol,medium,358.216,10,552928,513920,9115,24,24,True,unavailable
+R08,C,with_skill,gpt-6.1-sol,medium,199.288,4,186184,159104,2590,8,8,True,unavailable

@@ -1,0 +1,16 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+输入信息,原子序数+组成分数；无结构；默认mat2vec,只有化学组成,comparable,C02
+预测目标,28个选定性质的回归；含对数弹性目标,具体筛选性质未指定,unknown,C03;C06;C21
+样本来源,计算与实验混合；312—341788条,候选材料数据来源未指定,unknown,C03;C21
+测试划分,Matbench五折；Extended固定随机划分；按组成隔离,完全未见化学体系,mismatch,C04;C05;C17
+原始集合比例,Matbench72/8/20；Extended70/15/15；清理可改变,体系留出后的比例未确定,unknown,C04
+重复组成标签,OQMD/MP最低形成焓对应目标；其他均值,具体结构或制备状态是否影响目标未确定,unknown,C05;C20
+竞争模型,Roost、HotCrab、ElemNet、Magpie RF；各有优劣,声称普遍优于比较方法,mismatch,C01;C07;C09
+调参公平性,默认参数；CrabNet曾用部分相同任务验证集优化,目标任务同等调参预算尚未指定,unknown,C08
+性能指标,测试集MAE越低越好,未见体系筛选命中率或排序要求,mismatch,C06;C17;C21
+Automatminer比较,仅expt_gap和steels_yield聚焦无结构比较,无结构输入约束,comparable,C10
+IRNet对照,引用论文结果；未重训；band gap有反例,相同数据划分下比较,unknown,C11
+重复性,钢任务有反复训练文字；全性质固定seed42,未见体系多种子稳定性,unknown,C12;C13;C18
+不确定性,aleatoric输出；初始化epistemic未调查,目标域可靠校准与筛选置信度,unknown,C14;C15;C18
+新体系示例,Si–O扫描但训练已有SiO2,整个化学体系完全未见,mismatch,C16;C17
+钢强度单位,正文GPa；图1未标行单位,实际标签单位尚待核实,unknown,C10;C19

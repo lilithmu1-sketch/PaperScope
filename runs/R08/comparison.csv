@@ -1,0 +1,6 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+CrabNet steels_yield MAE,本次删减附件中未知,核实 steels_yield 上 CrabNet 的 MAE 与单位,unknown,C01
+Automatminer steels_yield MAE,本次删减附件中未知,核实同任务 Automatminer 的 MAE 与单位,unknown,C02
+MAE 改善幅度,两模型数值均无法确定,在可比条件下计算绝对差与相对改善率,unknown,C01;C02;C03
+数据范围与输入信息,附件不足以确认两模型的对应条件,同一 steels_yield 样本范围且明确两模型输入信息,unknown,C06
+评估划分与汇总口径,附件不足以确认两模型的对应条件,核实训练测试划分及 MAE 汇总口径是否一致,unknown,C06

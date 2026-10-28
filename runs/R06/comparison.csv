@@ -1,0 +1,6 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+steels_yield MAE,当前删减件缺少 CrabNet 与 Automatminer 对应数值及单位,核查两模型的 MAE,unknown,C02;C03
+改善量及方向,对应数值不足,计算绝对降低量和相对降低率,unknown,C04
+输入信息,CrabNet 使用仅含组成且无结构信息的 EDM；Automatminer 对应输入未知,核查 steels_yield 上双方输入条件,unknown,C05;C06
+样本与评价设置,缺少两者在 steels_yield 上的样本范围及划分和调参对应说明,核查数值是否来自可比设置,unknown,C06
+

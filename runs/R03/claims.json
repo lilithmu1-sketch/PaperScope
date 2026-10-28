@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.0",
+  "source_ids": [
+    "crabnet"
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "CrabNet 在全部 28 个基准任务上严格优于所有比较方法。",
+      "kind": "fact",
+      "verdict": "contradicted",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b05",
+          "quote": "Overall, we see similar performance between Roost and the two versions of CrabNet tested. Given the different architectures and modeling philosophies of Roost and CrabNet,i ti s promising that both approaches converge towards the same performance metrics."
+        }
+      ],
+      "reasoning": "正文明确称 Roost 与两种 CrabNet 整体相近，不能改述为全面严格胜出。另已查看 PDF 第4页图1：例如 phonons 的 Roost MAE 49.767、CrabNet 53.341；MP shear modulus 的 RF 12.777、CrabNet 12.787。这些是反例，不是新化学体系评价。"
+    },
+    {
+      "id": "C02",
+      "statement": "本研究的 CrabNet 输入为元素原子序数与组成分数，不使用晶体结构；默认以 mat2vec 引入元素化学表示。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p06-b02",
+          "quote": "Chemical compositions are input using the atomic numbers and fractional amounts of their constituent elements. The atomic numbers are used to retrieve element representations (either mat2vec or one-hot). The fractional amounts are used to obtain fractional embeddings (described below)."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p06-b03",
+          "quote": "default source of chemical information for each element, even though there are other choices for element properties available, such as Jarvis22, Magpie61, Oliynyk18 or a simple one-hot encoding. The mat2vec embedding has the advantage of being pre-scaled and normalized, and having no missing elements nor element features."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p06-b01",
+          "quote": "This work intentionally used a compositionally restricted EDM representation with no structural information."
+        }
+      ],
+      "reasoning": "原子序数用于取得元素表示，分数用于化学计量嵌入。仅需组成符合用户输入条件；并不意味着默认模型没有外部化学先验。"
+    },
+    {
+      "id": "C03",
+      "statement": "基准含 28 个材料性质数据集：10 个 Matbench、18 个 Extended，样本量 312—341788，兼有计算与实验来源；研究选择回归任务并忽略已有结构信息。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b02",
+          "quote": "For this work, we obtained both computational and experimental materials data for benchmarking. Our benchmark data includes materials properties from the Matbench dataset as provided by Dunn et al. 36. In addition, materials properties data from a number of works6,54–57 are collected, which are referred to as the Extended dataset. We included 28 benchmark datasets in total: 10 from the Matbench and 18 from the Extended datasets ranging from 312 to 341,788 instances of data."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b04",
+          "quote": "maintain consistent and simple benchmark comparisons, we selected data suitable for regression tasks and ignored structural information when present."
+        }
+      ],
+      "reasoning": "适用证据是这些回归性质和数据源，不是所有材料任务；不同数据集样本量与标签来源不同。"
+    },
+    {
+      "id": "C04",
+      "statement": "Matbench 采用五折交叉验证，表1原始每折比例为训练/验证/测试72/8/20；Extended 固定随机种子划分，表1原始比例70/15/15，清理后比例可变。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b02",
+          "quote": "The Matbench datasets were split using ﬁvefold cross-validation following instructions provided in the original publication 36. Materials properties in the Extended dataset were split into train, validation, and test datasets using a ﬁxed random seed."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p03-b03",
+          "quote": "castelli Castelli et al. 36,65 Formation enthalpy (perovskites) 18928 5-fold (72/8/20)"
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p03-b03",
+          "quote": "aﬂow__ael_bulk_modulus_vrh AFLOW54 Bulk modulus (VRH) 4905 (70/15/15)"
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b03",
+          "quote": "To remain comparable with the Automatminer publication36, we applied the data processing steps as mentioned above after splitting the data. Please note that since some datasets have more duplicate compositions than others, these processing steps may affect the train/val/test ratios."
+        }
+      ],
+      "reasoning": "已查看 PDF 第3页表1确认表头和列序。比例是原始设定，不能假定清理后的每个集合仍精确保持这些比例。"
+    },
+    {
+      "id": "C05",
+      "statement": "论文在划分后按组成去重并隔离跨集合相同组成；OQMD/MP 重复组成选最低形成焓对应目标值，其他数据取目标均值。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b02",
+          "quote": "Care was taken to ensure that (1) no duplicate compositions were present in each of the train, validation, and test datasets, and that (2) if a"
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b03",
+          "quote": "composition exists in the train or validation dataset, all compounds with the same composition are removed from the validation and test datasets. To remain comparable with the Automatminer publication36, we applied the data processing steps as mentioned above after splitting the data. Please note that since some datasets have more duplicate compositions than others, these processing steps may affect the train/val/test ratios. For duplicate compositions in the OQMD and MP datasets, the target value associated with the lowest formation enthalpy was selected. For other datasets, the mean of the target values was used."
+        }
+      ],
+      "reasoning": "第2页跨块续句说明去重规则。它避免相同组成跨集合，但不等价于把整个元素组合或化学家族留作外推测试。"
+    },
+    {
+      "id": "C06",
+      "statement": "论文以测试集 MAE 比较模型，越低越好；测试数据在训练和超参数调优结束后才用于性能评价。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b04",
+          "quote": "The performance of these benchmarked models is compared using the mean absolute error (MAE) between n true values ( y) and predicted values"
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b03",
+          "quote": "The training and validation data were used for training and hyperparameter tuning. The test data were held-out to provide a fair evaluation of performance metrics across all models. Model performance was only evaluated after all training and hyperparameter tuning was completed."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p04-b04",
+          "quote": "Cells are colored according to relative MAE performance within each row (blue is better, and red is worse)."
+        }
+      ],
+      "reasoning": "MAE是绝对误差均值；图1在各行内比较。不同性质、单位和对数目标的 MAE 不应直接合并为跨性质的优越性分数。"
+    },
+    {
+      "id": "C07",
+      "statement": "直接重训比较包括 Roost、默认 CrabNet、HotCrab、ElemNet 与 Magpie CBFV 的 RF；Roost/默认CrabNet含化学表示，HotCrab/ElemNet不以这类化学先验起步。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b04",
+          "quote": "Benchmark comparisons With the benchmark data described above, we generated material predictions using the publicly available code repositories for Roost 9, CrabNet59, and ElemNet5."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b04",
+          "quote": "The default CrabNet uses a mat2vec embedding when representing elements, similar to Roost."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b05",
+          "quote": "(HotCrab) uses one- hot encodings (in the form of atomic numbers) and fractional amounts to represent each element in a composition. This is similar to ElemNet, as both models start without any chemical information. The random forest ( RF) model utilizes a Magpie- featurized CBFV to represent chemistry. This is included as a performance baseline to match similar works 5,9,36."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p08-b02",
+          "quote": "The RF models were trained with nestimators = 500 and default parameters."
+        }
+      ],
+      "reasoning": "RF为500棵树的默认参数基线；较弱基线的结果不能代表所有经过充分优化的传统算法。"
+    },
+    {
+      "id": "C08",
+      "statement": "Roost、CrabNet、ElemNet 使用各自仓库默认参数，但 CrabNet 默认值曾在部分相同基准数据集的验证数据上优化，存在作者承认的潜在优势。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b04",
+          "quote": "Here we note that the models for Roost, CrabNet, and ElemNet were all trained using the default model parameters provided with their respective repositories. In contrast to Roost and ElemNet, the default parameters for CrabNet were optimized using validation data from some of the same datasets on which we benchmarked. Although it is possible this offers a small advantage to CrabNet’s performance, we do not expect this to be signi ﬁcant due to CrabNet’s consistently strong performance on all benchmark tasks."
+        }
+      ],
+      "reasoning": "没有测试集调参的证据；但默认参数比较并非各方法同等调参预算下的结论。作者认为优势很小是作者解释，不是独立量化验证。"
+    },
+    {
+      "id": "C09",
+      "statement": "mat2vec CrabNet 并不在所有性质上优于 HotCrab：作者列出的例外是 AFLOW 热导率、MP 弹性各向异性和最大 OQMD 数据集中的性质。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b05",
+          "quote": "Interestingly, Fig. 1 shows that the use of mat2vec instead of one-hot with CrabNet improves prediction performance on all materials properties except for AFLOW thermal conductivity, MP elastic anisotropy, and those present in the largest datasets (OQMD)."
+        }
+      ],
+      "reasoning": "这说明引入元素化学表示的效果依任务而变。PDF 第4页图1核对亦见 AFLOW thermal conductivity 的 HotCrab 2.254 < CrabNet 2.318；MP elastic anisotropy 的 Roost、HotCrab、ElemNet 都低于默认 CrabNet。"
+    },
+    {
+      "id": "C10",
+      "statement": "与 Automatminer 的无结构比较仅聚焦 expt_gap 和 steels_yield；正文报告其 MAE 分别为0.416与0.338 eV、95.2与91.7 GPa（前者Automatminer，后者CrabNet，单位按原文保留）。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b05",
+          "quote": "These metrics are not included in Fig. 1, since all but two (expt_gap, and steels_yield) of Automatminer’s models use structural information. Consequently, we focus on these two materials properties when comparing CrabNet’s results to those from Automatminer. For these two"
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b06",
+          "quote": "metrics, CrabNet’s structure-agnostic approach outperforms the reported MAE values from Automatminer on the same tasks (expt_gap: 0.416 eV vs. 0.338 eV for CrabNet; steels_yield: 95.2 GPa vs. 91.7 GPa for CrabNet)."
+        }
+      ],
+      "reasoning": "其他 Automatminer 模型使用结构信息，不宜混作只有组成的公平比较。钢强度单位仅作为正文报告值转录，其物理尺度需另查，不能擅改为MPa。"
+    },
+    {
+      "id": "C11",
+      "statement": "IRNet 未在本研究重训；引用的 OQMD band gap MAE 为 IRNet 0.047 eV、HotCrab 0.048 eV，数值上 IRNet 更低。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p08-b02",
+          "quote": "due to the prohibitively large computational requirements, we chose not to train and evaluate IRNet. We do however note that the OQMD performance reported in the IRNet publication 6 is consistently lower than both Roost and CrabNet for the same properties. These following values show the reported performance of IRNet vs. HotCrab, respectively, for formation enthalpy (0.048 eV vs. 0.031 eV), band gap (0.047 eV vs. 0.048 eV), energy per atom (0.070 eV vs. 0.033 eV), and volume per atom (0.394 Å3 vs. 0.277 Å3)."
+        }
+      ],
+      "reasoning": "引用比较不是本研究相同处理与划分的直接重训对照；正文称IRNet一致较差，但紧接的带隙数字存在反例，不能沿用其全称判断。"
+    },
+    {
+      "id": "C12",
+      "statement": "对仅312条数据、每组成最多13种元素的 steels_yield，正文称反复训练和验证 CrabNet 均优于 Automatminer 的95.2 GPa最佳结果。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b06",
+          "quote": "The steels_yield dataset contains com- pounds with small dopant amounts in large chemical systems (up to 13 elements per composition) and only 312 total data."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p03-b01",
+          "quote": "Nevertheless, repeated training and validation of CrabNet consistently produced error metrics better than the best result obtained by Automatminer (95.2 GPa)."
+        }
+      ],
+      "reasoning": "这是特定小样本掺杂任务的重复训练文字证据；不能抹掉它而说完全无重复，也不能推广成全部任务的多种子统计。"
+    },
+    {
+      "id": "C13",
+      "statement": "论文为减小不同模型训练运行的性能波动，对所有材料性质的 CrabNet 训练固定随机种子42。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p07-b04",
+          "quote": "It is a known phenomenon that random weight initialization can impact the performance of the Transformer encoder architecture. Thus, to mitigate variance in the performance metrics between different model runs, we trained CrabNet using a ﬁxed random seed of 42 for all training runs across all materials properties."
+        }
+      ],
+      "reasoning": "固定初始化有助复现这次比较，却不提供随机初始化变化下的性能分布；五折验证也不等同于多随机种子独立重复。"
+    },
+    {
+      "id": "C14",
+      "statement": "论文提出利用随机初始化的训练间差异估计 epistemic uncertainty，但明确称本研究尚未调查这一点。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p07-b04",
+          "quote": "We do note that in the case of random model initialization, the run-to-run variation between different trained models is a feature that could be taken"
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p07-b05",
+          "quote": "advantage of for determining the epistemic uncertainty. Unfortunately, due to the sheer volume of materials properties investigated in this work and the limited compute resources available, we have not investigated this thus far."
+        }
+      ],
+      "reasoning": "跨页续句将未研究对象限定为此类认知不确定性；不能泛化成模型没有任何不确定性输出。"
+    },
+    {
+      "id": "C15",
+      "statement": "模型确有 aleatoric uncertainty 输出：对逐元素不确定性取均值；图5灰色阴影表示这种预测不确定性。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p07-b03",
+          "quote": "Similarly, the mean of the element-uncertainties is used in the aleatoric uncertainty prediction as described by Roost 9."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p06-b04",
+          "quote": "The gray shading represents the aleatoric uncertainty for each prediction."
+        }
+      ],
+      "reasoning": "这是随机/数据不确定性的估计，不是已验证的分布外误差上界，也不是重复种子均值的置信区间。"
+    },
+    {
+      "id": "C16",
+      "statement": "Si–O 示例在训练中已有 SiO2 一个样本；作者绘制其他计量比的带隙预测，并把新体系稀疏学习及跨性质迁移描述为未来研究或可能性。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p04-b02",
+          "quote": "We note that the only available training data sample from the Si xO1−x system in the dataset was from the composition SiO 2. Therefore, we can see that the band gap trend predicted here by CrabNet is based on the learned chemical representations and inter- elemental interactions from other elements and systems."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p04-b03",
+          "quote": "For future studies, this ability may be investigated for its application in predicting the behavior of new chemical systems while only requiring a sparse sampling or learning of their chemical information. Furthermore, we believe that transfer learning of trained CrabNet models to other material properties is possible, due to the ability of the self-attention mechanism to accurately capture inter-elemental interactions."
+        }
+      ],
+      "reasoning": "该例展示预测行为而非对完全未见Si–O体系的独立真值检验。图示趋势与注意力可视化不能自动视作筛选准确率证据。"
+    },
+    {
+      "id": "C17",
+      "statement": "仅凭附件，尚不足以把这些基准成绩推断为可直接可靠筛选完全未见化学体系的新材料。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b02",
+          "quote": "The Matbench datasets were split using ﬁvefold cross-validation following instructions provided in the original publication 36. Materials properties in the Extended dataset were split into train, validation, and test datasets using a ﬁxed random seed."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b03",
+          "quote": "composition exists in the train or validation dataset, all compounds with the same composition are removed from the validation and test datasets."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p04-b03",
+          "quote": "For future studies, this ability may be investigated for its application in predicting the behavior of new chemical systems while only requiring a sparse sampling or learning of their chemical information."
+        }
+      ],
+      "reasoning": "前提是目标要求整个化学体系未见；本文描述的是五折/随机划分及相同组成隔离，并将新体系应用留作后续研究。未见组成与未见元素组合的难度不同，当前证据链无法完成这一步推广；并非证明模型必然失败。"
+    },
+    {
+      "id": "C18",
+      "statement": "附件主文不能给出全部28个任务在多随机初始化下的均值、标准差、显著性或未见体系上不确定性的校准性能。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "检查范围为所附主文PDF第1—10页及全份定位文本，重点含图1、第2页比较、第3页重复训练文字、第7页训练与不确定性方法；附件未附Supplementary Information或逐次训练输出。不能据此断言论文所有相关材料均无这些数据，亦不能从固定seed或钢任务文字补出统计量。"
+    },
+    {
+      "id": "C19",
+      "statement": "steels_yield 数值所应采用的真实单位和95.2基线的完整复验条件，尚不能由本次附件充分确认。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "第2—3页正文写GPa，图1给91.748但未标该行单位，表1列性质与样本量；本次没有原始标签文件、补充材料或Automatminer原文。保留原文单位，不自行换成MPa，也不声称发现或已核实勘误。"
+    },
+    {
+      "id": "C20",
+      "statement": "只有组成的表示无法区分同组成而结构或工艺不同的样本，因此用户若要筛选具体结构/制备状态，其目标条件需另行确认。",
+      "kind": "inference",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p06-b01",
+          "quote": "This work intentionally used a compositionally restricted EDM representation with no structural information."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p02-b03",
+          "quote": "For duplicate compositions in the OQMD and MP datasets, the target value associated with the lowest formation enthalpy was selected. For other datasets, the mean of the target values was used."
+        },
+        {
+          "source_id": "crabnet",
+          "block_id": "crabnet:p06-b02",
+          "quote": "involving processing steps or other non-compositional features c o u l db eu s e di nt h i sa p p r o a c h .Both of these changes could easily be implemented as extensions to the EDM."
+        }
+      ],
+      "reasoning": "相同模型输入给出相同组成表示，重复组成处理还压缩了多结构/多测量目标差异；这是输入信息限制的推断，不意味着所有性质都强烈依赖结构或工艺。"
+    },
+    {
+      "id": "C21",
+      "statement": "用户目标性质、候选元素组合与训练覆盖、可接受误差以及实际筛选命中率尚未确定。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "问题只说明只有组成、希望筛选未见化学体系，未给具体任务和候选范围。附件没有这些用户特定条件，因而无法给出该场景的误差承诺或推荐阈值。"
+    }
+  ]
+}

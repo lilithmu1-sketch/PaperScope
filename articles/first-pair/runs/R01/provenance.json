@@ -1,0 +1,33 @@
+{
+  "run_id": "R01",
+  "native_session_id": "01a1801e-5712-7092-8f2b-1408a3729aec",
+  "source_native_sha256": "db4887154eaac85211c29013b064db834a79bde84a55a65ecad81aa083424f11",
+  "export_method": "Chronological original response_item records; omitted system/developer messages, analysis/hidden reasoning, opaque events, and account metadata. Visible messages, original tool arguments and returned outputs unchanged.",
+  "trace_kind": "export",
+  "source_is_native": true,
+  "shared_export_is_full_native_telemetry": false,
+  "models_reported": [
+    "gpt-6.1-sol"
+  ],
+  "reasoning_efforts_reported": [
+    "medium"
+  ],
+  "started_at": "2026-10-28T01:27:14.538Z",
+  "ended_at": "2026-10-28T01:33:22.593Z",
+  "duration_seconds": 368.055,
+  "visible_tool_calls": 9,
+  "actual_wall_clock_within_budget": true,
+  "actual_tool_calls_within_budget": true,
+  "token_usage_reported": {
+    "input_tokens": 459665,
+    "cached_input_tokens": 422528,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 8346,
+    "reasoning_output_tokens": 800,
+    "total_tokens": 468011
+  },
+  "cost": null,
+  "cost_unavailable_reason": "Account monetary cost not exposed by the local session log; token counts do not prove a price.",
+  "human_core_corrections": "none",
+  "exported_at": "2026-10-28T01:35:58.446449+00:00"
+}

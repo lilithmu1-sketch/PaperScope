@@ -1,0 +1,319 @@
+{
+  "reviewed_at": "2026-10-28T01:53:14.726580+00:00",
+  "reviewer": "Project development AI assistant, same model family; group-visible; not independent human/expert review",
+  "records": [
+    {
+      "run_id": "R05",
+      "case": "B",
+      "criteria": [
+        {
+          "criterion": "B01",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C01",
+            "C08"
+          ],
+          "reason": "区分全局回归误差与近阈值分类表现。"
+        },
+        {
+          "criterion": "B02",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C05"
+          ],
+          "reason": "区分形成能与参考凸包竞争。"
+        },
+        {
+          "criterion": "B03",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C03"
+          ],
+          "reason": "正确限定测试输入为未弛豫结构。"
+        },
+        {
+          "criterion": "B04",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C04"
+          ],
+          "reason": "正确区分训练信息模态与纯架构控制实验。"
+        },
+        {
+          "criterion": "B05",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C06",
+            "C07"
+          ],
+          "reason": "说明MP参考凸包和联合凸包标签差异，未用预测构建参考。"
+        },
+        {
+          "criterion": "B06",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C14"
+          ],
+          "reason": "不将0K热力学稳定性等同可合成/动态稳定。"
+        },
+        {
+          "criterion": "B07",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C15"
+          ],
+          "reason": "明确勘误且没有输出未核实的当前排名。"
+        },
+        {
+          "criterion": "B08",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C16"
+          ],
+          "reason": "区分具体任务结论与目标实验收益未知。"
+        }
+      ],
+      "rubric_points": 16,
+      "rubric_max": 16
+    },
+    {
+      "run_id": "R06",
+      "case": "C",
+      "criteria": [
+        {
+          "criterion": "C01",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C02",
+            "C03"
+          ],
+          "reason": "明确是人为删减附件，不归咎作者。"
+        },
+        {
+          "criterion": "C02",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C02",
+            "C03",
+            "C04"
+          ],
+          "reason": "没有补造两项MAE、改善量或胜负。"
+        },
+        {
+          "criterion": "C03",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C06"
+          ],
+          "reason": "请求最小结果行/单位/比较设置。"
+        },
+        {
+          "criterion": "C04",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C01",
+            "C05"
+          ],
+          "reason": "保留现有摘要与组成条件等可核查部分，不假装看过全文。"
+        }
+      ],
+      "rubric_points": 8,
+      "rubric_max": 8
+    },
+    {
+      "run_id": "R08",
+      "case": "C",
+      "criteria": [
+        {
+          "criterion": "C01",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C01",
+            "C02"
+          ],
+          "reason": "明确删减转换件与全文区别。"
+        },
+        {
+          "criterion": "C02",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C01",
+            "C02",
+            "C03"
+          ],
+          "reason": "复测同样未补造目标数值或改善。"
+        },
+        {
+          "criterion": "C03",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C06"
+          ],
+          "reason": "提出结果表行和可比设置等最小补充材料。"
+        },
+        {
+          "criterion": "C04",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C04",
+            "C05"
+          ],
+          "reason": "用现存摘要和文献来源作有限回答，不用记忆还原缺失结果。"
+        }
+      ],
+      "rubric_points": 8,
+      "rubric_max": 8
+    },
+    {
+      "run_id": "R07",
+      "case": "A",
+      "criteria": [
+        {
+          "criterion": "A01",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C02",
+            "C20"
+          ],
+          "reason": "组成与结构边界清楚。"
+        },
+        {
+          "criterion": "A02",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C03"
+          ],
+          "reason": "数据数目和范围正确。"
+        },
+        {
+          "criterion": "A03",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C04",
+            "C19"
+          ],
+          "reason": "区分五折/随机留出与体系外推。"
+        },
+        {
+          "criterion": "A04",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C05"
+          ],
+          "reason": "去重/聚合及比例变化正确。"
+        },
+        {
+          "criterion": "A05",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C06"
+          ],
+          "reason": "指标及尺度正确。"
+        },
+        {
+          "criterion": "A06",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C08",
+            "C09"
+          ],
+          "reason": "承认强基线与逐任务反例。"
+        },
+        {
+          "criterion": "A07",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C10"
+          ],
+          "reason": "保留嵌入例外。"
+        },
+        {
+          "criterion": "A08",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C07"
+          ],
+          "reason": "指出验证集调参条件。"
+        },
+        {
+          "criterion": "A09",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C11",
+            "C12"
+          ],
+          "reason": "限定Automatminer比较及单位未知。"
+        },
+        {
+          "criterion": "A10",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C14",
+            "C15",
+            "C16",
+            "C21"
+          ],
+          "reason": "区分固定seed、多初始化和不确定性类别。"
+        },
+        {
+          "criterion": "A11",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C19",
+            "C21"
+          ],
+          "reason": "对新体系筛选保持证据边界。"
+        },
+        {
+          "criterion": "A12",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C12",
+            "C21"
+          ],
+          "reason": "区分事实、推断和未知并给后续核查。"
+        }
+      ],
+      "rubric_points": 24,
+      "rubric_max": 24
+    }
+  ],
+  "anomaly_repeat_consistent": true,
+  "normal_repeat_consistent": true,
+  "scope": "B completes declared method/metric reading; C tests only one explicitly constructed missing-evidence anomaly twice; A normal repeat retains key judgments.",
+  "limitations": [
+    "No claim of universal robustness",
+    "No additional scientific model training",
+    "No independent human validation",
+    "No score inferred for official B/C or reproducibility dimensions"
+  ],
+  "competition_score": null
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "source_ids": [
+    "crabnet-incomplete"
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "摘要称 CrabNet 在总计 28 个基准数据集中的几乎全部达到或超过当前最佳实践方法；该句没有给出 steels_yield 的具体 MAE。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet-incomplete",
+          "block_id": "p01-b01",
+          "quote": "Our results show that CrabNet’s performance matches or exceeds current best-practice methods on nearly all of 28 total benchmark datasets."
+        }
+      ],
+      "reasoning": "引文限定为 nearly all 和总体基准表现，没有指明 steels_yield，也没有给出其误差数值，不能用总体概括推出该数据集的比较结果。"
+    },
+    {
+      "id": "C02",
+      "statement": "仅凭当前删减转换件，无法确定 CrabNet 在 steels_yield 上报告的 MAE 及单位。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "检查范围为 crabnet-incomplete-原文定位.txt 的全部现存块，未见 steels_yield 结果条目、对应数值或单位。本次无全文 PDF；此结论不涉及完整论文是否报告。至少需要补充含该数据集 CrabNet MAE 的结果段或原表行，并保留列标题、单位和脚注。"
+    },
+    {
+      "id": "C03",
+      "statement": "仅凭当前删减转换件，无法确定 Automatminer 在 steels_yield 上的对应 MAE 及单位。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "检查范围为 crabnet-incomplete-原文定位.txt 的全部现存块，未见 Automatminer 的对应结果条目。不能从摘要概括推定基线数值，也不能从材料缺失推断完整论文没有报告。需要同一版本的 Automatminer 对应结果及其列标题、单位和脚注。"
+    },
+    {
+      "id": "C04",
+      "statement": "当前材料不足以确定 CrabNet 相对 Automatminer 在 steels_yield 上的 MAE 改善量、百分比或改善方向。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "缺少两种模型的对应 MAE 和可比性依据。若单位一致、设置可比，则绝对降低量为基线 MAE 减 CrabNet MAE；相对降低率需再除以非零基线 MAE 并乘 100%。缺少数值时，差值的大小及正负都不能确定。"
+    },
+    {
+      "id": "C05",
+      "statement": "论文有意使用仅含组成、无结构信息的 EDM 表示。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet-incomplete",
+          "block_id": "p06-b01",
+          "quote": "This work intentionally used a compositionally restricted EDM representation with no structural information."
+        }
+      ],
+      "reasoning": "引文直接说明该工作表示的组成限制及无结构信息条件，可作为补充结果后核对模型输入的依据。"
+    },
+    {
+      "id": "C06",
+      "statement": "当前删减材料不足以核实 CrabNet 与 Automatminer 在 steels_yield 上的输入、样本范围、训练／测试划分及调参条件是否可比。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "已检查整份转换件。现存方法段提供 CrabNet 的一般架构和训练信息，但没有两者针对 steels_yield 的成对比较设置；不可把一般默认参数当作双方相同评价协议的证明。需要补充同一版本的相应比较方法段或表格脚注。"
+    }
+  ]
+}

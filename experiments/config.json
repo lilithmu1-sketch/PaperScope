@@ -1,0 +1,41 @@
+{
+  "experiment_id": "paperscope-v1-20261028",
+  "skill_version": "paperscope-1.0-frozen",
+  "rules_version": "product-skill-rules-v2.5-read-minor-20261016-r2",
+  "host": "Codex desktop independent experimental subagents",
+  "requested_model": "inherit parent; no model override",
+  "parent_model_reported": "gpt-6.1-sol",
+  "parent_reasoning_effort_reported": "medium",
+  "model_limitations": "Backend snapshot/version and stochastic seed cannot be pinned; verify actual child model and effort in each native log.",
+  "session_isolation": "fork_turns=none; no task history; each worker may read only own input folder and write own output folder; no web, other runs or evaluation files",
+  "budget": {
+    "wall_seconds": 900,
+    "max_tool_calls": 20,
+    "max_final_output_tokens_instruction": 12000,
+    "output_file_bytes_guidance": 20000,
+    "enforcement": "worker instruction and post-run audit; host may not enforce a hard per-child token ceiling"
+  },
+  "human_policy": "No clarification, continuation or editing of raw answers; root may fix packaging separately without changing raw files.",
+  "run_groups": [
+    [
+      "R01",
+      "R02"
+    ],
+    [
+      "R03",
+      "R04"
+    ],
+    [
+      "R05",
+      "R06",
+      "R07"
+    ],
+    [
+      "R08"
+    ]
+  ],
+  "evaluation_policy": "Use frozen rubric on every result; group-visible developer evaluation is disclosed, not independent or blind expert review.",
+  "record_policy": "Retain authentic native logs privately; publish chronological visible export with original hash, excluding system/developer content and hidden reasoning. No invented tool events.",
+  "user_authorization": "User explicitly authorized independent experimental subagents in this chat on 2026-10-28; no separate API key required.",
+  "status": "frozen_before_any_formal_model_run"
+}

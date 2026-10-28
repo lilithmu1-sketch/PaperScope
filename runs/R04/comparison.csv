@@ -1,0 +1,15 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+输入,原子序数+分数含量；无结构,只有组成无晶体结构,comparable,C01;C08
+任务,28个回归性质,具体目标性质未说明,unknown,C02;C18
+数据,计算与实验；312—341788,目标体系规模和来源未知,unknown,C02;C18
+划分,五折或固定随机划分,完全未见化学体系,mismatch,C03;C16
+去重,相同组成去重与跨集清除,需整个体系隔离,mismatch,C04;C16
+标签,重复目标选最低形成焓对应值或均值,具体结构和状态未说明,unknown,C04;C17
+评价,测试MAE,新体系筛选排名与命中率,mismatch,C05;C18
+直接比较,Roost、HotCrab、ElemNet、Magpie RF,核查是否普遍优于比较方法,comparable,C06;C07;C08;C11
+结构比较,Automatminer仅两项无结构任务,泛指各种性质上优势,mismatch,C09
+调参,CrabNet部分默认参数在同基准验证集优化,对等优化下优势,mismatch,C10
+IRNet,引用外部结果；未重训,统一设置直接比较,mismatch,C11
+新体系例子,Si—O训练含SiO2，展示预测曲线,体系完全未见,mismatch,C15;C16
+重复,steels_yield定性重复；固定种子42,多种子稳定程度,unknown,C12;C13;C18
+不确定性,aleatoric输出；epistemic变化未研究,新体系校准置信度,mismatch,C13;C14;C18

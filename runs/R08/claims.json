@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "source_ids": ["crabnet-incomplete"],
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "本次附件不足以确定 CrabNet 在 steels_yield 上报告的 MAE。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "检查了所附 crabnet-incomplete-原文定位.txt 的全部内容（保留 PDF 页序 1、5—10 的部分块），并检索 steels、yield、Automatminer、MAE 和 Table 1。未找到 steels_yield 结果行或该项 CrabNet MAE。未提供全文 PDF；此判断仅针对本次删减附件，不代表完整论文没有报告。"
+    },
+    {
+      "id": "C02",
+      "statement": "本次附件不足以确定 Automatminer 在 steels_yield 上的 MAE。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "已检查整个所附论文转换文本，未找到 Automatminer 名称及其 steels_yield 结果。附件无完整 PDF 或额外结果表；不能由其他模型或摘要补足基线数值。"
+    },
+    {
+      "id": "C03",
+      "statement": "本次附件不足以确定 CrabNet 相对 Automatminer 在 steels_yield 上是否改善及改善幅度。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "两模型在 steels_yield 上的 MAE 均缺失，比较条件也未能确认，故既不能计算绝对差或相对改善率，也不能确定优劣方向。补齐可比结果后，绝对改善为 Automatminer MAE 减 CrabNet MAE，相对改善还需除以正的 Automatminer MAE。"
+    },
+    {
+      "id": "C04",
+      "statement": "摘要只概括 CrabNet 在 28 个基准数据集中的几乎所有数据集上达到或超过当前最佳实践方法；该概括没有给出 steels_yield 的具体 MAE 或相对 Automatminer 的改善幅度。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet-incomplete",
+          "block_id": "p01-b01",
+          "quote": "Our results show that CrabNet’s performance matches or exceeds current best-practice methods on nearly all of 28 total benchmark datasets."
+        }
+      ],
+      "reasoning": "引文是总体且保留 nearly all 限定的陈述，未列数据集级数值；检查范围为摘要所在 p01-b01 块，不能把该概括转成 steels_yield 的逐项胜出结论。"
+    },
+    {
+      "id": "C05",
+      "statement": "所附参考文献 72 列出 Mechanical properties of some steels 数据来源及其 ID 153092、Version 3，但该引文未列模型 MAE。",
+      "kind": "fact",
+      "verdict": "supported",
+      "evidence": [
+        {
+          "source_id": "crabnet-incomplete",
+          "block_id": "p09-b08",
+          "quote": "72. Conduit, G. & Bajaj, S. Mechanical properties of some steels: ID: 153092 - Version 3 https://citrination.com/datasets/153092/ (2017)."
+        }
+      ],
+      "reasoning": "该连续引文仅给出数据来源书目信息；其数字为来源 ID、版本和年份，不能解释为 CrabNet 或 Automatminer 的误差。"
+    },
+    {
+      "id": "C06",
+      "statement": "本次附件不足以确认 CrabNet 与 Automatminer 在 steels_yield 上的数据范围、输入信息、训练测试划分和评价汇总条件是否可比。",
+      "kind": "unknown",
+      "verdict": "insufficient",
+      "evidence": [],
+      "reasoning": "检查了全部所附论文块。保留的方法段有 CrabNet 的一般训练说明，但未保留 steels_yield 与 Automatminer 对应的实验比较条件。最小需补同版本结果行、表头、单位和脚注；若条件不在其中，再补对应评估方法段。"
+    }
+  ]
+}

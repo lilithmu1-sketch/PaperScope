@@ -1,0 +1,9 @@
+SOURCE_ID: matbench-correction
+TITLE: Author Correction: A framework to evaluate machine learning crystal stability predictions
+DOI: 10.1038/s42256-025-01117-4
+LICENSE: CC BY 4.0
+SOURCE_SHA256: 0610c58227c575e7f30ee63c791d779ccaca10c9b5d1569921a4a32125d23c3d
+Text is extracted; use the attached PDF to verify tables and reading order when provided.
+
+[matbench-correction:notice-b01; PDF page 1]
+In the version of this article initially published, Figs. 1–3, Table 1 and the Supplementary Information presented more models than were present in the accepted version of the article, and which were not discussed in the text. The Supplementary Information has been revised and the figures and table are now updated in the HTML and PDF versions of the article.

@@ -1,0 +1,16 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+input,元素原子序数及分数含量；不使用结构,只有化学组成无晶体结构,comparable,C02
+target_property,28个选定回归任务；实验和计算标签混合,拟筛选性质及标签来源未指定,unknown,C03;C06
+data_size,312至341788；表1为原始规模,目标训练样本数未提供,unknown,C03;C04
+split,Matbench五折；Extended固定种子随机划分；去除跨集合同组成,整个未见化学体系的新材料,mismatch,C04;C05;C19
+split_ratio,表1原始72/8/20或70/15/15；去重后可变,目标划分比例未提供,unknown,C04;C05
+label_aggregation,OQMD及MP取最低形成焓对应目标；其他均值,具体新材料的结构与加工状态及标签未提供,unknown,C05;C20
+metric,同任务MAE点估计；越低越好,筛选排序命中率与阈值成功率,mismatch,C06;C21
+baseline,Roost、ElemNet、Magpie RF；默认参数且CrabNet部分验证调优,无目标域同条件比较,unknown,C07;C08;C22
+strict_dominance,图1存在Roost或RF更优的任务,以普遍严格领先作为选型依据,mismatch,C08;C09
+automatminer,仅expt_gap与steels_yield重点可比；其余用结构,只有组成的研究需求,comparable,C11
+IRNet,只引用外文献结果；未重训；带隙IRNet略低,需要同数据与划分的性能比较,unknown,C13
+repeatability,固定种子42；steels_yield有定性重复描述,新体系多初始化稳定性,mismatch,C14;C15;C21
+uncertainty,aleatoric输出；epistemic初始化研究未做,新体系筛选风险及分布外校准,mismatch,C14;C16;C21
+Si_O_demo,SiO2已在训练；展示沿组成变化的预测,完全未见化学体系的验证,mismatch,C17;C18;C19
+units,steels_yield正文写GPa；原始标签未提供,用于绝对误差阈值的可信单位,unknown,C11;C12

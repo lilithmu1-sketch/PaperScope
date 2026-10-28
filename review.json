@@ -1,0 +1,271 @@
+{
+  "schema_version": "bounded-review-v1",
+  "selections": [
+    {
+      "path": "materials/A-crabnet-原文定位.txt",
+      "sha256": "caf79b3823badd3ff749b1519364bcd465ec77999429e9d3940f23abe22265bc",
+      "start": 8205,
+      "end": 10605,
+      "purpose": "A: actual input evidence for scope, methods or information gap"
+    },
+    {
+      "path": "materials/A-crabnet-原文定位.txt",
+      "sha256": "caf79b3823badd3ff749b1519364bcd465ec77999429e9d3940f23abe22265bc",
+      "start": 38511,
+      "end": 40911,
+      "purpose": "A: fixed-seed and uninvestigated initialization uncertainty; limits and counterevidence"
+    },
+    {
+      "path": "materials/B-matbench-discovery-原文定位.txt",
+      "sha256": "678064caadcebfa7fece5aca8deb1b95686c405a2bf9a0548226a296246d1359",
+      "start": 38302,
+      "end": 40702,
+      "purpose": "B: actual input evidence for scope, methods or information gap"
+    },
+    {
+      "path": "materials/B-matbench-correction-原文定位.txt",
+      "sha256": "69b291cc8393333e17d6a91f950d9ec4c3529a7bf81c4691cda124bf57ef36d6",
+      "start": 0,
+      "end": 756,
+      "purpose": "B: actual input evidence for scope, methods or information gap"
+    },
+    {
+      "path": "materials/C-crabnet-incomplete-原文定位.txt",
+      "sha256": "f080ce637f4761f98a5eeddd572587b2e0331371b5c087429279ea7a87d1e069",
+      "start": 0,
+      "end": 2400,
+      "purpose": "C: actual input evidence for scope, methods or information gap"
+    },
+    {
+      "path": "runs/R01/answer.md",
+      "sha256": "d0a80074e45f7355ee3dbfce93c1c0e247ba887fcb16643bcf4b87f4119d9364",
+      "start": 0,
+      "end": 2400,
+      "purpose": "R01: actual unedited core output"
+    },
+    {
+      "path": "runs/R01/claims.json",
+      "sha256": "88e77e81eff02f970b2a799a7cc27081618221dfec8899382bad7df03931a9ed",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R01: actual unedited core output"
+    },
+    {
+      "path": "runs/R01/comparison.csv",
+      "sha256": "ac413e36b4071122a9e2e656a2fe014a6ec10aaea7fbdc2040204a478e6c462e",
+      "start": 0,
+      "end": 1084,
+      "purpose": "R01: actual unedited core output"
+    },
+    {
+      "path": "runs/R01/visible-export.jsonl",
+      "sha256": "a3762791f7c8f75810ba94870bd6741766733fb9b7eac574f9c33be0bdc99c95",
+      "start": 0,
+      "end": 700,
+      "purpose": "R01: original visible session record"
+    },
+    {
+      "path": "runs/R02/answer.md",
+      "sha256": "85df4bb6de6ae6bf4bf87f6ebd2a8af1947c9ae6c17814f71d6e8906606b0bc8",
+      "start": 0,
+      "end": 2400,
+      "purpose": "R02: actual unedited core output"
+    },
+    {
+      "path": "runs/R02/claims.json",
+      "sha256": "9bbeea6de999b6cd3ed1b1c4d0c11e1e19a6be8fec3dd161b4c84270fe35f2cf",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R02: actual unedited core output"
+    },
+    {
+      "path": "runs/R02/comparison.csv",
+      "sha256": "942131715beca0f4c4e81b402a6afd0ad8786d161b95a679d42162052efda1a0",
+      "start": 0,
+      "end": 825,
+      "purpose": "R02: actual unedited core output"
+    },
+    {
+      "path": "runs/R02/visible-export.jsonl",
+      "sha256": "39af71793f30fea577b9361017b9c153598f93cf519ee0dc8cbbbaf4cc3dbcf7",
+      "start": 0,
+      "end": 700,
+      "purpose": "R02: original visible session record"
+    },
+    {
+      "path": "runs/R03/answer.md",
+      "sha256": "3a550e4155af8776dd76c37bfc294e1b83cb15b0aa043db977b085b96f4bc04a",
+      "start": 0,
+      "end": 2400,
+      "purpose": "R03: actual unedited core output"
+    },
+    {
+      "path": "runs/R03/claims.json",
+      "sha256": "4c2615a0350839b3f12f7d5b6234c5792c2ebc0eb5dd43c01af2efc4275df503",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R03: actual unedited core output"
+    },
+    {
+      "path": "runs/R03/comparison.csv",
+      "sha256": "eaf2ebb153058a6de0edaa0bd162094d3415cec6043e59a2db789d00ec4b33ee",
+      "start": 0,
+      "end": 948,
+      "purpose": "R03: actual unedited core output"
+    },
+    {
+      "path": "runs/R03/visible-export.jsonl",
+      "sha256": "827c98ae8b2a5bbcfb0d89133f21ed167f740ea69f647505438f1fbec425e456",
+      "start": 0,
+      "end": 700,
+      "purpose": "R03: original visible session record"
+    },
+    {
+      "path": "runs/R04/answer.md",
+      "sha256": "6098cfb24981f1b8a119d6c32d95a3adb9df1cf6ab922175381f9566bf269f04",
+      "start": 0,
+      "end": 2400,
+      "purpose": "R04: actual unedited core output"
+    },
+    {
+      "path": "runs/R04/claims.json",
+      "sha256": "c742d905d0f9283447c3523d67b4277cf3031fefec982d62c73597dbd22e4d93",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R04: actual unedited core output"
+    },
+    {
+      "path": "runs/R04/comparison.csv",
+      "sha256": "a24bcc4645d19eebf075be44097672b0d00eb5e68326d6bc8f17b891c47177e7",
+      "start": 0,
+      "end": 734,
+      "purpose": "R04: actual unedited core output"
+    },
+    {
+      "path": "runs/R04/visible-export.jsonl",
+      "sha256": "08de500bf4feb258e43a242c9be083b25c08b3362c08e555ebc5e9ebff4c9835",
+      "start": 0,
+      "end": 700,
+      "purpose": "R04: original visible session record"
+    },
+    {
+      "path": "runs/R05/answer.md",
+      "sha256": "68a68a9314f6d8cd9943ae2c06aba9820a39884b54c405b906dd1f66680a896c",
+      "start": 0,
+      "end": 2317,
+      "purpose": "R05: actual unedited core output"
+    },
+    {
+      "path": "runs/R05/claims.json",
+      "sha256": "d600fd94556d8144e72fd75b6da36418950062cf59f07bad8e963aeac0c41eaf",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R05: actual unedited core output"
+    },
+    {
+      "path": "runs/R05/comparison.csv",
+      "sha256": "ee09d29fa7381cb5a92e02e9b5e58be85ef6b047e8c467630c4d5e0eb99c70fc",
+      "start": 0,
+      "end": 679,
+      "purpose": "R05: actual unedited core output"
+    },
+    {
+      "path": "runs/R05/visible-export.jsonl",
+      "sha256": "b02d7b6cc2df82b2fa1f5a1c482e06797b810078059520370d49bfb48eb2871a",
+      "start": 0,
+      "end": 700,
+      "purpose": "R05: original visible session record"
+    },
+    {
+      "path": "runs/R06/answer.md",
+      "sha256": "4eeae9b0207b294379fd76962fe57e7a157448b27ad7b4793a5be9efc3d73923",
+      "start": 0,
+      "end": 880,
+      "purpose": "R06: actual unedited core output"
+    },
+    {
+      "path": "runs/R06/claims.json",
+      "sha256": "5ec275cbb8b1982046686832103189b8737485fcf4ac3f014ec6f1e1a995ecec",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R06: actual unedited core output"
+    },
+    {
+      "path": "runs/R06/comparison.csv",
+      "sha256": "50c7493f215252c26c18b10d602a5646f49d1b06d193bb932a6e85df9a99db20",
+      "start": 0,
+      "end": 345,
+      "purpose": "R06: actual unedited core output"
+    },
+    {
+      "path": "runs/R06/visible-export.jsonl",
+      "sha256": "93140aed4cf6f35c9dfe45c6ddbf89e466903ddd2b97179e7a78381b8df35a65",
+      "start": 0,
+      "end": 700,
+      "purpose": "R06: original visible session record"
+    },
+    {
+      "path": "runs/R07/answer.md",
+      "sha256": "1019a84337a9484bffaf0576f9ca8693cda522275907148ceeab28012fcd7438",
+      "start": 0,
+      "end": 2400,
+      "purpose": "R07: actual unedited core output"
+    },
+    {
+      "path": "runs/R07/claims.json",
+      "sha256": "752a3d6792652a01ef10d7c40dd63e437c28d12171d7795591fe2c874f68449c",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R07: actual unedited core output"
+    },
+    {
+      "path": "runs/R07/comparison.csv",
+      "sha256": "aee854d1f360108f5f50f1686518012d6d5fb24955a038a17f7205345dc14ba0",
+      "start": 0,
+      "end": 1055,
+      "purpose": "R07: actual unedited core output"
+    },
+    {
+      "path": "runs/R07/visible-export.jsonl",
+      "sha256": "918b360c2007da78d7c0ecf517be820413f189f6757566c1b3ac69ba52906e8d",
+      "start": 0,
+      "end": 700,
+      "purpose": "R07: original visible session record"
+    },
+    {
+      "path": "runs/R08/answer.md",
+      "sha256": "71806342f3b27db74289f5cf061379898bdb1ae0a325d99e9e5e36eac29b8d8e",
+      "start": 0,
+      "end": 851,
+      "purpose": "R08: actual unedited core output"
+    },
+    {
+      "path": "runs/R08/claims.json",
+      "sha256": "97d47027e51705f6d6afb6be0c69d98ca51fe7eed223005cbd4eb7a92b3fb38f",
+      "start": 0,
+      "end": 1800,
+      "purpose": "R08: actual unedited core output"
+    },
+    {
+      "path": "runs/R08/comparison.csv",
+      "sha256": "897f7a0609b41152cf6c578f332d0f5ff133219112f1813006bdcec13b0bc753",
+      "start": 0,
+      "end": 413,
+      "purpose": "R08: actual unedited core output"
+    },
+    {
+      "path": "runs/R08/visible-export.jsonl",
+      "sha256": "904d1742ed96fb0f9811ec38b11b5a48559cc50d83c7aeb47ebbf14fb74a5d16",
+      "start": 0,
+      "end": 700,
+      "purpose": "R08: original visible session record"
+    },
+    {
+      "path": "runs/R01/checks.json",
+      "sha256": "b4f1ba8c2f67ab3c10ccaaea1d4ab737a15aaa71c33df571fee35259dbe293ea",
+      "start": 0,
+      "end": 1200,
+      "purpose": "Retained first failed checker result; precise-anchor compatibility fix is disclosed, raw answers unchanged"
+    }
+  ]
+}

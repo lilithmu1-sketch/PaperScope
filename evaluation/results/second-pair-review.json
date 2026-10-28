@@ -1,0 +1,267 @@
+{
+  "reviewed_at": "2026-10-28T01:43:00.413768+00:00",
+  "reviewer": "Project development AI assistant, same model family as execution; group labels visible; not independent human or expert review",
+  "method": "Compared original answers/claims with frozen acceptance rubric, corpus and original PDF page 4 figure; raw answers unchanged",
+  "records": [
+    {
+      "run_id": "R03",
+      "criteria": [
+        {
+          "criterion": "A01",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C02",
+            "C20"
+          ],
+          "reason": "明确组成输入与结构信息边界，并区分目标筛选场景。"
+        },
+        {
+          "criterion": "A02",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C03"
+          ],
+          "reason": "正确给出28任务、10+18组成及数据范围。"
+        },
+        {
+          "criterion": "A03",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C04",
+            "C17"
+          ],
+          "reason": "准确区分五折和固定种子划分，不将其写成化学体系整体留出。"
+        },
+        {
+          "criterion": "A04",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C05"
+          ],
+          "reason": "正确描述重复组成处理及清理后比例可能改变。"
+        },
+        {
+          "criterion": "A05",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C06"
+          ],
+          "reason": "正确解释MAE与性质尺度，未据点估计宣布统计显著性。"
+        },
+        {
+          "criterion": "A06",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C01",
+            "C07"
+          ],
+          "reason": "识别Roost总体相近，给出图1反例；数值已另对照原页图。"
+        },
+        {
+          "criterion": "A07",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C09"
+          ],
+          "reason": "记录mat2vec相对one-hot的例外，而非宣称所有任务胜出。"
+        },
+        {
+          "criterion": "A08",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C08"
+          ],
+          "reason": "识别验证集调参条件不对称，未误称测试集泄漏。"
+        },
+        {
+          "criterion": "A09",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C10"
+          ],
+          "reason": "限定Automatminer直接比较的两个组成任务，保留单位疑问。"
+        },
+        {
+          "criterion": "A10",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C13",
+            "C14",
+            "C15",
+            "C18"
+          ],
+          "reason": "区分固定seed、局部重复训练陈述及未研究的初始化不确定性。"
+        },
+        {
+          "criterion": "A11",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C17",
+            "C21"
+          ],
+          "reason": "对未见体系采用有边界的推断；目标域误差/命中率保留未知。"
+        },
+        {
+          "criterion": "A12",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C18",
+            "C19"
+          ],
+          "reason": "区分事实、推断、未知并给最小后续材料线索；未声称访问未提供附件。"
+        }
+      ],
+      "rubric_points": 24,
+      "rubric_max": 24,
+      "scope": "12 predefined necessary-information criteria; not exhaustive accuracy of every assertion"
+    },
+    {
+      "run_id": "R04",
+      "criteria": [
+        {
+          "criterion": "A01",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C01",
+            "C17"
+          ],
+          "reason": "明确组成输入与结构信息边界，并区分目标筛选场景。"
+        },
+        {
+          "criterion": "A02",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C02"
+          ],
+          "reason": "正确给出28任务、10+18组成及数据范围。"
+        },
+        {
+          "criterion": "A03",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C03",
+            "C16"
+          ],
+          "reason": "准确区分五折和固定种子划分，不将其写成化学体系整体留出。"
+        },
+        {
+          "criterion": "A04",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C04"
+          ],
+          "reason": "正确描述重复组成处理及清理后比例可能改变。"
+        },
+        {
+          "criterion": "A05",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C05",
+            "C18"
+          ],
+          "reason": "正确解释MAE与性质尺度，未据点估计宣布统计显著性。"
+        },
+        {
+          "criterion": "A06",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C06",
+            "C07"
+          ],
+          "reason": "识别Roost总体相近，给出图1反例；数值已另对照原页图。"
+        },
+        {
+          "criterion": "A07",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C08"
+          ],
+          "reason": "记录mat2vec相对one-hot的例外，而非宣称所有任务胜出。"
+        },
+        {
+          "criterion": "A08",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C10"
+          ],
+          "reason": "识别验证集调参条件不对称，未误称测试集泄漏。"
+        },
+        {
+          "criterion": "A09",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C09"
+          ],
+          "reason": "限定Automatminer直接比较的两个组成任务，保留单位疑问。"
+        },
+        {
+          "criterion": "A10",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C12",
+            "C13",
+            "C14",
+            "C18"
+          ],
+          "reason": "区分固定seed、局部重复训练陈述及未研究的初始化不确定性。"
+        },
+        {
+          "criterion": "A11",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C16",
+            "C18"
+          ],
+          "reason": "对未见体系采用有边界的推断；目标域误差/命中率保留未知。"
+        },
+        {
+          "criterion": "A12",
+          "reviewer_points": 2,
+          "max_points": 2,
+          "output_claim_ids": [
+            "C18",
+            "C19"
+          ],
+          "reason": "区分事实、推断、未知并给最小后续材料线索；未声称访问未提供附件。"
+        }
+      ],
+      "rubric_points": 24,
+      "rubric_max": 24,
+      "scope": "12 predefined necessary-information criteria; not exhaustive accuracy of every assertion"
+    }
+  ],
+  "paired_change_with_minus_without": 0,
+  "conclusion": "second pair shows no necessary-information coverage gain; both answers satisfy these 12 criteria. More text or claims is not counted as improvement.",
+  "post_run_checker_fix": "Both sources rendered compound anchors source_id:block_id. Checker v1.1 accepts exact source qualification uniformly; original failing R01 check retained. No model output or frozen instruction was changed.",
+  "limitations": [
+    "Small sample",
+    "Same model family as reviewer",
+    "Unblinded evaluation",
+    "No human scientific expert validation",
+    "Does not determine competition score"
+  ],
+  "competition_score": null
+}
