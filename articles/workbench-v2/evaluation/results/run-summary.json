@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-28T01:53:14.974721+00:00",
+  "completed_runs": 2,
+  "planned_runs": 2,
+  "model_consistent_so_far": true,
+  "rows": [
+    {
+      "run_id": "R01",
+      "case": "A",
+      "condition": "without_skill",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "duration_seconds": 368.055,
+      "tool_calls": 9,
+      "input_tokens": 459665,
+      "cached_input_tokens": 422528,
+      "output_tokens": 8346,
+      "rubric_points": 24,
+      "rubric_max": 24,
+      "mechanical_checks_passed": true,
+      "cost": "unavailable"
+    },
+    {
+      "run_id": "R02",
+      "case": "A",
+      "condition": "with_skill",
+      "model": "gpt-6.1-sol",
+      "effort": "medium",
+      "duration_seconds": 392.889,
+      "tool_calls": 11,
+      "input_tokens": 584278,
+      "cached_input_tokens": 535296,
+      "output_tokens": 10175,
+      "rubric_points": 24,
+      "rubric_max": 24,
+      "mechanical_checks_passed": true,
+      "cost": "unavailable"
+    }
+  ],
+  "competition_score": null,
+  "limitations": [
+    "Same-family development-AI review, not independent human review",
+    "Small paired sample",
+    "Wall time influenced by shared host/concurrency",
+    "Backend snapshot/seed unavailable",
+    "No currency price inferred from token counts"
+  ],
+  "scope": "Subset of authentic V1 metrics, first pair; not new measurements"
+}

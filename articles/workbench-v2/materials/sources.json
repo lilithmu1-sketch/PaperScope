@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "source_id": "crabnet",
+      "kind": "anchored_text",
+      "path": "materials/crabnet-原文定位.txt",
+      "sha256": "caf79b3823badd3ff749b1519364bcd465ec77999429e9d3940f23abe22265bc",
+      "original_pdf_sha256": "3a19cce38b13a335d25f94c565e3284eee84ca498cf5f95c35a26040f5e3f740",
+      "scope": "Hash registers the packaged faithful anchored text, not an assertion that a full PDF is packaged here. Original attribution and PDF hash: materials/source.json."
+    }
+  ]
+}

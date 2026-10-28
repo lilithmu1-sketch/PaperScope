@@ -1,0 +1,61 @@
+{
+  "schema_version": "paperscope-workbench-input/1",
+  "scope": "First actual pair only; copied original core outputs unchanged",
+  "runs": [
+    {
+      "id": "R01",
+      "case_id": "A",
+      "condition": "without_skill",
+      "skill_version": "none",
+      "output_files": [
+        "runs/R01/answer.md",
+        "runs/R01/claims.json",
+        "runs/R01/comparison.csv",
+        "runs/R01/checks-v1.1.json",
+        "runs/R01/checks.json",
+        "runs/R01/provenance.json"
+      ],
+      "primary_output_files": [
+        "runs/R01/answer.md",
+        "runs/R01/claims.json",
+        "runs/R01/comparison.csv"
+      ],
+      "trace_files": [
+        "runs/R01/visible-export.jsonl"
+      ],
+      "started_at": "2026-10-28T01:27:14.538Z",
+      "duration_seconds": 368.055,
+      "cost": null,
+      "cost_unavailable_reason": "Account monetary cost not exposed by the local session log; token counts do not prove a price.",
+      "human_steps": [],
+      "result": "Actual unedited output; see mechanical checks and semantic evaluation in report. No claim of success based solely on file presence."
+    },
+    {
+      "id": "R02",
+      "case_id": "A",
+      "condition": "with_skill",
+      "skill_version": "paperscope-1.0-frozen",
+      "output_files": [
+        "runs/R02/answer.md",
+        "runs/R02/claims.json",
+        "runs/R02/comparison.csv",
+        "runs/R02/checks-v1.1.json",
+        "runs/R02/provenance.json"
+      ],
+      "primary_output_files": [
+        "runs/R02/answer.md",
+        "runs/R02/claims.json",
+        "runs/R02/comparison.csv"
+      ],
+      "trace_files": [
+        "runs/R02/visible-export.jsonl"
+      ],
+      "started_at": "2026-10-28T01:27:24.577Z",
+      "duration_seconds": 392.889,
+      "cost": null,
+      "cost_unavailable_reason": "Account monetary cost not exposed by the local session log; token counts do not prove a price.",
+      "human_steps": [],
+      "result": "Actual unedited output; see mechanical checks and semantic evaluation in report. No claim of success based solely on file presence."
+    }
+  ]
+}

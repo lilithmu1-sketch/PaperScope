@@ -1,0 +1,14 @@
+item,paper_setting,target_setting,comparability,evidence_ids
+输入信息,原子序数与分数含量；无结构,只有化学组成；无晶体结构,comparable,C02
+训练先验,默认mat2vec；HotCrab为one-hot,允许何种先验未说明,unknown,C02;C08
+性质任务,28个回归任务；计算与实验数据混合,具体筛选性质与标签来源未说明,unknown,C03;C24
+数据规模,312至341788；表1为原始计数,目标训练集和候选规模未说明,unknown,C03;C04
+测试分布,Matbench五折；Extended固定种子划分；组成排重,未见化学体系的新材料,mismatch,C04;C05;C15
+标签含义,MP/OQMD取最低形成焓对应目标；其他重复目标均值,目标是否要求特定结构或工艺未说明,unknown,C05;C25
+评价目标,测试集MAE；越低越好,筛选命中率与容许误差未给定,unknown,C07;C24
+主要比较条件,Roost/CrabNet/ElemNet/RF共用处理后数据；调参机会不完全一致,希望确定目标任务最佳方法,unknown,C06;C08;C09;C10
+结构方法比较,Automatminer仅两项可重点作无结构比较,输入缺晶体结构,mismatch,C12
+新体系例证,Si–O趋势预测；训练中有SiO2,完全未见体系的可靠筛选,mismatch,C16;C17
+运行不确定性,固定种子42；钢任务定性重训；认知不确定性未研究,目标体系稳健性与多种子统计未知,unknown,C18;C19;C20;C22
+预测区间,输出偶然不确定性,未见体系误差覆盖可靠性未知,unknown,C21;C22;C24
+钢任务单位,正文95.2对91.7 GPa；真实数据单位未核实,目标是否为钢任务未说明,unknown,C13;C23
