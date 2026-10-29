@@ -1,0 +1,2064 @@
+{
+  "schema": "paperscope-bohrium-bridge/0.1",
+  "calls": [
+    {
+      "operation": "graph",
+      "doi": "10.1038/s41524-021-00545-1",
+      "api_ok": false,
+      "request_id": "7863f6bc-f1c4-406c-bb61-3bed1b41f23d",
+      "cli_version": "2.9.3",
+      "billing": {
+        "channel": "quota",
+        "resource": "lkm",
+        "remaining": 999
+      },
+      "semantic_support_verified": false,
+      "paper_id": "812361083858714625",
+      "status": "empty_graph",
+      "nodes": 0,
+      "edges": 0,
+      "error": {
+        "code": "UNKNOWN",
+        "http": 500,
+        "message": "paper found but knowledge graph is empty",
+        "request_id": "7863f6bc-f1c4-406c-bb61-3bed1b41f23d",
+        "retryable": false
+      },
+      "number": 1,
+      "captured_response_sha256": "bef662d92be63073b3c0ed936e71020ce8285a7a3c15aa89468798d85dcb60d5",
+      "capture_kind": "field_projection_of_original_cli_json_not_full_stdout"
+    },
+    {
+      "operation": "graph",
+      "doi": "10.1038/s42256-025-01055-1",
+      "api_ok": false,
+      "request_id": "914dd7e6-9b22-46c4-8157-582dd9d10067",
+      "cli_version": "2.9.3",
+      "billing": {
+        "channel": "quota",
+        "resource": "lkm",
+        "remaining": 998
+      },
+      "semantic_support_verified": false,
+      "paper_id": "1144324869857476610",
+      "status": "empty_graph",
+      "nodes": 0,
+      "edges": 0,
+      "error": {
+        "code": "UNKNOWN",
+        "http": 500,
+        "message": "paper found but knowledge graph is empty",
+        "request_id": "914dd7e6-9b22-46c4-8157-582dd9d10067",
+        "retryable": false
+      },
+      "number": 2,
+      "captured_response_sha256": "d0e755830827c1a0739c2b20d0fbff1a0cef68a8bc2c8e52688f160836f43ef6",
+      "capture_kind": "field_projection_of_original_cli_json_not_full_stdout"
+    },
+    {
+      "operation": "reference",
+      "doi": "10.1038/s41524-021-00545-1",
+      "api_ok": true,
+      "request_id": "68ac957c-9ebf-4b8f-a352-d00f0deaafb7",
+      "cli_version": "2.9.3",
+      "billing": {
+        "channel": "quota",
+        "resource": "lkm",
+        "remaining": 997
+      },
+      "semantic_support_verified": false,
+      "paper_id": "812361083858714625",
+      "status": "bibliography_returned",
+      "references": 73,
+      "title_located": 60,
+      "entries": [
+        {
+          "response_index": 0,
+          "title": "Thermal conductivity of the gadolinium calcium silicate apatites: Effect of different point defect types",
+          "doi": "10.1016/j.actamat.2011.03.008",
+          "paper_id": "811671960948834307",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 1,
+          "title": "Predicting the Band Gaps of Inorganic Solids by Machine Learning",
+          "doi": "10.1021/acs.jpclett.8b00124",
+          "paper_id": "813050280135360513",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b05",
+              "pdf_page": 8,
+              "block_sha256": "3288962d37a7a29a32a90cba057c0188dde3df18954e44a53f254bd86e36d295"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 2,
+          "title": "QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b04",
+              "pdf_page": 9,
+              "block_sha256": "232ee982b0354f6106811c779afe80973022ee3610d043d02f84ec72efd92914"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 3,
+          "title": "SchNet – A deep learning architecture for molecules and materials",
+          "doi": "10.1063/1.5019779",
+          "paper_id": "813047779256434689",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b04",
+              "pdf_page": 8,
+              "block_sha256": "03f41990f6c68c50bfee4d6f6255d6fd766bbd7e1a6425d878578cac389c8006"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 4,
+          "title": "A Statistical Learning Framework for Materials Science: Application to Elastic Moduli of k-nary Inorganic Polycrystalline Compounds",
+          "doi": "10.1038/srep34256",
+          "paper_id": "811133635796140033",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 5,
+          "title": "High-throughput screening of inorganic compounds for the discovery of novel dielectric and optical materials",
+          "doi": "10.1038/sdata.2016.134",
+          "paper_id": "811074052050386944",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b07",
+              "pdf_page": 9,
+              "block_sha256": "63969355523a928541d8a047b871b26d73387595877a4aedfa9b1c5d82a826a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 6,
+          "title": "Universal fragment descriptors for predicting properties of inorganic crystals",
+          "doi": "10.1038/ncomms15679",
+          "paper_id": "813128444794634242",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 7,
+          "title": "High-throughput density-functional perturbation theory phonons for inorganic materials",
+          "doi": "10.1038/sdata.2018.65",
+          "paper_id": "813038747397390337",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b07",
+              "pdf_page": 9,
+              "block_sha256": "63969355523a928541d8a047b871b26d73387595877a4aedfa9b1c5d82a826a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 8,
+          "title": "Attention is All you Need",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 9,
+          "title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties",
+          "doi": "10.1103/PhysRevLett.120.145301",
+          "paper_id": "817343424595230722",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b04",
+              "pdf_page": 8,
+              "block_sha256": "03f41990f6c68c50bfee4d6f6255d6fd766bbd7e1a6425d878578cac389c8006"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 10,
+          "title": "Charting the complete elastic properties of inorganic crystalline compounds",
+          "doi": "10.1038/sdata.2015.9",
+          "paper_id": "814645235849101312",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b07",
+              "pdf_page": 9,
+              "block_sha256": "63969355523a928541d8a047b871b26d73387595877a4aedfa9b1c5d82a826a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 11,
+          "title": "A RESTful API for exchanging materials data in the AFLOWLIB.org consortium",
+          "doi": "10.1016/j.commatsci.2014.05.014",
+          "paper_id": "814714332561539072",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 12,
+          "title": "Anisotropic Thermal Diffusivity and Conductivity of La-Doped Strontium Niobate Sr 2 Nb 2 O 7",
+          "doi": "10.1111/j.1551-2916.2009.03533.x",
+          "paper_id": "811810446972551168",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 13,
+          "title": "Combinatorial and High-Throughput Materials Science",
+          "doi": "10.1002/anie.200603675",
+          "paper_id": "811976416714293249",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b03",
+              "pdf_page": 8,
+              "block_sha256": "8a536021c3e6122456d08fbfe5fd8db9c752efef7697627d0d73bf16333371eb"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 14,
+          "title": "Information-Theoretic Approach for the Discovery of Design Rules for Crystal Chemistry",
+          "doi": "10.1021/ci200628z",
+          "paper_id": "813298422307094529",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b05",
+              "pdf_page": 8,
+              "block_sha256": "3288962d37a7a29a32a90cba057c0188dde3df18954e44a53f254bd86e36d295"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 15,
+          "title": "New developments in the Inorganic Crystal Structure Database (ICSD): accessibility in support of materials research and design",
+          "doi": "10.1107/s0108768102006948",
+          "paper_id": "813288683938512897",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 16,
+          "title": "Low temperature mechanical properties of boron-doped silicon",
+          "doi": "10.1103/physrevlett.68.3052",
+          "paper_id": "812683776772538369",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 17,
+          "title": "Predicting Crystal Structures with Data Mining of Quantum Calculations",
+          "doi": "10.1103/physrevlett.91.135503",
+          "paper_id": "812384885518893057",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b05",
+              "pdf_page": 8,
+              "block_sha256": "3288962d37a7a29a32a90cba057c0188dde3df18954e44a53f254bd86e36d295"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 18,
+          "title": "Predicting crystal structure by merging data mining with quantum mechanics",
+          "doi": "10.1038/nmat1691",
+          "paper_id": "812070795646861312",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b05",
+              "pdf_page": 8,
+              "block_sha256": "3288962d37a7a29a32a90cba057c0188dde3df18954e44a53f254bd86e36d295"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 19,
+          "title": "A general-purpose machine learning framework for predicting properties of inorganic materials",
+          "doi": "10.1038/npjcompumats.2016.28",
+          "paper_id": "811088422855770112",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b06",
+              "pdf_page": 9,
+              "block_sha256": "fbbf4494ac1c338ffb91856be218cf3d9d42a8448d5c9c8a52d093da9b556459"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 20,
+          "title": "Machine Learning Energies of 2 Million Elpasolite ( A B C 2 D 6 ) Crystals",
+          "doi": "10.1103/physrevlett.117.135502",
+          "paper_id": "811145487544483840",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 21,
+          "title": "Self-Attention Generative Adversarial Networks",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b04",
+              "pdf_page": 9,
+              "block_sha256": "232ee982b0354f6106811c779afe80973022ee3610d043d02f84ec72efd92914"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 22,
+          "title": "Image Super-Resolution Using Very Deep Residual Channel Attention Networks",
+          "doi": "10.1007/978-3-030-01234-2_18",
+          "paper_id": "812840647844167680",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b04",
+              "pdf_page": 9,
+              "block_sha256": "232ee982b0354f6106811c779afe80973022ee3610d043d02f84ec72efd92914"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 23,
+          "title": "Insightful classification of crystal structures using deep learning",
+          "doi": "10.1038/s41467-018-05169-6",
+          "paper_id": "813016405950595075",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b04",
+              "pdf_page": 8,
+              "block_sha256": "03f41990f6c68c50bfee4d6f6255d6fd766bbd7e1a6425d878578cac389c8006"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 24,
+          "title": "Machine Learning Directed Search for Ultraincompressible, Superhard Materials",
+          "doi": "10.1021/jacs.8b02717",
+          "paper_id": "813014305250213889",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 25,
+          "title": "The Materials Application Programming Interface (API): A simple, flexible and efficient API for materials data based on REpresentational State Transfer (REST) principles",
+          "doi": "10.1016/j.commatsci.2014.10.037",
+          "paper_id": "814681323493916676",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b07",
+              "pdf_page": 9,
+              "block_sha256": "63969355523a928541d8a047b871b26d73387595877a4aedfa9b1c5d82a826a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 26,
+          "title": "Matminer: An open source toolkit for materials data mining",
+          "doi": "10.1016/j.commatsci.2018.05.018",
+          "paper_id": "813031250611666944",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b06",
+              "pdf_page": 9,
+              "block_sha256": "fbbf4494ac1c338ffb91856be218cf3d9d42a8448d5c9c8a52d093da9b556459"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 27,
+          "title": "Character-Level Language Modeling with Deeper Self-Attention",
+          "doi": "10.1609/aaai.v33i01.33013159",
+          "paper_id": "812737388982829056",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b03",
+              "pdf_page": 9,
+              "block_sha256": "46b65e46b55639833a65d99d7764324fda0fbff32cacc5a32cc5d4e460cf8230"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 28,
+          "title": "Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures",
+          "doi": "10.18653/v1/D18-1458",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b03",
+              "pdf_page": 9,
+              "block_sha256": "46b65e46b55639833a65d99d7764324fda0fbff32cacc5a32cc5d4e460cf8230"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 29,
+          "title": "Spatio-Temporal Transformer Network for Video Restoration",
+          "doi": "10.1007/978-3-030-01219-9_7",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 30,
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "doi": "10.18653/v1/n19-1423",
+          "paper_id": "812751275480317953",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b03",
+              "pdf_page": 9,
+              "block_sha256": "46b65e46b55639833a65d99d7764324fda0fbff32cacc5a32cc5d4e460cf8230"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 31,
+          "title": "Finding Nature’s Missing Ternary Oxide Compounds Using Machine Learning and Density Functional Theory",
+          "doi": "10.1021/cm100795d",
+          "paper_id": "811782516032667650",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 32,
+          "title": "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction",
+          "doi": "10.1021/acscentsci.9b00576",
+          "paper_id": "812738812064038913",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 33,
+          "title": "ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition",
+          "doi": "10.1038/s41598-018-35934-y",
+          "paper_id": "812822734923890689",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b04",
+              "pdf_page": 8,
+              "block_sha256": "03f41990f6c68c50bfee4d6f6255d6fd766bbd7e1a6425d878578cac389c8006"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 34,
+          "title": "Music Transformer: Generating Music with Long-Term Structure",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 35,
+          "title": "High-Throughput Machine-Learning-Driven Synthesis of Full-Heusler Compounds",
+          "doi": "10.1021/acs.chemmater.6b02724",
+          "paper_id": "811145160938225665",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 36,
+          "title": "Identifying Structure–Property Relationships through SMILES Syntax Analysis with Self-Attention Mechanism",
+          "doi": "10.1021/acs.jcim.8b00803",
+          "paper_id": "812807867848458241",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 37,
+          "title": "Perspective: Web-based machine learning models for real-time screening of thermoelectric materials properties",
+          "doi": "10.1063/1.4952607",
+          "paper_id": "811270872210866177",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 38,
+          "title": "Machine Learning Prediction of Heat Capacity for Solid Inorganics",
+          "doi": "10.1007/s40192-018-0108-9",
+          "paper_id": "813031219489931264",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b05",
+              "pdf_page": 8,
+              "block_sha256": "3288962d37a7a29a32a90cba057c0188dde3df18954e44a53f254bd86e36d295"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 39,
+          "title": "Residual Non-local Attention Networks for Image Restoration",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 40,
+          "title": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation",
+          "doi": "10.1063/1.4812323",
+          "paper_id": "813210684010528768",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b07",
+              "pdf_page": 9,
+              "block_sha256": "63969355523a928541d8a047b871b26d73387595877a4aedfa9b1c5d82a826a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 41,
+          "title": "Computational screening of perovskite metal oxides for optimal solar light capture",
+          "doi": "10.1039/C1EE02717D",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b07",
+              "pdf_page": 9,
+              "block_sha256": "63969355523a928541d8a047b871b26d73387595877a4aedfa9b1c5d82a826a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 42,
+          "title": "The microscopic origin of the doping limits in semiconductors and wide-gap materials and recent developments in overcoming these limits: a review",
+          "doi": "10.1088/0953-8984/14/34/201",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 43,
+          "title": "Impact of the Doping Method on Conductivity and Thermopower in Semiconducting Polythiophenes",
+          "doi": "10.1002/aenm.201401072",
+          "paper_id": "814690524026896385",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 44,
+          "title": "Crystal structure representations for machine learning models of formation energies",
+          "doi": "10.1002/qua.24917",
+          "paper_id": "814638477135052800",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b04",
+              "pdf_page": 8,
+              "block_sha256": "03f41990f6c68c50bfee4d6f6255d6fd766bbd7e1a6425d878578cac389c8006"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 45,
+          "title": "Perspective: Materials informatics and big data: Realization of the “fourth paradigm” of science in materials science",
+          "doi": "10.1063/1.4946894",
+          "paper_id": "814533130303045633",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b03",
+              "pdf_page": 8,
+              "block_sha256": "8a536021c3e6122456d08fbfe5fd8db9c752efef7697627d0d73bf16333371eb"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 46,
+          "title": "Thermophysical properties of materials",
+          "doi": "10.1088/0305-4624/8/1/407",
+          "paper_id": "812437126174998529",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 47,
+          "title": ": A Review of the",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 48,
+          "title": "Machine learning with force-field-inspired descriptors for materials: Fast screening and mapping energy landscape",
+          "doi": "10.1103/physrevmaterials.2.083801",
+          "paper_id": "813010070454403072",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 49,
+          "title": "A simple model for the prediction of thermal conductivity in pure and doped insulating crystals",
+          "doi": "10.1063/1.1601676",
+          "paper_id": "812391864664588288",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b03",
+              "pdf_page": 9,
+              "block_sha256": "46b65e46b55639833a65d99d7764324fda0fbff32cacc5a32cc5d4e460cf8230"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 50,
+          "title": "The Open Quantum Materials Database (OQMD): assessing the accuracy of DFT formation energies",
+          "doi": "10.1038/npjcompumats.2015.10",
+          "paper_id": "814575595965906945",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b06",
+              "pdf_page": 9,
+              "block_sha256": "fbbf4494ac1c338ffb91856be218cf3d9d42a8448d5c9c8a52d093da9b556459"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 51,
+          "title": "Microstructure, precipitates and compressive properties of various holmium doped NiAl/Cr(Mo,Hf) eutectic alloys",
+          "doi": "10.1016/j.matdes.2011.06.026",
+          "paper_id": "811649948348055552",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 52,
+          "title": "Machine Learning and Energy Minimization Approaches for Crystal Structure Predictions: A Review and New Horizons",
+          "doi": "10.1021/acs.chemmater.7b05304",
+          "paper_id": "813033548423364610",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 53,
+          "title": "EDVR: Video Restoration With Enhanced Deformable Convolutional Networks",
+          "doi": "10.1109/cvprw.2019.00247",
+          "paper_id": "812652221014474754",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 54,
+          "title": "Language Models are Unsupervised Multitask Learners",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 55,
+          "title": "Large Batch Optimization for Deep Learning: Training BERT in 76 minutes",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 56,
+          "title": "Second-Order Attention Network for Single Image Super-Resolution",
+          "doi": "10.1109/cvpr.2019.01132",
+          "paper_id": "812690184888909824",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b04",
+              "pdf_page": 9,
+              "block_sha256": "232ee982b0354f6106811c779afe80973022ee3610d043d02f84ec72efd92914"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 57,
+          "title": "XLNet: Generalized Autoregressive Pretraining for Language Understanding",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b04",
+              "pdf_page": 9,
+              "block_sha256": "232ee982b0354f6106811c779afe80973022ee3610d043d02f84ec72efd92914"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 58,
+          "title": "Unsupervised word embeddings capture latent knowledge from materials science literature",
+          "doi": "10.1038/s41586-019-1335-8",
+          "paper_id": "812759679473025024",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b06",
+              "pdf_page": 9,
+              "block_sha256": "fbbf4494ac1c338ffb91856be218cf3d9d42a8448d5c9c8a52d093da9b556459"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 59,
+          "title": "IRNet",
+          "doi": "10.1145/3292500.3330703",
+          "paper_id": "812750896453648384",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 60,
+          "title": "Lookahead Optimizer: k steps forward, 1 step back",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 61,
+          "title": "Atomic Substitution to Balance Hardness, Ductility, and Sustainability in Molybdenum Tungsten Borocarbide",
+          "doi": "10.1021/acs.chemmater.9b02596",
+          "paper_id": "812747143386234885",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b02",
+              "pdf_page": 9,
+              "block_sha256": "78dc588758d9be018c39626d75b4c4da39a04eb0c4c97fede2eb6847f31ea714"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 62,
+          "title": "Emergent Tool Use From Multi-Agent Autocurricula",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 63,
+          "title": "Can Machine Learning Find Extraordinary Materials?",
+          "doi": "10.26434/chemrxiv.9396623",
+          "paper_id": "7478028773129486404",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b01",
+              "pdf_page": 9,
+              "block_sha256": "b1ad960ec50e8e4254f561198ba5af09b9fdb79f441ef34e7c751c5f35197200"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 64,
+          "title": "Predicting materials properties without crystal structure: deep representation learning from stoichiometry",
+          "doi": "10.1038/s41467-020-19964-7",
+          "paper_id": "812530489389744128",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b04",
+              "pdf_page": 8,
+              "block_sha256": "03f41990f6c68c50bfee4d6f6255d6fd766bbd7e1a6425d878578cac389c8006"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 65,
+          "title": "Grandmaster level in StarCraft II using multi-agent reinforcement learning",
+          "doi": "10.1038/s41586-019-1724-z",
+          "paper_id": "812718078507876352",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b05",
+              "pdf_page": 9,
+              "block_sha256": "08762c0fa1cc3631d2e6124404030bee9d3132efcf9e55160a7a62011a960bb5"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 66,
+          "title": "A critical examination of compound stability predictions from machine-learned formation energies",
+          "doi": "10.1038/s41524-020-00362-y",
+          "paper_id": "812591830339158017",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b06",
+              "pdf_page": 9,
+              "block_sha256": "fbbf4494ac1c338ffb91856be218cf3d9d42a8448d5c9c8a52d093da9b556459"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 67,
+          "title": "Is Domain Knowledge Necessary for Machine Learning Materials Properties?",
+          "doi": "10.1007/s40192-020-00179-z",
+          "paper_id": "812574746179796992",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b03",
+              "pdf_page": 9,
+              "block_sha256": "46b65e46b55639833a65d99d7764324fda0fbff32cacc5a32cc5d4e460cf8230"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 68,
+          "title": "Benchmarking materials property prediction methods: the Matbench test set and Automatminer reference algorithm",
+          "doi": "10.1038/s41524-020-00406-3",
+          "paper_id": "812568667844771840",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p09-b03",
+              "pdf_page": 9,
+              "block_sha256": "46b65e46b55639833a65d99d7764324fda0fbff32cacc5a32cc5d4e460cf8230"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 69,
+          "title": "Benchmark AFLOW Data Sets for Machine Learning",
+          "doi": "10.1007/s40192-020-00174-4",
+          "paper_id": "812635541357985794",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 70,
+          "title": "Machine Learning for Materials Scientists: An Introductory Guide Towards Best Practices",
+          "doi": "10.26434/chemrxiv.12249752",
+          "paper_id": "7478028639100502155",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b03",
+              "pdf_page": 8,
+              "block_sha256": "8a536021c3e6122456d08fbfe5fd8db9c752efef7697627d0d73bf16333371eb"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 71,
+          "title": "Best Practice Leads to the Best Materials Informatics",
+          "doi": "10.1016/j.matt.2020.06.003",
+          "paper_id": "812593975499161600",
+          "primary_title_matches": [
+            {
+              "source_id": "crabnet",
+              "block_id": "p08-b03",
+              "pdf_page": 8,
+              "block_sha256": "8a536021c3e6122456d08fbfe5fd8db9c752efef7697627d0d73bf16333371eb"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 72,
+          "title": "5分で分かる!? 有名論文ナナメ読み：Jacob Devlin et al. : BERT : Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        }
+      ],
+      "number": 3,
+      "captured_response_sha256": "128af7ded90ef284c99d42a8e1e2867a8907802b538126f2b644cab04f0c308f",
+      "capture_kind": "field_projection_of_original_cli_json_not_full_stdout"
+    },
+    {
+      "operation": "reference",
+      "doi": "10.1038/s42256-025-01055-1",
+      "api_ok": true,
+      "request_id": "333f7147-9282-4655-9203-630183117256",
+      "cli_version": "2.9.3",
+      "billing": {
+        "channel": "quota",
+        "resource": "lkm",
+        "remaining": 996
+      },
+      "semantic_support_verified": false,
+      "paper_id": "1144324869857476610",
+      "status": "bibliography_returned",
+      "references": 45,
+      "title_located": 41,
+      "entries": [
+        {
+          "response_index": 0,
+          "title": "Computational Screening of All Stoichiometric Inorganic Materials",
+          "doi": "10.1016/j.chempr.2016.09.010",
+          "paper_id": "811128793535086592",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 1,
+          "title": "Thermodynamic limit for synthesis of metastable inorganic materials",
+          "doi": "10.1126/sciadv.aaq0148",
+          "paper_id": "813039226265272322",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b02",
+              "pdf_page": 11,
+              "block_sha256": "a8c96b23fbcfc5d211a957ab54747cfbd690bccf199c9a839b4073a778d49ea8"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 2,
+          "title": "AFLOW: An automatic framework for high-throughput materials discovery",
+          "doi": "10.1016/j.commatsci.2012.02.005",
+          "paper_id": "813326687608504320",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 3,
+          "title": "The thermodynamic scale of inorganic crystalline metastability",
+          "doi": "10.1126/sciadv.1600225",
+          "paper_id": "811110013174022145",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 4,
+          "title": "A general-purpose machine learning framework for predicting properties of inorganic materials",
+          "doi": "10.1038/npjcompumats.2016.28",
+          "paper_id": "811088422855770112",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b06",
+              "pdf_page": 11,
+              "block_sha256": "a44633001ff85d6cdce169d0a9243a2c698bb6c3b4cff278e1e71adfb4666fab"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 5,
+          "title": "The inorganic crystal structure data base",
+          "doi": "10.1021/ci00038a003",
+          "paper_id": "812289386015096834",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b01",
+              "pdf_page": 10,
+              "block_sha256": "d3625cdaf0dbf163fa93f300e782c52ed0633e6ec0ec8357af2ad6703f9f2f46"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 6,
+          "title": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation",
+          "doi": "10.1063/1.4812323",
+          "paper_id": "813210684010528768",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 7,
+          "title": "NOMAD: The FAIR concept for big data-driven materials science",
+          "doi": "10.1557/mrs.2018.208",
+          "paper_id": "812847633495228417",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 8,
+          "title": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals",
+          "doi": "10.1021/acs.chemmater.9b01294",
+          "paper_id": "812784446510989314",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b03",
+              "pdf_page": 11,
+              "block_sha256": "072448136abbf2764849af90ad88021dc839b4bd577268941b18a098f7e6a9a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 9,
+          "title": "The optimal one dimensional periodic table: a modified Pettifor chemical scale from data mining",
+          "doi": "10.1088/1367-2630/18/9/093011",
+          "paper_id": "811151233464139776",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b03",
+              "pdf_page": 11,
+              "block_sha256": "072448136abbf2764849af90ad88021dc839b4bd577268941b18a098f7e6a9a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 10,
+          "title": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)",
+          "doi": "10.1007/s11837-013-0755-4",
+          "paper_id": "813196006475694083",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 11,
+          "title": "Screening billions of candidates for solid lithium-ion conductors: A transfer learning approach for small data",
+          "doi": "10.1063/1.5093220",
+          "paper_id": "812769514604199936",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 12,
+          "title": "Predicting materials properties without crystal structure: deep representation learning from stoichiometry",
+          "doi": "10.1038/s41467-020-19964-7",
+          "paper_id": "812530489389744128",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 13,
+          "title": "Machine learning enabled autonomous microstructural characterization in 3D samples",
+          "doi": "10.1038/s41524-019-0267-z",
+          "paper_id": "812692556553912323",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 14,
+          "title": "A critical examination of compound stability predictions from machine-learned formation energies",
+          "doi": "10.1038/s41524-020-00362-y",
+          "paper_id": "812591830339158017",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b03",
+              "pdf_page": 10,
+              "block_sha256": "f210e98f1bb43304ae37ca384c1a119e043fc3be9306d7e676265bc0daa5ed12"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 15,
+          "title": "Retrospective on a decade of machine learning for chemical discovery",
+          "doi": "10.1038/s41467-020-18556-9",
+          "paper_id": "812560914321506310",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 16,
+          "title": "Cautionary Guidelines for Machine Learning Studies with Combinatorial Datasets",
+          "doi": "10.1021/acscombsci.0c00118",
+          "paper_id": "812561124972036096",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 17,
+          "title": "Open Catalyst 2020 (OC20) Dataset and Community Challenges",
+          "doi": "10.1021/acscatal.0c04525",
+          "paper_id": "812466818395406336",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 18,
+          "title": "Supplementary Information for A general-purpose machine-learning force field for bulk and nanostructured phosphorus",
+          "doi": "",
+          "paper_id": "",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 19,
+          "title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials",
+          "doi": "10.1038/s41467-022-29939-5",
+          "paper_id": "864960072894120354",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b05",
+              "pdf_page": 11,
+              "block_sha256": "de5416fb0ac867b99d65ce907c1b129955de2c5d16bdb0060eddd7b3a246f051"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 20,
+          "title": "Predicting stable crystalline compounds using chemical similarity",
+          "doi": "10.1038/s41524-020-00481-6",
+          "paper_id": "812510541472858112",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b02",
+              "pdf_page": 11,
+              "block_sha256": "a8c96b23fbcfc5d211a957ab54747cfbd690bccf199c9a839b4073a778d49ea8"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 21,
+          "title": "Accelerating materials discovery with Bayesian optimization and graph deep learning",
+          "doi": "10.1016/j.mattod.2021.08.012",
+          "paper_id": "811710290973425666",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b04",
+              "pdf_page": 10,
+              "block_sha256": "5e2ebca6408dd53bb0764444f1c9a2bc07093a4d18538ab78633087ca0cb8c0c"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 22,
+          "title": "A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis",
+          "doi": "10.1038/s41467-021-23339-x",
+          "paper_id": "812369171852558336",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 23,
+          "title": "Atomistic Line Graph Neural Network for improved materials property predictions",
+          "doi": "10.1038/s41524-021-00650-1",
+          "paper_id": "813252203660705792",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b05",
+              "pdf_page": 11,
+              "block_sha256": "de5416fb0ac867b99d65ce907c1b129955de2c5d16bdb0060eddd7b3a246f051"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 24,
+          "title": "Rational Solid-State Synthesis Routes for Inorganic Materials",
+          "doi": "10.1021/jacs.1c04888",
+          "paper_id": "812300651307466755",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 25,
+          "title": "On the robustness of generalization of drug–drug interaction models",
+          "doi": "10.1186/s12859-021-04398-9",
+          "paper_id": "811702556198699008",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b04",
+              "pdf_page": 10,
+              "block_sha256": "5e2ebca6408dd53bb0764444f1c9a2bc07093a4d18538ab78633087ca0cb8c0c"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 26,
+          "title": "A universal graph deep learning interatomic potential for the periodic table",
+          "doi": "10.1038/s43588-022-00349-3",
+          "paper_id": "864984737691730038",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b04",
+              "pdf_page": 10,
+              "block_sha256": "5e2ebca6408dd53bb0764444f1c9a2bc07093a4d18538ab78633087ca0cb8c0c"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 27,
+          "title": "Data-augmentation for graph neural network learning of the relaxed energies of unrelaxed structures",
+          "doi": "10.1038/s41524-022-00891-8",
+          "paper_id": "817361009701289984",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b05",
+              "pdf_page": 11,
+              "block_sha256": "de5416fb0ac867b99d65ce907c1b129955de2c5d16bdb0060eddd7b3a246f051"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 28,
+          "title": "Rapid discovery of stable materials by coordinate-free coarse graining",
+          "doi": "10.1126/sciadv.abn4117",
+          "paper_id": "817355388717367296",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 29,
+          "title": "The Open Catalyst 2022 (OC22) Dataset and Challenges for Oxide Electrocatalysts",
+          "doi": "10.1021/acscatal.2c05426",
+          "paper_id": "864973773571359120",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 30,
+          "title": "A critical examination of robustness and generalizability of machine learning prediction of materials properties",
+          "doi": "10.1038/s41524-023-01012-9",
+          "paper_id": "852162659141812225",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b03",
+              "pdf_page": 11,
+              "block_sha256": "072448136abbf2764849af90ad88021dc839b4bd577268941b18a098f7e6a9a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 31,
+          "title": "Fast uncertainty estimates in deep learning interatomic potentials",
+          "doi": "10.1063/5.0136574",
+          "paper_id": "864974602994974893",
+          "primary_title_matches": [],
+          "title_match_status": "not_verified_by_literal_match",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 32,
+          "title": "AdsorbML: a leap in efficiency for adsorption energy calculations using generalizable machine learning potentials",
+          "doi": "10.1038/s41524-023-01121-5",
+          "paper_id": "912537828297015453",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 33,
+          "title": "Chemical reaction networks and opportunities for machine learning",
+          "doi": "10.1038/s43588-022-00369-z",
+          "paper_id": "822057336502747137",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 34,
+          "title": "Exploiting redundancy in large materials datasets for efficient machine learning with less data",
+          "doi": "10.1038/s41467-023-42992-y",
+          "paper_id": "949091732270612648",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b03",
+              "pdf_page": 11,
+              "block_sha256": "072448136abbf2764849af90ad88021dc839b4bd577268941b18a098f7e6a9a0"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 35,
+          "title": "JARVIS-Leaderboard: a large scale benchmark of materials design methods",
+          "doi": "10.1038/s41524-024-01259-w",
+          "paper_id": "995140978786435081",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b05",
+              "pdf_page": 10,
+              "block_sha256": "14b7c9fadb70e00daf46eadd3e84be8a27406b31f3d7837c1b3c06de22b26269"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 36,
+          "title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling",
+          "doi": "10.1038/s42256-023-00716-3",
+          "paper_id": "909618885471241043",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b04",
+              "pdf_page": 10,
+              "block_sha256": "5e2ebca6408dd53bb0764444f1c9a2bc07093a4d18538ab78633087ca0cb8c0c"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 37,
+          "title": "The Open DAC 2023 Dataset and Challenges for Sorbent Discovery in Direct Air Capture",
+          "doi": "10.1021/acscentsci.3c01629",
+          "paper_id": "1039136793326256158",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 38,
+          "title": "Scaling deep learning for materials discovery",
+          "doi": "10.1038/s41586-023-06735-9",
+          "paper_id": "937209348289986644",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b01",
+              "pdf_page": 11,
+              "block_sha256": "4f6cf3d29ebdc29d83d8d8c06aa58440d0be479fa2387549ffe3f03dffeee4e9"
+            },
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b02",
+              "pdf_page": 11,
+              "block_sha256": "a8c96b23fbcfc5d211a957ab54747cfbd690bccf199c9a839b4073a778d49ea8"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 39,
+          "title": "Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations",
+          "doi": "10.1021/acs.jctc.4c00190",
+          "paper_id": "1003477153922154498",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b04",
+              "pdf_page": 11,
+              "block_sha256": "8d5bccb71db664be2f0e3fc1b1001ccb628915c3821d80a9ac432e05b9e347d7"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 40,
+          "title": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery",
+          "doi": "10.1021/acs.chemmater.4c00643",
+          "paper_id": "991881087602917379",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b02",
+              "pdf_page": 11,
+              "block_sha256": "a8c96b23fbcfc5d211a957ab54747cfbd690bccf199c9a839b4073a778d49ea8"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 41,
+          "title": "Improving machine-learning models in materials science through large datasets",
+          "doi": "10.1016/j.mtphys.2024.101560",
+          "paper_id": "1055807346174853121",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 42,
+          "title": "Discovery of high-performance dielectric materials with machine-learning-guided search",
+          "doi": "10.1016/j.xcrp.2024.102241",
+          "paper_id": "1063208838091505703",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p10-b02",
+              "pdf_page": 10,
+              "block_sha256": "b16a93446f907218c4fe85b9a26ae988d58f2a866f0a8af6e281544d60cf906d"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 43,
+          "title": "Analytical ab initio hessian from a deep learning potential for transition state optimization",
+          "doi": "10.1038/s41467-024-52481-5",
+          "paper_id": "1063151254265397267",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b02",
+              "pdf_page": 11,
+              "block_sha256": "a8c96b23fbcfc5d211a957ab54747cfbd690bccf199c9a839b4073a778d49ea8"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        },
+        {
+          "response_index": 44,
+          "title": "Systematic softening in universal machine learning interatomic potentials",
+          "doi": "10.1038/s41524-024-01500-6",
+          "paper_id": "1084707485769531393",
+          "primary_title_matches": [
+            {
+              "source_id": "matbench-discovery",
+              "block_id": "p11-b02",
+              "pdf_page": 11,
+              "block_sha256": "a8c96b23fbcfc5d211a957ab54747cfbd690bccf199c9a839b4073a778d49ea8"
+            }
+          ],
+          "title_match_status": "literal_normalised_title_found",
+          "reference_doi_verified_against_primary_source": false,
+          "scientific_claim_verified": false
+        }
+      ],
+      "number": 4,
+      "captured_response_sha256": "fae13c8f5cc6e2d91f575fe1b373cf75a1553d9189ba63026fe203ae2d7bc7e7",
+      "capture_kind": "field_projection_of_original_cli_json_not_full_stdout"
+    },
+    {
+      "operation": "search",
+      "doi": "10.1038/s41524-021-00545-1",
+      "api_ok": true,
+      "request_id": "44c509c9-a6c3-493d-8f46-74a17f313bcb",
+      "cli_version": "2.9.3",
+      "billing": {
+        "channel": "quota",
+        "resource": "lkm",
+        "remaining": 995
+      },
+      "semantic_support_verified": false,
+      "status": "no_matches",
+      "query": "composition-based prediction benchmarking generalization uncertainty",
+      "returned_variables": 0,
+      "has_more": false,
+      "number": 5,
+      "captured_response_sha256": "fdfd080cc4211f9ca45b648aca40ade108829f287c34915d011ae4f4ad4ddf03",
+      "capture_kind": "field_projection_of_original_cli_json_not_full_stdout"
+    },
+    {
+      "operation": "search",
+      "doi": "10.1038/s42256-025-01055-1",
+      "api_ok": true,
+      "request_id": "4ff6a188-8f0e-40ab-b983-380b8be4ba0d",
+      "cli_version": "2.9.3",
+      "billing": {
+        "channel": "quota",
+        "resource": "lkm",
+        "remaining": 994
+      },
+      "semantic_support_verified": false,
+      "status": "no_matches",
+      "query": "crystal stability prediction benchmark evaluation extrapolation data leakage",
+      "returned_variables": 0,
+      "has_more": false,
+      "number": 6,
+      "captured_response_sha256": "313cdd40b0d9bb992f39cd25a55798b917411616d255e6fbb5933dedd945640f",
+      "capture_kind": "field_projection_of_original_cli_json_not_full_stdout"
+    }
+  ],
+  "billing_channels": {
+    "quota": 6
+  },
+  "nominal_reserved_cny": "0.30",
+  "actual_charge_amount_aggregated": false,
+  "actual_charge_amount_cny": null,
+  "all_recorded_requests_used_free_pool": true,
+  "references_returned": 118,
+  "references_with_literal_title_location": 101,
+  "sources": {
+    "10.1038/s41524-021-00545-1": {
+      "corpus_sha256": "fa891f1b86637eb42c12a9dbe4aada21b36a38ee211c1a533cbe83e5c9b7eb0e",
+      "primary_pdf_sha256_verified": "3a19cce38b13a335d25f94c565e3284eee84ca498cf5f95c35a26040f5e3f740"
+    },
+    "10.1038/s42256-025-01055-1": {
+      "corpus_sha256": "f8eff69338fe54e40de989bb0e110648e63b8a6919e0aa9eb24a2ff5713b6abb",
+      "primary_pdf_sha256_verified": "24349db88d4ed5cb1b0a6e601d026457f918d2ca30b5105afb33dde5c98853e4"
+    }
+  },
+  "semantic_support_verified": false,
+  "corpus_primary_pdf_text_equivalence_verified": false,
+  "limitations": [
+    "Literal title location is not a correctness rate, DOI verification, bibliography completeness, or scientific support.",
+    "Unmatched titles require further review; they are not automatically wrong references.",
+    "The two scoped queries returning no matches do not prove absence under every possible query.",
+    "This uses Bohrium CLI, not the scientific-space web chat. No graph reasoning was obtained.",
+    "The Matbench primary PDF is the registered historical snapshot; current performance must account for its separate correction."
+  ]
+}

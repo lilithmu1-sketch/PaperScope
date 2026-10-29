@@ -1,0 +1,94 @@
+{
+  "maximum_nominal_cny": "0.50",
+  "maximum_requests": 10,
+  "reserved_nominal_cny": "0.30",
+  "response_kind": "field_projection_of_original_cli_json_not_full_stdout",
+  "requests": [
+    {
+      "number": 1,
+      "operation": [
+        "lkm",
+        "graph",
+        "--doi",
+        "10.1038/s41524-021-00545-1"
+      ],
+      "reserved_nominal_cny": "0.05",
+      "response_sha256": "bef662d92be63073b3c0ed936e71020ce8285a7a3c15aa89468798d85dcb60d5",
+      "original_response_sha256": "4a6b8cd45874dadaa0fe3d908ad13972211627728efd7d05af35bffc79c0a77d"
+    },
+    {
+      "number": 2,
+      "operation": [
+        "lkm",
+        "graph",
+        "--doi",
+        "10.1038/s42256-025-01055-1"
+      ],
+      "reserved_nominal_cny": "0.05",
+      "response_sha256": "d0e755830827c1a0739c2b20d0fbff1a0cef68a8bc2c8e52688f160836f43ef6",
+      "original_response_sha256": "d37e6272f22f27e612d8ad263da38fb79c5a76e0a9d91d0e06909558a887fe33"
+    },
+    {
+      "number": 3,
+      "operation": [
+        "lkm",
+        "reference",
+        "--doi",
+        "10.1038/s41524-021-00545-1",
+        "--with-reference"
+      ],
+      "reserved_nominal_cny": "0.05",
+      "response_sha256": "128af7ded90ef284c99d42a8e1e2867a8907802b538126f2b644cab04f0c308f",
+      "original_response_sha256": "c0c838f29227331f7eb1029f99b0c61ec023766747a188f53bc2e87d0c83d44f"
+    },
+    {
+      "number": 4,
+      "operation": [
+        "lkm",
+        "reference",
+        "--doi",
+        "10.1038/s42256-025-01055-1",
+        "--with-reference",
+        "--with-abstract=false",
+        "--with-cited-by=false"
+      ],
+      "reserved_nominal_cny": "0.05",
+      "response_sha256": "fae13c8f5cc6e2d91f575fe1b373cf75a1553d9189ba63026fe203ae2d7bc7e7",
+      "original_response_sha256": "d6906b49a0fe572f902357e48214f61cfdcfe212260c66bdeafef93a27a3f1c2"
+    },
+    {
+      "number": 5,
+      "operation": [
+        "lkm",
+        "search",
+        "composition-based prediction benchmarking generalization uncertainty",
+        "--scopes",
+        "conclusion",
+        "--top-k",
+        "5",
+        "--doi",
+        "10.1038/s41524-021-00545-1"
+      ],
+      "reserved_nominal_cny": "0.05",
+      "response_sha256": "fdfd080cc4211f9ca45b648aca40ade108829f287c34915d011ae4f4ad4ddf03",
+      "original_response_sha256": "1cc076ffff3a17d9f7210ed213a8bb64c8d236fe2156818ab1f77c7ea4f548b3"
+    },
+    {
+      "number": 6,
+      "operation": [
+        "lkm",
+        "search",
+        "crystal stability prediction benchmark evaluation extrapolation data leakage",
+        "--scopes",
+        "conclusion",
+        "--top-k",
+        "5",
+        "--doi",
+        "10.1038/s42256-025-01055-1"
+      ],
+      "reserved_nominal_cny": "0.05",
+      "response_sha256": "313cdd40b0d9bb992f39cd25a55798b917411616d255e6fbb5933dedd945640f",
+      "original_response_sha256": "ca93e16d9f7240ab789229a08c6a1fb9b889a7b4eac2e298a7a98c7466219c6d"
+    }
+  ]
+}

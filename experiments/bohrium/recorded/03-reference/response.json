@@ -1,0 +1,401 @@
+{
+  "ok": true,
+  "notice": {
+    "billing": {
+      "channel": "quota",
+      "resource": "lkm",
+      "remaining": 997
+    }
+  },
+  "meta": {
+    "request_id": "68ac957c-9ebf-4b8f-a352-d00f0deaafb7",
+    "cli_version": "2.9.3",
+    "cli_commit": "7f011c77a151c445c39b58c1e4daaad62be79ff4",
+    "cli_modified": false,
+    "command": "bohr lkm reference",
+    "duration_ms": 970,
+    "timestamp": 1793179867
+  },
+  "data": {
+    "items": [
+      {
+        "id": "812361083858714625",
+        "doi": "10.1038/s41524-021-00545-1",
+        "en_title": "Compositionally restricted attention-based network for materials property predictions",
+        "references": [
+          {
+            "id": "811671960948834307",
+            "doi": "10.1016/j.actamat.2011.03.008",
+            "en_title": "Thermal conductivity of the gadolinium calcium silicate apatites: Effect of different point defect types"
+          },
+          {
+            "id": "813050280135360513",
+            "doi": "10.1021/acs.jpclett.8b00124",
+            "en_title": "Predicting the Band Gaps of Inorganic Solids by Machine Learning"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "QANet: Combining Local Convolution with Global Self-Attention for Reading Comprehension"
+          },
+          {
+            "id": "813047779256434689",
+            "doi": "10.1063/1.5019779",
+            "en_title": "SchNet – A deep learning architecture for molecules and materials"
+          },
+          {
+            "id": "811133635796140033",
+            "doi": "10.1038/srep34256",
+            "en_title": "A Statistical Learning Framework for Materials Science: Application to Elastic Moduli of k-nary Inorganic Polycrystalline Compounds"
+          },
+          {
+            "id": "811074052050386944",
+            "doi": "10.1038/sdata.2016.134",
+            "en_title": "High-throughput screening of inorganic compounds for the discovery of novel dielectric and optical materials"
+          },
+          {
+            "id": "813128444794634242",
+            "doi": "10.1038/ncomms15679",
+            "en_title": "Universal fragment descriptors for predicting properties of inorganic crystals"
+          },
+          {
+            "id": "813038747397390337",
+            "doi": "10.1038/sdata.2018.65",
+            "en_title": "High-throughput density-functional perturbation theory phonons for inorganic materials"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Attention is All you Need"
+          },
+          {
+            "id": "817343424595230722",
+            "doi": "10.1103/PhysRevLett.120.145301",
+            "en_title": "Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties"
+          },
+          {
+            "id": "814645235849101312",
+            "doi": "10.1038/sdata.2015.9",
+            "en_title": "Charting the complete elastic properties of inorganic crystalline compounds"
+          },
+          {
+            "id": "814714332561539072",
+            "doi": "10.1016/j.commatsci.2014.05.014",
+            "en_title": "A RESTful API for exchanging materials data in the AFLOWLIB.org consortium"
+          },
+          {
+            "id": "811810446972551168",
+            "doi": "10.1111/j.1551-2916.2009.03533.x",
+            "en_title": "Anisotropic Thermal Diffusivity and Conductivity of La-Doped Strontium Niobate Sr 2 Nb 2 O 7"
+          },
+          {
+            "id": "811976416714293249",
+            "doi": "10.1002/anie.200603675",
+            "en_title": "Combinatorial and High-Throughput Materials Science"
+          },
+          {
+            "id": "813298422307094529",
+            "doi": "10.1021/ci200628z",
+            "en_title": "Information-Theoretic Approach for the Discovery of Design Rules for Crystal Chemistry"
+          },
+          {
+            "id": "813288683938512897",
+            "doi": "10.1107/s0108768102006948",
+            "en_title": "New developments in the Inorganic Crystal Structure Database (ICSD): accessibility in support of materials research and design"
+          },
+          {
+            "id": "812683776772538369",
+            "doi": "10.1103/physrevlett.68.3052",
+            "en_title": "Low temperature mechanical properties of boron-doped silicon"
+          },
+          {
+            "id": "812384885518893057",
+            "doi": "10.1103/physrevlett.91.135503",
+            "en_title": "Predicting Crystal Structures with Data Mining of Quantum Calculations"
+          },
+          {
+            "id": "812070795646861312",
+            "doi": "10.1038/nmat1691",
+            "en_title": "Predicting crystal structure by merging data mining with quantum mechanics"
+          },
+          {
+            "id": "811088422855770112",
+            "doi": "10.1038/npjcompumats.2016.28",
+            "en_title": "A general-purpose machine learning framework for predicting properties of inorganic materials"
+          },
+          {
+            "id": "811145487544483840",
+            "doi": "10.1103/physrevlett.117.135502",
+            "en_title": "Machine Learning Energies of 2 Million Elpasolite ( A B C 2 D 6 ) Crystals"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Self-Attention Generative Adversarial Networks"
+          },
+          {
+            "id": "812840647844167680",
+            "doi": "10.1007/978-3-030-01234-2_18",
+            "en_title": "Image Super-Resolution Using Very Deep Residual Channel Attention Networks"
+          },
+          {
+            "id": "813016405950595075",
+            "doi": "10.1038/s41467-018-05169-6",
+            "en_title": "Insightful classification of crystal structures using deep learning"
+          },
+          {
+            "id": "813014305250213889",
+            "doi": "10.1021/jacs.8b02717",
+            "en_title": "Machine Learning Directed Search for Ultraincompressible, Superhard Materials"
+          },
+          {
+            "id": "814681323493916676",
+            "doi": "10.1016/j.commatsci.2014.10.037",
+            "en_title": "The Materials Application Programming Interface (API): A simple, flexible and efficient API for materials data based on REpresentational State Transfer (REST) principles"
+          },
+          {
+            "id": "813031250611666944",
+            "doi": "10.1016/j.commatsci.2018.05.018",
+            "en_title": "Matminer: An open source toolkit for materials data mining"
+          },
+          {
+            "id": "812737388982829056",
+            "doi": "10.1609/aaai.v33i01.33013159",
+            "en_title": "Character-Level Language Modeling with Deeper Self-Attention"
+          },
+          {
+            "id": "",
+            "doi": "10.18653/v1/D18-1458",
+            "en_title": "Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures"
+          },
+          {
+            "id": "",
+            "doi": "10.1007/978-3-030-01219-9_7",
+            "en_title": "Spatio-Temporal Transformer Network for Video Restoration"
+          },
+          {
+            "id": "812751275480317953",
+            "doi": "10.18653/v1/n19-1423",
+            "en_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+          },
+          {
+            "id": "811782516032667650",
+            "doi": "10.1021/cm100795d",
+            "en_title": "Finding Nature’s Missing Ternary Oxide Compounds Using Machine Learning and Density Functional Theory"
+          },
+          {
+            "id": "812738812064038913",
+            "doi": "10.1021/acscentsci.9b00576",
+            "en_title": "Molecular Transformer: A Model for Uncertainty-Calibrated Chemical Reaction Prediction"
+          },
+          {
+            "id": "812822734923890689",
+            "doi": "10.1038/s41598-018-35934-y",
+            "en_title": "ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Music Transformer: Generating Music with Long-Term Structure"
+          },
+          {
+            "id": "811145160938225665",
+            "doi": "10.1021/acs.chemmater.6b02724",
+            "en_title": "High-Throughput Machine-Learning-Driven Synthesis of Full-Heusler Compounds"
+          },
+          {
+            "id": "812807867848458241",
+            "doi": "10.1021/acs.jcim.8b00803",
+            "en_title": "Identifying Structure–Property Relationships through SMILES Syntax Analysis with Self-Attention Mechanism"
+          },
+          {
+            "id": "811270872210866177",
+            "doi": "10.1063/1.4952607",
+            "en_title": "Perspective: Web-based machine learning models for real-time screening of thermoelectric materials properties"
+          },
+          {
+            "id": "813031219489931264",
+            "doi": "10.1007/s40192-018-0108-9",
+            "en_title": "Machine Learning Prediction of Heat Capacity for Solid Inorganics"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Residual Non-local Attention Networks for Image Restoration"
+          },
+          {
+            "id": "813210684010528768",
+            "doi": "10.1063/1.4812323",
+            "en_title": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+          },
+          {
+            "id": "",
+            "doi": "10.1039/C1EE02717D",
+            "en_title": "Computational screening of perovskite metal oxides for optimal solar light capture"
+          },
+          {
+            "id": "",
+            "doi": "10.1088/0953-8984/14/34/201",
+            "en_title": "The microscopic origin of the doping limits in semiconductors and wide-gap materials and recent developments in overcoming these limits: a review"
+          },
+          {
+            "id": "814690524026896385",
+            "doi": "10.1002/aenm.201401072",
+            "en_title": "Impact of the Doping Method on Conductivity and Thermopower in Semiconducting Polythiophenes"
+          },
+          {
+            "id": "814638477135052800",
+            "doi": "10.1002/qua.24917",
+            "en_title": "Crystal structure representations for machine learning models of formation energies"
+          },
+          {
+            "id": "814533130303045633",
+            "doi": "10.1063/1.4946894",
+            "en_title": "Perspective: Materials informatics and big data: Realization of the “fourth paradigm” of science in materials science"
+          },
+          {
+            "id": "812437126174998529",
+            "doi": "10.1088/0305-4624/8/1/407",
+            "en_title": "Thermophysical properties of materials"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": ": A Review of the"
+          },
+          {
+            "id": "813010070454403072",
+            "doi": "10.1103/physrevmaterials.2.083801",
+            "en_title": "Machine learning with force-field-inspired descriptors for materials: Fast screening and mapping energy landscape"
+          },
+          {
+            "id": "812391864664588288",
+            "doi": "10.1063/1.1601676",
+            "en_title": "A simple model for the prediction of thermal conductivity in pure and doped insulating crystals"
+          },
+          {
+            "id": "814575595965906945",
+            "doi": "10.1038/npjcompumats.2015.10",
+            "en_title": "The Open Quantum Materials Database (OQMD): assessing the accuracy of DFT formation energies"
+          },
+          {
+            "id": "811649948348055552",
+            "doi": "10.1016/j.matdes.2011.06.026",
+            "en_title": "Microstructure, precipitates and compressive properties of various holmium doped NiAl/Cr(Mo,Hf) eutectic alloys"
+          },
+          {
+            "id": "813033548423364610",
+            "doi": "10.1021/acs.chemmater.7b05304",
+            "en_title": "Machine Learning and Energy Minimization Approaches for Crystal Structure Predictions: A Review and New Horizons"
+          },
+          {
+            "id": "812652221014474754",
+            "doi": "10.1109/cvprw.2019.00247",
+            "en_title": "EDVR: Video Restoration With Enhanced Deformable Convolutional Networks"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Language Models are Unsupervised Multitask Learners"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Large Batch Optimization for Deep Learning: Training BERT in 76 minutes"
+          },
+          {
+            "id": "812690184888909824",
+            "doi": "10.1109/cvpr.2019.01132",
+            "en_title": "Second-Order Attention Network for Single Image Super-Resolution"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "XLNet: Generalized Autoregressive Pretraining for Language Understanding"
+          },
+          {
+            "id": "812759679473025024",
+            "doi": "10.1038/s41586-019-1335-8",
+            "en_title": "Unsupervised word embeddings capture latent knowledge from materials science literature"
+          },
+          {
+            "id": "812750896453648384",
+            "doi": "10.1145/3292500.3330703",
+            "en_title": "IRNet"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Lookahead Optimizer: k steps forward, 1 step back"
+          },
+          {
+            "id": "812747143386234885",
+            "doi": "10.1021/acs.chemmater.9b02596",
+            "en_title": "Atomic Substitution to Balance Hardness, Ductility, and Sustainability in Molybdenum Tungsten Borocarbide"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Emergent Tool Use From Multi-Agent Autocurricula"
+          },
+          {
+            "id": "7478028773129486404",
+            "doi": "10.26434/chemrxiv.9396623",
+            "en_title": "Can Machine Learning Find Extraordinary Materials?"
+          },
+          {
+            "id": "812530489389744128",
+            "doi": "10.1038/s41467-020-19964-7",
+            "en_title": "Predicting materials properties without crystal structure: deep representation learning from stoichiometry"
+          },
+          {
+            "id": "812718078507876352",
+            "doi": "10.1038/s41586-019-1724-z",
+            "en_title": "Grandmaster level in StarCraft II using multi-agent reinforcement learning"
+          },
+          {
+            "id": "812591830339158017",
+            "doi": "10.1038/s41524-020-00362-y",
+            "en_title": "A critical examination of compound stability predictions from machine-learned formation energies"
+          },
+          {
+            "id": "812574746179796992",
+            "doi": "10.1007/s40192-020-00179-z",
+            "en_title": "Is Domain Knowledge Necessary for Machine Learning Materials Properties?"
+          },
+          {
+            "id": "812568667844771840",
+            "doi": "10.1038/s41524-020-00406-3",
+            "en_title": "Benchmarking materials property prediction methods: the Matbench test set and Automatminer reference algorithm"
+          },
+          {
+            "id": "812635541357985794",
+            "doi": "10.1007/s40192-020-00174-4",
+            "en_title": "Benchmark AFLOW Data Sets for Machine Learning"
+          },
+          {
+            "id": "7478028639100502155",
+            "doi": "10.26434/chemrxiv.12249752",
+            "en_title": "Machine Learning for Materials Scientists: An Introductory Guide Towards Best Practices"
+          },
+          {
+            "id": "812593975499161600",
+            "doi": "10.1016/j.matt.2020.06.003",
+            "en_title": "Best Practice Leads to the Best Materials Informatics"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "5分で分かる!? 有名論文ナナメ読み：Jacob Devlin et al. : BERT : Pre-training of Deep Bidirectional Transformers for Language Understanding"
+          }
+        ]
+      }
+    ],
+    "pagination": {
+      "has_more": false,
+      "page": 1,
+      "page_size": 1,
+      "total": 1
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "ok": true,
+  "notice": {
+    "billing": {
+      "channel": "quota",
+      "resource": "lkm",
+      "remaining": 996
+    }
+  },
+  "meta": {
+    "request_id": "333f7147-9282-4655-9203-630183117256",
+    "cli_version": "2.9.3",
+    "cli_commit": "7f011c77a151c445c39b58c1e4daaad62be79ff4",
+    "cli_modified": false,
+    "command": "bohr lkm reference",
+    "duration_ms": 439,
+    "timestamp": 1793179920
+  },
+  "data": {
+    "items": [
+      {
+        "id": "1144324869857476610",
+        "doi": "10.1038/s42256-025-01055-1",
+        "en_title": "A framework to evaluate machine learning crystal stability predictions",
+        "references": [
+          {
+            "id": "811128793535086592",
+            "doi": "10.1016/j.chempr.2016.09.010",
+            "en_title": "Computational Screening of All Stoichiometric Inorganic Materials"
+          },
+          {
+            "id": "813039226265272322",
+            "doi": "10.1126/sciadv.aaq0148",
+            "en_title": "Thermodynamic limit for synthesis of metastable inorganic materials"
+          },
+          {
+            "id": "813326687608504320",
+            "doi": "10.1016/j.commatsci.2012.02.005",
+            "en_title": "AFLOW: An automatic framework for high-throughput materials discovery"
+          },
+          {
+            "id": "811110013174022145",
+            "doi": "10.1126/sciadv.1600225",
+            "en_title": "The thermodynamic scale of inorganic crystalline metastability"
+          },
+          {
+            "id": "811088422855770112",
+            "doi": "10.1038/npjcompumats.2016.28",
+            "en_title": "A general-purpose machine learning framework for predicting properties of inorganic materials"
+          },
+          {
+            "id": "812289386015096834",
+            "doi": "10.1021/ci00038a003",
+            "en_title": "The inorganic crystal structure data base"
+          },
+          {
+            "id": "813210684010528768",
+            "doi": "10.1063/1.4812323",
+            "en_title": "Commentary: The Materials Project: A materials genome approach to accelerating materials innovation"
+          },
+          {
+            "id": "812847633495228417",
+            "doi": "10.1557/mrs.2018.208",
+            "en_title": "NOMAD: The FAIR concept for big data-driven materials science"
+          },
+          {
+            "id": "812784446510989314",
+            "doi": "10.1021/acs.chemmater.9b01294",
+            "en_title": "Graph Networks as a Universal Machine Learning Framework for Molecules and Crystals"
+          },
+          {
+            "id": "811151233464139776",
+            "doi": "10.1088/1367-2630/18/9/093011",
+            "en_title": "The optimal one dimensional periodic table: a modified Pettifor chemical scale from data mining"
+          },
+          {
+            "id": "813196006475694083",
+            "doi": "10.1007/s11837-013-0755-4",
+            "en_title": "Materials Design and Discovery with High-Throughput Density Functional Theory: The Open Quantum Materials Database (OQMD)"
+          },
+          {
+            "id": "812769514604199936",
+            "doi": "10.1063/1.5093220",
+            "en_title": "Screening billions of candidates for solid lithium-ion conductors: A transfer learning approach for small data"
+          },
+          {
+            "id": "812530489389744128",
+            "doi": "10.1038/s41467-020-19964-7",
+            "en_title": "Predicting materials properties without crystal structure: deep representation learning from stoichiometry"
+          },
+          {
+            "id": "812692556553912323",
+            "doi": "10.1038/s41524-019-0267-z",
+            "en_title": "Machine learning enabled autonomous microstructural characterization in 3D samples"
+          },
+          {
+            "id": "812591830339158017",
+            "doi": "10.1038/s41524-020-00362-y",
+            "en_title": "A critical examination of compound stability predictions from machine-learned formation energies"
+          },
+          {
+            "id": "812560914321506310",
+            "doi": "10.1038/s41467-020-18556-9",
+            "en_title": "Retrospective on a decade of machine learning for chemical discovery"
+          },
+          {
+            "id": "812561124972036096",
+            "doi": "10.1021/acscombsci.0c00118",
+            "en_title": "Cautionary Guidelines for Machine Learning Studies with Combinatorial Datasets"
+          },
+          {
+            "id": "812466818395406336",
+            "doi": "10.1021/acscatal.0c04525",
+            "en_title": "Open Catalyst 2020 (OC20) Dataset and Community Challenges"
+          },
+          {
+            "id": "",
+            "doi": "",
+            "en_title": "Supplementary Information for A general-purpose machine-learning force field for bulk and nanostructured phosphorus"
+          },
+          {
+            "id": "864960072894120354",
+            "doi": "10.1038/s41467-022-29939-5",
+            "en_title": "E(3)-equivariant graph neural networks for data-efficient and accurate interatomic potentials"
+          },
+          {
+            "id": "812510541472858112",
+            "doi": "10.1038/s41524-020-00481-6",
+            "en_title": "Predicting stable crystalline compounds using chemical similarity"
+          },
+          {
+            "id": "811710290973425666",
+            "doi": "10.1016/j.mattod.2021.08.012",
+            "en_title": "Accelerating materials discovery with Bayesian optimization and graph deep learning"
+          },
+          {
+            "id": "812369171852558336",
+            "doi": "10.1038/s41467-021-23339-x",
+            "en_title": "A graph-based network for predicting chemical reaction pathways in solid-state materials synthesis"
+          },
+          {
+            "id": "813252203660705792",
+            "doi": "10.1038/s41524-021-00650-1",
+            "en_title": "Atomistic Line Graph Neural Network for improved materials property predictions"
+          },
+          {
+            "id": "812300651307466755",
+            "doi": "10.1021/jacs.1c04888",
+            "en_title": "Rational Solid-State Synthesis Routes for Inorganic Materials"
+          },
+          {
+            "id": "811702556198699008",
+            "doi": "10.1186/s12859-021-04398-9",
+            "en_title": "On the robustness of generalization of drug–drug interaction models"
+          },
+          {
+            "id": "864984737691730038",
+            "doi": "10.1038/s43588-022-00349-3",
+            "en_title": "A universal graph deep learning interatomic potential for the periodic table"
+          },
+          {
+            "id": "817361009701289984",
+            "doi": "10.1038/s41524-022-00891-8",
+            "en_title": "Data-augmentation for graph neural network learning of the relaxed energies of unrelaxed structures"
+          },
+          {
+            "id": "817355388717367296",
+            "doi": "10.1126/sciadv.abn4117",
+            "en_title": "Rapid discovery of stable materials by coordinate-free coarse graining"
+          },
+          {
+            "id": "864973773571359120",
+            "doi": "10.1021/acscatal.2c05426",
+            "en_title": "The Open Catalyst 2022 (OC22) Dataset and Challenges for Oxide Electrocatalysts"
+          },
+          {
+            "id": "852162659141812225",
+            "doi": "10.1038/s41524-023-01012-9",
+            "en_title": "A critical examination of robustness and generalizability of machine learning prediction of materials properties"
+          },
+          {
+            "id": "864974602994974893",
+            "doi": "10.1063/5.0136574",
+            "en_title": "Fast uncertainty estimates in deep learning interatomic potentials"
+          },
+          {
+            "id": "912537828297015453",
+            "doi": "10.1038/s41524-023-01121-5",
+            "en_title": "AdsorbML: a leap in efficiency for adsorption energy calculations using generalizable machine learning potentials"
+          },
+          {
+            "id": "822057336502747137",
+            "doi": "10.1038/s43588-022-00369-z",
+            "en_title": "Chemical reaction networks and opportunities for machine learning"
+          },
+          {
+            "id": "949091732270612648",
+            "doi": "10.1038/s41467-023-42992-y",
+            "en_title": "Exploiting redundancy in large materials datasets for efficient machine learning with less data"
+          },
+          {
+            "id": "995140978786435081",
+            "doi": "10.1038/s41524-024-01259-w",
+            "en_title": "JARVIS-Leaderboard: a large scale benchmark of materials design methods"
+          },
+          {
+            "id": "909618885471241043",
+            "doi": "10.1038/s42256-023-00716-3",
+            "en_title": "CHGNet as a pretrained universal neural network potential for charge-informed atomistic modelling"
+          },
+          {
+            "id": "1039136793326256158",
+            "doi": "10.1021/acscentsci.3c01629",
+            "en_title": "The Open DAC 2023 Dataset and Challenges for Sorbent Discovery in Direct Air Capture"
+          },
+          {
+            "id": "937209348289986644",
+            "doi": "10.1038/s41586-023-06735-9",
+            "en_title": "Scaling deep learning for materials discovery"
+          },
+          {
+            "id": "1003477153922154498",
+            "doi": "10.1021/acs.jctc.4c00190",
+            "en_title": "Scalable Parallel Algorithm for Graph Neural Network Interatomic Potentials in Molecular Dynamics Simulations"
+          },
+          {
+            "id": "991881087602917379",
+            "doi": "10.1021/acs.chemmater.4c00643",
+            "en_title": "Artificial Intelligence Driving Materials Discovery? Perspective on the Article: Scaling Deep Learning for Materials Discovery"
+          },
+          {
+            "id": "1055807346174853121",
+            "doi": "10.1016/j.mtphys.2024.101560",
+            "en_title": "Improving machine-learning models in materials science through large datasets"
+          },
+          {
+            "id": "1063208838091505703",
+            "doi": "10.1016/j.xcrp.2024.102241",
+            "en_title": "Discovery of high-performance dielectric materials with machine-learning-guided search"
+          },
+          {
+            "id": "1063151254265397267",
+            "doi": "10.1038/s41467-024-52481-5",
+            "en_title": "Analytical ab initio hessian from a deep learning potential for transition state optimization"
+          },
+          {
+            "id": "1084707485769531393",
+            "doi": "10.1038/s41524-024-01500-6",
+            "en_title": "Systematic softening in universal machine learning interatomic potentials"
+          }
+        ]
+      }
+    ],
+    "pagination": {
+      "has_more": false,
+      "page": 1,
+      "page_size": 1,
+      "total": 1
+    }
+  }
+}

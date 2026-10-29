@@ -1,0 +1,49 @@
+{
+  "ok": false,
+  "notice": {
+    "billing": {
+      "channel": "quota",
+      "resource": "lkm",
+      "remaining": 999
+    }
+  },
+  "error": {
+    "code": "UNKNOWN",
+    "http": 500,
+    "message": "paper found but knowledge graph is empty",
+    "request_id": "7863f6bc-f1c4-406c-bb61-3bed1b41f23d",
+    "retryable": false
+  },
+  "meta": {
+    "request_id": "7863f6bc-f1c4-406c-bb61-3bed1b41f23d",
+    "cli_version": "2.9.3",
+    "cli_commit": "7f011c77a151c445c39b58c1e4daaad62be79ff4",
+    "cli_modified": false,
+    "command": "bohr lkm graph",
+    "duration_ms": 491,
+    "timestamp": 1793179590
+  },
+  "data": {
+    "items": [
+      {
+        "paper": {
+          "id": "812361083858714625",
+          "doi": "10.1038/s41524-021-00545-1",
+          "en_title": "Compositionally restricted attention-based network for materials property predictions"
+        },
+        "graph": {
+          "edges": [],
+          "nodes": []
+        },
+        "addressed_problems": [],
+        "open_questions": []
+      }
+    ],
+    "pagination": {
+      "has_more": false,
+      "page": 1,
+      "page_size": 1,
+      "total": 1
+    }
+  }
+}

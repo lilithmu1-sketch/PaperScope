@@ -1,0 +1,49 @@
+{
+  "ok": false,
+  "notice": {
+    "billing": {
+      "channel": "quota",
+      "resource": "lkm",
+      "remaining": 998
+    }
+  },
+  "error": {
+    "code": "UNKNOWN",
+    "http": 500,
+    "message": "paper found but knowledge graph is empty",
+    "request_id": "914dd7e6-9b22-46c4-8157-582dd9d10067",
+    "retryable": false
+  },
+  "meta": {
+    "request_id": "914dd7e6-9b22-46c4-8157-582dd9d10067",
+    "cli_version": "2.9.3",
+    "cli_commit": "7f011c77a151c445c39b58c1e4daaad62be79ff4",
+    "cli_modified": false,
+    "command": "bohr lkm graph",
+    "duration_ms": 584,
+    "timestamp": 1793179800
+  },
+  "data": {
+    "items": [
+      {
+        "paper": {
+          "id": "1144324869857476610",
+          "doi": "10.1038/s42256-025-01055-1",
+          "en_title": "A framework to evaluate machine learning crystal stability predictions"
+        },
+        "graph": {
+          "edges": [],
+          "nodes": []
+        },
+        "addressed_problems": [],
+        "open_questions": []
+      }
+    ],
+    "pagination": {
+      "has_more": false,
+      "page": 1,
+      "page_size": 1,
+      "total": 1
+    }
+  }
+}

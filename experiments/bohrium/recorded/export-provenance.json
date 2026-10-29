@@ -1,0 +1,44 @@
+{
+  "capture_interface": "Official Bohrium CLI 2.9.3 JSON responses",
+  "is_full_native_agent_trajectory": false,
+  "projection": "Keep request metadata, billing notices, errors, empty search/graphs and bibliography IDs/titles/DOIs. Omit abstracts, reverse citations, journal metrics and unrelated metadata.",
+  "raw_responses_retained_privately": true,
+  "files": [
+    {
+      "path": "01-graph/response.json",
+      "projection_sha256": "bef662d92be63073b3c0ed936e71020ce8285a7a3c15aa89468798d85dcb60d5",
+      "original_response_sha256": "4a6b8cd45874dadaa0fe3d908ad13972211627728efd7d05af35bffc79c0a77d",
+      "request_id": "7863f6bc-f1c4-406c-bb61-3bed1b41f23d"
+    },
+    {
+      "path": "02-graph/response.json",
+      "projection_sha256": "d0e755830827c1a0739c2b20d0fbff1a0cef68a8bc2c8e52688f160836f43ef6",
+      "original_response_sha256": "d37e6272f22f27e612d8ad263da38fb79c5a76e0a9d91d0e06909558a887fe33",
+      "request_id": "914dd7e6-9b22-46c4-8157-582dd9d10067"
+    },
+    {
+      "path": "03-reference/response.json",
+      "projection_sha256": "128af7ded90ef284c99d42a8e1e2867a8907802b538126f2b644cab04f0c308f",
+      "original_response_sha256": "c0c838f29227331f7eb1029f99b0c61ec023766747a188f53bc2e87d0c83d44f",
+      "request_id": "68ac957c-9ebf-4b8f-a352-d00f0deaafb7"
+    },
+    {
+      "path": "04-reference/response.json",
+      "projection_sha256": "fae13c8f5cc6e2d91f575fe1b373cf75a1553d9189ba63026fe203ae2d7bc7e7",
+      "original_response_sha256": "d6906b49a0fe572f902357e48214f61cfdcfe212260c66bdeafef93a27a3f1c2",
+      "request_id": "333f7147-9282-4655-9203-630183117256"
+    },
+    {
+      "path": "05-search/response.json",
+      "projection_sha256": "fdfd080cc4211f9ca45b648aca40ade108829f287c34915d011ae4f4ad4ddf03",
+      "original_response_sha256": "1cc076ffff3a17d9f7210ed213a8bb64c8d236fe2156818ab1f77c7ea4f548b3",
+      "request_id": "44c509c9-a6c3-493d-8f46-74a17f313bcb"
+    },
+    {
+      "path": "06-search/response.json",
+      "projection_sha256": "313cdd40b0d9bb992f39cd25a55798b917411616d255e6fbb5933dedd945640f",
+      "original_response_sha256": "ca93e16d9f7240ab789229a08c6a1fb9b889a7b4eac2e298a7a98c7466219c6d",
+      "request_id": "4ff6a188-8f0e-40ab-b983-380b8be4ba0d"
+    }
+  ]
+}

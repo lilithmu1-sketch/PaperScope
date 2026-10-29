@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "notice": {
+    "billing": {
+      "channel": "quota",
+      "resource": "lkm",
+      "remaining": 994
+    }
+  },
+  "meta": {
+    "request_id": "4ff6a188-8f0e-40ab-b983-380b8be4ba0d",
+    "cli_version": "2.9.3",
+    "cli_commit": "7f011c77a151c445c39b58c1e4daaad62be79ff4",
+    "cli_modified": false,
+    "command": "bohr lkm search",
+    "duration_ms": 533,
+    "timestamp": 1793180079
+  },
+  "data": {
+    "has_more": false,
+    "papers": {},
+    "variables": []
+  }
+}
