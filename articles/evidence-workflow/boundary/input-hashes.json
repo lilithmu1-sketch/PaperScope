@@ -1,0 +1,12 @@
+{
+  "shared": {
+    "task.txt": "905418a5c480db7bb60a32e27c2e74d64c21411bcd49d37773db3aa4634fca00",
+    "materials/paper-excerpt.txt": "414787e1e8ef2d4c4bdc501d46f729d7ae63b3ce76daac57b5534de43ca8e480",
+    "materials/source.json": "2c39199d07eca62ddc909ed94610bdba1737b4fe848ffc2c2a5fe0ba87a01286"
+  },
+  "byte_identical_runs": [
+    "R48",
+    "R50"
+  ],
+  "constructed_partial_material": true
+}

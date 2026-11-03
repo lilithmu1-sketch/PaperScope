@@ -1,0 +1,94 @@
+{
+  "scope": "Main PDF physical p4 Fig3; values visually checked against retained context and detail, label checked against correction p1. No per-fold values or significance test.",
+  "readings": [
+    {
+      "id": "N01",
+      "model": "Automatminer",
+      "value": "95.2",
+      "unit": "MPa",
+      "metric": "five-fold NCV mean MAE",
+      "source": "main",
+      "physical_page": 4,
+      "location": "Fig.3 第一列 Automatminer/RF行",
+      "image": "images/steel-detail/region.png",
+      "reviewer": "AI视觉复核；非人工专家",
+      "status": "已对照未加标注局部、全页与勘误；未取得逐折误差"
+    },
+    {
+      "id": "N02",
+      "model": "composition RF",
+      "value": "104",
+      "unit": "MPa",
+      "metric": "five-fold NCV mean MAE",
+      "source": "main",
+      "physical_page": 4,
+      "location": "Fig.3 第一列 Automatminer/RF行",
+      "image": "images/steel-detail/region.png",
+      "reviewer": "AI视觉复核；非人工专家",
+      "status": "已对照未加标注局部、全页与勘误；未取得逐折误差"
+    }
+  ],
+  "calculations": [
+    {
+      "id": "N03",
+      "inputs": {
+        "autom": "95.2",
+        "rf": "104"
+      },
+      "signed_difference_formula": "autom-rf",
+      "signed_difference_MPa": "-8.8",
+      "reduction_MPa": "8.8",
+      "relative_reduction_formula": "(rf-autom)/rf*100",
+      "direction": "positive reduction means Automatminer has lower MAE",
+      "denominator": "RF 104 MPa",
+      "raw_percent": "8.461538461538461538461538462",
+      "rounded_percent": "8.46",
+      "rounding": "Decimal ROUND_HALF_UP 2 decimal places; input precision limited to published rounded labels",
+      "reverse_denominator_autom_percent": "9.24"
+    }
+  ],
+  "unit_review": {
+    "id": "N04",
+    "source": "correction",
+    "physical_page": 1,
+    "quote": "Yield Strength (GPa) / Yield Strength (MPa)",
+    "result": "label corrected to MPa; supplied main Fig3 already MPa; no multiplying these readings by 1000"
+  },
+  "other_numbers": [
+    {
+      "metric": "steel sample count",
+      "value": 312,
+      "source": "main",
+      "physical_page": 3,
+      "location": "Table1 final row",
+      "unit": "samples",
+      "scope": "text extraction; no local sample count audit"
+    },
+    {
+      "metric": "outer CV folds",
+      "value": 5,
+      "source": "main",
+      "physical_page": 7,
+      "location": "Evaluation methods",
+      "unit": "folds",
+      "scope": "randomized KFold, seed 18012019; not group CV"
+    },
+    {
+      "metric": "software version",
+      "value": "Automatminer v1.0.3.20191111 / TPOT v.10.1",
+      "source": "main",
+      "physical_page": 8,
+      "location": "Machine learning pipelines",
+      "scope": "historical experiment only"
+    },
+    {
+      "metric": "Express search limit",
+      "value": 24,
+      "unit": "hours per outer fold",
+      "source": "main",
+      "physical_page": 8,
+      "location": "Methods TPOT paragraph",
+      "scope": "100 individuals/generation; 20 min per pipeline; 10-way parallelism"
+    }
+  ]
+}

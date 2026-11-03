@@ -1,0 +1,4 @@
+请使用本次paperscope-evidence Skill，把所给paper.pdf物理第4页的Figure 3和完整图注制作成读者可核对的局部证据图片，保留图表的行列、单位和图例。先给出整页定位预览，再交付正式裁图、未加定位标注的上下文及真实出处记录和简短中文说明。不需要论文研究咨询、转录模型分数、计算或训练，也不用为了凑格式做四视图报告。
+
+先读skill/paperscope-evidence/SKILL.md，再选择需要的参考与工具。只读自己的输入目录、自己的输出和必要本地运行时，不读父聊天/其他项目资料/评分或协议，不联网、不创建子代理。只写自己的指定输出目录；保留失败和自修正，不覆盖旧证据。不要修改Skill；不要调用apply_patch，用Python/PowerShell正常写文件。Python用-B -X utf8，文本UTF-8。
+PDF依赖解释器：C:/Users/lilith/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe。预算900秒、最多15次可见工具调用、指令性10000输出token；单次本地调用120秒无返回即停止并报告。无需API Key或安装依赖。最后给出准确路径及未完成项，不把工具成功等同人工或科学认证。

@@ -1,0 +1,38 @@
+{
+  "run_id": "R48",
+  "native_session_id": "01a19ffa-9221-7752-a6b8-d1e8da52e76e",
+  "source_native_sha256": "32d165d27db48b3210e096c34dbd5eb3d522d880bf9cff0501158b1a224784ca",
+  "fork_turns": "none",
+  "models_reported": [
+    "gpt-6.1-sol"
+  ],
+  "reasoning_efforts_reported": [
+    "medium"
+  ],
+  "started_at": "2026-11-03T05:56:01.332Z",
+  "ended_at": "2026-11-03T05:59:09.728Z",
+  "duration_seconds": 188.396,
+  "completed_normally": true,
+  "end_time_source": "native session end",
+  "usage_is_final": true,
+  "partial_usage_note": null,
+  "visible_tool_calls": 4,
+  "token_usage_reported": {
+    "input_tokens": 115810,
+    "cached_input_tokens": 93184,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1805,
+    "reasoning_output_tokens": 36,
+    "total_tokens": 117615
+  },
+  "cash_cost": null,
+  "cash_cost_reason": "Not exposed by native account telemetry; tokens are not money.",
+  "actual_wall_clock_within_budget": true,
+  "actual_tool_calls_within_budget": true,
+  "human_core_corrections": "none",
+  "exported_at_utc": "2026-11-03T06:00:08.357430+00:00",
+  "export_method": "Chronological visible user/assistant and tool records plus source-backed parent dispatch metadata. Excludes system/developer, analysis/hidden reasoning and opaque event kinds; recursively removes encrypted_content fields. An opaque encoded parent message is explicitly omitted, never reconstructed; source line SHA256 retained. Other retained text/arguments/results unchanged.",
+  "source_is_native": true,
+  "trace_kind": "export",
+  "shared_export_is_full_native_telemetry": false
+}

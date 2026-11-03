@@ -1,0 +1,132 @@
+{
+  "claims": [
+    {
+      "id": "F01",
+      "type": "事实",
+      "claim": "钢屈服强度任务为312个实验样本，输入无晶体结构，单位MPa。",
+      "source": "main",
+      "physical_page": 3,
+      "quote": "Steel yield strength (MPa) Regression Citrine Informatics 51 312 No Experiment",
+      "location": "Table 1 最后一行",
+      "anchor_id": "F01"
+    },
+    {
+      "id": "F02",
+      "type": "事实",
+      "claim": "steels取自steel_strength，仅保留成分和目标；不能据此认为原始数据没有工艺。",
+      "source": "main",
+      "physical_page": 8,
+      "quote": "(8) Remove all columns except composition and the target variable.",
+      "location": "Table 2 steels行对应modification 8",
+      "anchor_id": "F02"
+    },
+    {
+      "id": "F03",
+      "type": "事实",
+      "claim": "外层五折为随机划分，同算法使用相同折；非牌号分组验证。",
+      "source": "main",
+      "physical_page": 7,
+      "quote": "used uniformly randomized splits generated with scikit-learn",
+      "location": "Methods Evaluation，结合相邻句random seed 18012019",
+      "anchor_id": "F03"
+    },
+    {
+      "id": "F04",
+      "type": "事实",
+      "claim": "论文RF为Magpie组成统计，500棵树且不限制深度。",
+      "source": "main",
+      "physical_page": 8,
+      "quote": "itself consisted of 500 estimators and no max depth",
+      "location": "Methods Machine learning pipelines",
+      "anchor_id": "F04"
+    },
+    {
+      "id": "F05",
+      "type": "事实",
+      "claim": "论文版本为Automatminer v1.0.3.20191111，TPOT v.10.1，Express搜索每外折24小时上限。",
+      "source": "main",
+      "physical_page": 8,
+      "quote": "Automatminer v1.0.3.20191111 was used for all Automatminer bench-",
+      "location": "Methods；TPOT和24 h在后续段",
+      "anchor_id": "F05"
+    },
+    {
+      "id": "F06",
+      "type": "事实",
+      "claim": "组成RF与Automatminer图3结果使用相同外折，特征拟合、优化及选模仅在训练集。",
+      "source": "main",
+      "physical_page": 4,
+      "quote": "all featurizer (descriptor) ﬁtting, hyperparameter optimization, internal validation, and model selection were done on the training set only.",
+      "location": "Fig.3 caption",
+      "anchor_id": "F06"
+    },
+    {
+      "id": "F07",
+      "type": "事实",
+      "claim": "所给勘误仅纠正Fig.3首列GPa为MPa，说明PDF和HTML已改；本地PDF图像也显示MPa。",
+      "source": "correction",
+      "physical_page": 1,
+      "quote": "incorrectly read ‘Yield Strength (GPa) ’, rather than the correct",
+      "location": "勘误正文；后接Yield Strength (MPa)",
+      "anchor_id": "F07"
+    },
+    {
+      "id": "F08",
+      "type": "事实",
+      "claim": "论文提醒分组方式应匹配实际应用，组成特征可能不足以确定合理分组。",
+      "source": "main",
+      "physical_page": 7,
+      "quote": "the testing procedure should mimic the real-world applica-",
+      "location": "Discussion首段，下一行tion",
+      "anchor_id": "F08"
+    },
+    {
+      "id": "F09",
+      "type": "事实",
+      "claim": "论文总体8/13最优包含1%内并列标准，异质任务的总体胜率不能作为本地胜出概率。",
+      "source": "main",
+      "physical_page": 4,
+      "quote": "best taken to include scores within 1% of the",
+      "location": "Results；8/13见p5首段",
+      "anchor_id": "F09"
+    },
+    {
+      "id": "I01",
+      "type": "推断/建议",
+      "claim": "约350条与312量级相近，只足以支持把Automatminer列为候选；先统一标签、成分和条件再比较。",
+      "source": "main",
+      "physical_page": 2,
+      "quote": "when provided with a suitable training dataset.",
+      "location": "Automatminer概述；本地约350来自任务.txt",
+      "anchor_id": "I01"
+    },
+    {
+      "id": "I02",
+      "type": "推断/建议",
+      "claim": "同牌号试样应成组跨折隔离；新候选的成分空间外推要另做族群/成分簇留出。",
+      "source": "main",
+      "physical_page": 7,
+      "quote": "Instead, grouped CV will ﬁrst separate data points by chemical space",
+      "location": "Discussion分组示例；本地方案为本报告建议",
+      "anchor_id": "I02"
+    },
+    {
+      "id": "U01",
+      "type": "未知",
+      "claim": "本地屈服定义、温度范围、独立牌号数、热处理缺失机制、候选是否在域内未知，尚不能给可用误差承诺。",
+      "source": null,
+      "physical_page": null,
+      "quote": null,
+      "location": "任务.txt只有概况，未提供本地数据表"
+    }
+  ],
+  "numeric_claims": [
+    "N01",
+    "N02",
+    "N03",
+    "N04"
+  ],
+  "numeric_details": "numeric-review.json",
+  "source_registry": "../inputs/sources.json",
+  "scope": "facts versus model-authored proposals/unknowns are typed; numeric graph values are visual readings"
+}

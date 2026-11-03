@@ -1,0 +1,22 @@
+{
+  "schema_version": "paperscope-locator/1.0",
+  "source_pdf_sha256": "8cceca7b20cffcb36f48d81079eb8be283bbdf9469aa0e290ce58ce6ced97b25",
+  "physical_page_one_based": 1,
+  "page_size_canvas_units": [
+    595.2760009765625,
+    790.8660278320312
+  ],
+  "unannotated_context_sha256": "77dc84880d74eebb78dc395a07da2885c63fc4897044a7be8935c04abb700f28",
+  "locator_sha256": "18f5c90675c0a2306c49517068c4e493b57261e31c2b7016f4da2f8bf276d9a7",
+  "locator_page_origin_pixels": [
+    56,
+    56
+  ],
+  "locator_page_size_pixels": [
+    893,
+    1187
+  ],
+  "coordinate_system": "Fractions of the ORIGINAL page, left/top=0, right/bottom=1; exclude locator margins.",
+  "annotations_added": "Navigation grid and fractional rulers; locator is not an unmodified source image.",
+  "numeric_content_verified": false
+}

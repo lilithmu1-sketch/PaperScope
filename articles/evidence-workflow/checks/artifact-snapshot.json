@@ -1,0 +1,51 @@
+{
+  "files": [
+    {
+      "path": "figure3/context.png",
+      "bytes": 405266,
+      "sha256": "b154522f61b6b1ca7bec1aa7797b5de885fcbc58ee4818152215705a8629e164"
+    },
+    {
+      "path": "figure3/provenance.json",
+      "bytes": 1820,
+      "sha256": "fec27af0f2408dc4eaa1c863118a9915c3cfbe944f2ca238bb98919ba6fa6e89"
+    },
+    {
+      "path": "figure3/region.png",
+      "bytes": 922769,
+      "sha256": "4c2e6d72f02e518517ec3349d951126455c4a850cbd4b1dd62d561555834de66"
+    },
+    {
+      "path": "overview/context.png",
+      "bytes": 405266,
+      "sha256": "b154522f61b6b1ca7bec1aa7797b5de885fcbc58ee4818152215705a8629e164"
+    },
+    {
+      "path": "overview/locator-provenance.json",
+      "bytes": 825,
+      "sha256": "d37b8298abe285d9071545bae3596cbba7522f16ce06a491596f1fbe92eb4c0d"
+    },
+    {
+      "path": "overview/locator.png",
+      "bytes": 434620,
+      "sha256": "ebda5d9eb9a94c28e2879595abc5c6085ce85dd621244c2e6a44f93c861cff95"
+    },
+    {
+      "path": "overview/provenance.json",
+      "bytes": 1730,
+      "sha256": "f0804074f14446bdcf87a641212d3deb143476ac12810b8e67a7455f9da9fb59"
+    },
+    {
+      "path": "overview/region.png",
+      "bytes": 405266,
+      "sha256": "b154522f61b6b1ca7bec1aa7797b5de885fcbc58ee4818152215705a8629e164"
+    },
+    {
+      "path": "说明.md",
+      "bytes": 1875,
+      "sha256": "64c9e03a5a8b6c503371a3c7e16e48375afef7a540a65d5ddd258c7fa9d1a0b9"
+    }
+  ],
+  "total_generated_bytes_before_parent_exports": 2579437,
+  "only_final_three_files_bytes": 0
+}

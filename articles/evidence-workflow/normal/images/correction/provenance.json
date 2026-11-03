@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "created_utc": "2026-11-03T05:59:14.722310+00:00",
+  "source_pdf_name": "source.pdf",
+  "source_pdf_sha256": "8cceca7b20cffcb36f48d81079eb8be283bbdf9469aa0e290ce58ce6ced97b25",
+  "expected_source_hash_checked": false,
+  "physical_page_one_based": 1,
+  "page_size_canvas_units": [
+    595.2760009765625,
+    790.8660278320312
+  ],
+  "page_rotation_degrees": 0,
+  "coordinate_system": "top-left origin in displayed unrotated page canvas units; left,top,right,bottom",
+  "retained_rectangle": [
+    0,
+    0,
+    595.2760009765625,
+    790.8660278320312
+  ],
+  "region_pixel_box_left_top_right_bottom": [
+    0,
+    0,
+    893,
+    1187
+  ],
+  "requested_rectangle": null,
+  "requested_coordinate_mode": "whole-page",
+  "render_strategy": "Render full page, then crop outward to integer pixel boundaries without resizing",
+  "region_scale_pixels_per_canvas_unit": 1.5,
+  "context_scale_pixels_per_canvas_unit": 1.5,
+  "annotations_rendered": false,
+  "renderer": {
+    "pypdfium2": "5.14.0",
+    "Pillow": "12.3.0"
+  },
+  "script_sha256": "1974f9c96b3e28e64c8bc908de2c38f41c09a9dd7e99149deac44659df27ed54",
+  "files": {
+    "region.png": {
+      "sha256": "77dc84880d74eebb78dc395a07da2885c63fc4897044a7be8935c04abb700f28",
+      "pixels": [
+        893,
+        1187
+      ]
+    },
+    "context.png": {
+      "sha256": "77dc84880d74eebb78dc395a07da2885c63fc4897044a7be8935c04abb700f28",
+      "pixels": [
+        893,
+        1187
+      ]
+    }
+  },
+  "numeric_content_verified": false,
+  "limitations": "No OCR or semantic validation. Enlargement cannot recover detail absent from the source. Inspect labels, units, footnotes and version in context; rotated pages require a separate viewer workflow."
+}

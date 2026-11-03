@@ -1,0 +1,25 @@
+{
+  "frozen_at_utc": "2026-11-02T09:09:44.201980+00:00",
+  "skill_version": "3.3-candidate-1",
+  "runs": {
+    "R37": "narrow_figure_navigation_use"
+  },
+  "pairs": [],
+  "budget": {
+    "wall_seconds_instruction": 900,
+    "visible_model_tool_calls": 15,
+    "output_tokens_instruction": 10000,
+    "local_tool_no_response_seconds": 120,
+    "hard_caps_available": false
+  },
+  "design": "One treated no-history navigation use on known paper, no comparator, no pre-supplied coordinates/images or numerical answers.",
+  "acceptance": [
+    "Locate requested figure and complete caption on raw page, retain row/column labels, units and legend.",
+    "Keep locator annotations separate from unannotated evidence.",
+    "Use frozen tools; record actual rectangles/source hashes and preserve failures.",
+    "Inspect first crop and document whether recropping was necessary, without general efficacy inference."
+  ],
+  "stopping": "Once only, no selective rerun or author core repair; interrupt local call >120s or total >900s.",
+  "formal_submission": false,
+  "external_paid_calls": false
+}

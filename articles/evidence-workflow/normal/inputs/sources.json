@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "file": "../../materials/paper.pdf",
+      "doi": "10.1038/s41524-020-00406-3",
+      "source_url": "https://www.nature.com/articles/s41524-020-00406-3.pdf",
+      "retrieved_date": "2026-10-30",
+      "sha256": "003a1bf09c4f7e2959a5cabef0910ec7d91e739836c13cdcf575c4d121539830",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Dunn, Wang, Ganose, Dopp and Jain; npj Computational Materials (2020). Original publisher PDF bytes retained; check individual third-party credit lines.",
+      "original_file": "matbench-automatminer.pdf"
+    },
+    {
+      "file": "../../materials/correction.pdf",
+      "doi": "10.1038/s41524-020-00433-0",
+      "source_url": "https://www.nature.com/articles/s41524-020-00433-0.pdf",
+      "retrieved_date": "2026-10-30",
+      "sha256": "8cceca7b20cffcb36f48d81079eb8be283bbdf9469aa0e290ce58ce6ced97b25",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Dunn, Wang, Ganose, Dopp and Jain; npj Computational Materials (2020). Original publisher PDF bytes retained; check individual third-party credit lines.",
+      "original_file": "matbench-automatminer-correction.pdf"
+    }
+  ],
+  "scope": "Offline path aliases; unmodified original registry in normal/sources-original.json."
+}
