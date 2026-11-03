@@ -1,0 +1,80 @@
+Physical PDF page 4; faithful extraction, inspect original PDF for chart.
+split using an inner cross validation that is used for model
+selection within the training data, hence the name Nested Cross
+Validation (in our procedure, an algorithm can make use of the
+training data, however, it chooses). One advantage of 5-fold
+nested CV over a traditional train-test split is that each sample in
+the overall dataset is present as training in four of the splits and as
+test in one of the splits.
+For all tasks, the Automatminer Express preset con ﬁguration is
+used in this work. The Express preset only implements featurizers
+from Matminer that are broadly applicable (tend to produce valid
+feature values for almost all compositions and/or crystal
+structures), are computationally ef ﬁcient (<2 s/sample), and can
+be trivially transformed from matrices to vectors for each sample.
+Express feature reduction typically retains between 20 and 200
+features based on a feature importance threshold from a Random
+Forest
+27 model. The reduced number of features allows for
+accelerated evolution of the TPOT genetic algorithm within the
+Express training time limit of 24 h. Further details can be found in
+the Methods, Supplementary Tables 1 –3, and Supplementary
+Notes 1 and 2. While other presets are available in Automatminer,
+we have found that the Express preset generally retains 95% or
+more of the accuracy of more expensive presets on multiple data-
+scarce tasks (bulk metallic glass classi ﬁcation, experimental band
+gap regression/classiﬁcation, exfoliation energy regression) at less
+than 50% of the computational cost to reach reasonable AutoML
+convergence. We emphasize that the Automatminer Express
+preset is a single con ﬁguration capable of ﬁtting on all Matbench
+tasks with no additional input or con ﬁguration. We do not modify
+this preset for different tasks.
+Four alternative algorithms are used for comparison. To
+simulate a control, a Dummy model predicts the mean of the
+training set (regression) or randomly selects a label in proportion
+to the distribution of the training set (classi ﬁcation). As a second
+baseline representing commonly used methods, we employ a
+Random Forest
+27 model (RF) using Magpie elemental statistics 28
+and Sine Coulomb Matrix 29 (if structures are present in the
+dataset) to predict each property. Finally, for tasks containing
+relaxed structures, we also test against CGCNN
+26 and MEGNet 30,
+two graph-network algorithms for general-purpose property
+prediction. It must be emphasized that a goal of Matbench is to
+minimize arbitrary biases when comparing models. Therefore, the
+four alternatives and Automatminer all underwent identical error
+estimation procedures (NCV on identical folds) for each task.
+For some Matbench tasks, we were able toﬁnd published scores of
+researcher-optimized machine learning models, which we label as the
+Best Literature score. However, itshould be noted that although these
+studies report the same error metric (MAE) using similar datasets, the
+scores do not use identical datasets (e.g., using different dataﬁltering
+algorithms to remove erroneous or unreliable data points) or the same
+error estimation procedure (e.g., they do not use nested cross validation
+and may use different proportions of train and test). Therefore, these
+scores cannot be directly compared to the algorithms listed above.
+All models outperform Dummy on all tasks: the Dummy
+comparison exhibits errors between 68 and 299% higher than
+the best model for any task. We next examine which algorithms
+perform best, with best taken to include scores within 1% of the
+best NCV score (we ﬁnd the standard deviation between folds for
+the same model is typically between 0.5 and 5%). The
+Fig. 3 Comparison of machine learning algorithm accuracies on the Matbench v0.1 test suite. See Table 1 for more details of the test sets.
+Numbers on each square represent either the mean average error (regression) or mean ROC-AUC (classi ﬁcation) of a ﬁve-fold nested cross
+validation (NCV), except for Best Literature scores. Best Literature scores were taken from published literature models 33,46,53 evaluated on
+similar tasks or datasets, often subsets of those in Matbench, and do not use NCV. Colors represent prediction quality (analogous to relative
+error) with respect to either the dataset target mean average deviation (MAD) for regression or the high/low limits of ROC-AUC (0.5 is
+equivalent to random, 1.0 is best) for classi ﬁcation; blue and red represent high and low prediction qualities, respectively, with respect to
+these baselines. Accordingly, red-hued columns indicate more dif ﬁcult ML tasks where no algorithm has high predictive accuracy when
+compared to predicting the mean. Red-hued rows therefore indicate poorly performing algorithms across multiple tasks. The best score for
+each task is outlined with a black box (The Best Literature scores are excluded because they do not use the same testing protocol). To account
+for variance from choice of NCV split, multiple scores may be outlined if within 1% of the true best score. A comparison with a pure Random
+Forest (RF) model using Magpie
+28 and SineCoulombMatrix 29 features is provided for reference. Dummy predictor results are also shown for
+each task. All Automatminer, CGCNN, MEGNet, and RF results were generated using the same NCV test procedure on identical train/test folds;
+all featurizer (descriptor) ﬁtting, hyperparameter optimization, internal validation, and model selection were done on the training set only. A
+full breakdown of all error estimation procedures can be found in Methods.
+A. Dunn et al.
+4
+npj Computational Materials (2020) 138 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences

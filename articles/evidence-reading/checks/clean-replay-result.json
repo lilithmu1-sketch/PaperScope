@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "original_artifacts_unchanged": 9,
+  "replayed_images": [
+    {
+      "render": "overview",
+      "images_byte_identical": {
+        "region.png": true,
+        "context.png": true
+      }
+    },
+    {
+      "render": "figure3",
+      "images_byte_identical": {
+        "region.png": true,
+        "context.png": true
+      }
+    }
+  ],
+  "locator_identical": true,
+  "scientific_certification": false
+}
